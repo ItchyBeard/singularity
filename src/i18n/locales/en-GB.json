@@ -1,0 +1,362 @@
+{
+  "general": {
+    "about": "About",
+    "add_to": "Add to",
+    "all": "All",
+    "camouflage": "Camouflage | Camouflages",
+    "category": "Category | Categories",
+    "change_language": "Change language",
+    "close": "Close",
+    "coming_soon": "Coming soon",
+    "complete": "Complete",
+    "days_ago": "{0} day ago | {0} days ago",
+    "favorites": "Favorites",
+    "filters": "Filters",
+    "grid": "Grid",
+    "hide": "Hide",
+    "list": "List",
+    "made_by": "Made by {0}.",
+    "inspired_by": "Inspired by {0}.",
+    "mastery": "Mastery",
+    "mobile_nav_support_link": "Support me by buying me a beer 🍺",
+    "multiplayer": "Multiplayer",
+    "no_favorites_placeholder": "You don't have any favorites yet. Click the {star} icon on a {type} to add it to your favorites.",
+    "remove_all": "Remove all",
+    "remove_from": "Remove from",
+    "report_an_issue": "Report an issue",
+    "requirement": "Requirement | Requirements",
+    "reset": "Reset",
+    "search": "Search",
+    "setting": "Setting | Settings",
+    "show": "Show",
+    "support_notice_link": "buying me a beer",
+    "support_notice": "If you like this tracker, show your appreciation by {link} 🍺",
+    "translated_by": ", translated by {0}",
+    "tools": "Tools",
+    "weapon": "Weapon | Weapons",
+    "unlocked": "unlocked",
+    "warzone": "Warzone",
+    "zombies": "Zombies",
+    "campaign": "Campaign"
+  },
+  "filters": {
+    "hide_completed": "Hide completed",
+    "hide_shattered_gold": "Hide Shattered Gold",
+    "hide_arclight": "Hide Arclight",
+    "hide_tempest": "Hide Tempest",
+    "hide_singularity": "Hide Singularity",
+    "hide_golden_dragon": "Hide Golden Dragon",
+    "hide_bloodstone": "Hide Bloodstone",
+    "hide_doomsteel": "Hide Doomsteel",
+    "hide_infestation": "Hide Infestation",
+    "hide_molten_gold": "Hide Molten Gold",
+    "hide_moonstone": "Hide Moonstone",
+    "hide_chroma_flux": "Hide Chroma Flux",
+    "hide_genesis": "Hide Genesis",
+    "hide_golden_damascus": "Hide Golden Damascus",
+    "hide_starglass": "Hide Starglass",
+    "hide_absolute_zero": "Hide Absolute Zero",
+    "hide_apocalypse": "Hide Apocalypse",
+    "toggle_favorite": "{state} favorites",
+    "toggle_favorites": "Toggle favorites",
+    "toggle_layout": "Toggle layout"
+  },
+  "locales": {
+    "en-GB": "English"
+  },
+  "pages": {
+    "404": {
+      "description": "Dang, looks like you {0}.",
+      "scenarios": [
+        "took a wrong turn at Nuketown and ended up on a missing page 🏘️",
+        "got stuck respawning and ended up on a missing page 💥",
+        "tried to quick-scope the URL and ended up on a missing page 🔭",
+        "used Dead Silence too effectively and ended up on a missing page 🚫🔊",
+        "dove into a glitch and ended up on a missing page 🕳️",
+        "got flashbanged in the menus and ended up on a missing page ⚡",
+        "were last seen dropping into Verdansk and ended up on a missing page 🪂",
+        "got trapped in a Gulag and ended up on a missing page 🚿",
+        "tried to wall-run on a flat page and ended up on a missing page 🏃‍♂️",
+        "hit the wrong loadout drop and ended up on a missing page 📦",
+        "got caught in a crossfire between pages and ended up on a missing page 🔫",
+        "followed Captain Price into a secret mission and ended up on a missing page 🕵️",
+        "didn't use your UAV and got lost and ended up on a missing page 🛰️",
+        "tried to exfil without a chopper and ended up on a missing page 🚁",
+        "took the secret tunnel to Zombies and ended up on a missing page 🧟‍♂️",
+        "missed the Call... of Duty and ended up on a missing page 📞",
+        "tried to loot a non-existent cache and ended up on a missing page 💼",
+        "parachuted into an uncharted territory and ended up on a missing page 🗺️",
+        "mistakenly tried to rendezvous with Ghost and ended up on a missing page 👻",
+        "looked for Easter eggs in the wrong spot and ended up on a missing page 🥚"
+      ],
+      "link": "Return to home"
+    },
+    "about": {
+      "features": {
+        "autosaving": {
+          "title": "Autosaving",
+          "description": "Your progress is automatically saved and stored. No account needed."
+        },
+        "responsive": {
+          "title": "Responsive",
+          "description": "The tracker works on all devices, from desktop to mobile."
+        },
+        "export_import": {
+          "title": "Export/Import",
+          "description": "Export your progress to a file and import it on another device."
+        },
+        "filterable": {
+          "title": "Filterable",
+          "description": "Easily switch between weapon categories and toggle completed on/off."
+        },
+        "ad_free": {
+          "title": "Ad-free",
+          "description": "No annoying ads cluttering the site. Not now, not ever."
+        }
+      },
+      "open_source_description": "Built with {0}, hosted on {1} and analytics by {2}. The code to this site is available on {3}.",
+      "open_source": "Open source",
+      "previous_trackers_description": "Looking for camouflage trackers for the previous Call of Duty games going back to 2019?",
+      "previous_trackers": "Previous trackers",
+      "subtitle": "Keep track of your progress to the Singularity, Infestation, Genesis, and Apocalypse camouflages with this easy-to-use tracker.",
+      "support_me_description": "You can support me by {0} 🍺, it'd be greatly appreciated!",
+      "support_me_link": "buying me a beer",
+      "support_me": "Support me",
+      "title": "Simple, lightweight & intuitive",
+      "tools": "Tools",
+      "tools_description": "Looking for other useful tools created by some amazing people to help you complete your camouflages faster? You can find a list of them {0} on our tools page.",
+      "tools_link": "here"
+    },
+    "mastery": {
+      "completed_modal": {
+        "body": "Congratulations on finishing all mastery challenges! That's quite the feat! You first started tracking your grind here {duration} on {date}.",
+        "support_link": "buying me a beer",
+        "support": "If you liked this tracker, show your appreciation by spreading the word about it and if you're feeling generous please consider {0} as a thanks. Hope I see you on the battlefield! Cheers! 🍺",
+        "title": "Mastery challenges completed 👏🥳"
+      },
+      "info": "Once you have unlocked each mastery camouflage, a mastery challenge is unlocked that requires you to get a certain amount of kills while using that specific camouflage to complete it.",
+      "progress": {
+        "label": "Mastery progress",
+        "tooltip": "Progress towards completing all mastery challenges"
+      }
+    },
+    "requirements": {
+      "checklist": {
+        "military": "Military camouflages on 30 weapons",
+        "special": "Special camouflages on 30 weapons",
+        "shattered_gold": "Shattered Gold camouflage on 30 weapons",
+        "arclight": "Arclight camouflage on 30 weapons",
+        "tempest": "Tempest camouflage on 30 weapons"
+      },
+      "description": "To unlock any of the mastery camouflages you need to unlock the previous camouflage stage. So for example, to unlock the Singularity camouflage the following requirements must be met: {checklist} As you progress through the camouflage stages you will unlock the next stage:",
+      "stages": {
+        "military": "Military",
+        "special": "Special",
+        "shattered_gold": "Shattered Gold",
+        "arclight": "Arclight",
+        "tempest": "Tempest",
+        "singularity": "Singularity"
+      },
+      "table": {
+        "headers": {
+          "requirement": "Requirement",
+          "stage": "Stage"
+        },
+        "stage_requirements": {
+          "military": "Complete all 9 Military camouflage challenges for a weapon.",
+          "special": "Once all Military camos are unlocked, complete all 3 Special camouflage challenges for that weapon.",
+          "shattered_gold": "Once all Military and Special camos are unlocked, complete the Shattered Gold challenge for that weapon.",
+          "arclight": "After unlocking Shattered Gold on all weapons in a category, complete the Arclight challenge for those weapons.",
+          "tempest": "After unlocking Arclight on 30 weapons, complete the Tempest challenge for those weapons.",
+          "singularity": "After unlocking Tempest on 30 weapons, Singularity is automatically unlocked for all weapons."
+        },
+        "subtitle": "To get to the next camouflage stage you need to first unlock the previous stage:",
+        "title": "How do I unlock each camouflage stage?"
+      },
+      "title": "How do I unlock the mastery camouflages?"
+    },
+    "settings": {
+      "export": {
+        "copy_to_clipboard": "Copy to clipboard",
+        "description": "Export your progress to another device, or browser.",
+        "download_as_file": "Download as file",
+        "title": "Export progress"
+      },
+      "import": {
+        "description": "Import your progress from another device, or browser, by either pasting the exported code or uploading the exported file.",
+        "import_code": "Import code",
+        "import_disabled_tooltip": "You need to input code in the field above.",
+        "import_from_file": "Import from file",
+        "placeholder": "Paste code here, or import from file below.",
+        "title": "Import progress"
+      },
+      "reset": {
+        "confirm": {
+          "body": "Are you sure you want to reset all your progress?",
+          "cancel": "Cancel",
+          "reset": "Reset",
+          "title": "Reset all progress"
+        },
+        "description": "This action will reset all your progress and start over from zero.",
+        "reset_my_progress": "Reset my progress",
+        "title": "Reset all progress",
+        "warning": "This action is irreversible if you haven't exported your progress."
+      },
+      "weapon_completion": {
+        "title": "Weapon completion",
+        "description": "Choose which camouflage should be considered as completed for each weapon. This is useful if you want to track your progress towards a specific camouflage stage. For example, if you want to track your progress in stages towards the end goal, rather than just the final stage.",
+        "label": "Weapon completion stage",
+        "options": {
+          "1": "Shattered Gold / Golden Dragon / Molten Gold / Golden Damascus",
+          "2": "Arclight / Bloodstone / Moonstone / Starglass",
+          "3": "Tempest / Doomsteel / Chroma Flux / Absolute Zero",
+          "4": "Singularity / Infestation / Genesis / Apocalypse"
+        }
+      }
+    },
+    "tools": {
+      "title": "Tools",
+      "subtitle": "Useful tools by some other amazing people to help you complete your camouflages faster."
+    },
+    "campaign": {
+      "completed_modal": {
+        "body": "Congratulations on finishing the Genesis camouflage grind! That's quite the feat! You first started tracking your grind here {duration} on {date}.",
+        "support_link": "buying me a beer",
+        "support": "If you liked this tracker, show your appreciation by spreading the word about it and if you're feeling generous please consider {0} as a thanks. Hope I see you on the battlefield! Cheers! 🍺",
+        "title": "Campaign camouflages completed 👏🥳"
+      },
+      "progress": {
+        "label": "Genesis progress",
+        "tooltip": "Progress towards completing all campaign camouflages"
+      }
+    },
+    "warzone": {
+      "completed_modal": {
+        "body": "Congratulations on finishing all Warzone camouflages! That's quite the feat! You first started tracking your grind here {duration} on {date}.",
+        "support_link": "buying me a beer",
+        "support": "If you liked this tracker, show your appreciation by spreading the word about it and if you're feeling generous please consider {0} as a thanks. Hope I see you on the battlefield! Cheers! 🍺",
+        "title": "Warzone camouflages completed 👏🥳"
+      },
+      "progress": {
+        "label": "Apocalypse progress",
+        "tooltip": "Progress towards completing all Warzone camouflages"
+      }
+    },
+    "multiplayer": {
+      "completed_in_category": "Weapons completed in category",
+      "completed_modal": {
+        "body": "Congratulations on finishing the Singularity camouflage grind! It's been a long ride! You first started tracking your grind here {duration} on {date}.",
+        "support_link": "buying me a beer",
+        "support": "If you liked this tracker, show your appreciation by spreading the word about it and if you're feeling generous please consider {0} as a thanks. Hope I see you on the battlefield! Cheers! 🍺",
+        "title": "Multiplayer camouflages completed! 👏🥳"
+      },
+      "double_click_category_tooltip": "Double-click to toggle category as completed",
+      "double_click_tooltip": "Double-click to {state} weapon",
+      "finished_placeholder": "You have completed all camouflage challenges 👏",
+      "info_link": "here",
+      "info_tooltip": "You only need to complete the number of base guns there are for each category to earn the Forged camouflage challenge. For example, the Assault Rifles requires a total of 6 Gilded camouflages to unlock the Forged camouflage challenge for all weapons in that category. Press this icon to read more.",
+      "info": "You only need to complete the number of base guns there are for each category to earn the Forged camouflage challenge. For example, the Assault Rifles requires a total of 6 Gilded camouflages to unlock the Forged camouflage challenge for all weapons in that category. Read more {link}.",
+      "progress": {
+        "label": "Singularity progress",
+        "tooltip": "Progress towards completing all multiplayer camouflages"
+      }
+    },
+    "zombies": {
+      "completed_modal": {
+        "body": "Congratulations on finishing the Infestation camouflage grind! That's quite the feat! You first started tracking your grind here {duration} on {date}.",
+        "support_link": "buying me a beer",
+        "support": "If you liked this tracker, show your appreciation by spreading the word about it and if you're feeling generous please consider {0} as a thanks. Hope I see you on the battlefield! Cheers! 🍺",
+        "title": "Zombie camouflages completed 👏🥳"
+      },
+      "progress": {
+        "label": "Infestation progress",
+        "tooltip": "Progress towards completing all zombie camouflages"
+      }
+    }
+  },
+  "challenges": {
+    "types": {
+      "aerial_scorestreaks": "{amount} aerial scorestreaks destroyed",
+      "armored_zombie_kills": "{amount} Armored Zombie kills",
+      "critical_kills": "{amount} critical kills",
+      "destructions_sm": "{amount} enemy scorestreaks or vehicles destroyed in a single match {times} times",
+      "direct_hit_kills": "{amount} direct hit kills",
+      "double_kills": "{amount} double kills",
+      "eliminations": "{amount} eliminations",
+      "elite_zombie_kills": "{amount} Elite Zombie kills",
+      "headshots": "{amount} headshots",
+      "hipfire_kills": "{amount} hipfire kills",
+      "kills": "{amount} kills",
+      "kills_sm": "{amount} kills in a single match {times} times",
+      "kills_at_rare_rarity_or_higher": "{amount} kills at Rare rarity or higher",
+      "kills_in_a_single_shot": "{amount} kills in a single shot {times} times",
+      "kills_shortly_after_switching_weapons": "{amount} kills shortly after switching weapons",
+      "kills_while_enforcer_combat_specialty_is_active": "{amount} kills while Enforcer Combat Specialty is active",
+      "kills_while_recon_combat_speciality_is_active": "{amount} kills while Recon Combat Specialty is active",
+      "kills_while_moving": "{amount} kills while moving",
+      "kills_while_most_wanted": "{amount} eliminations while being the Most Wanted Contract target",
+      "kills_while_pack_a_punched": "{amount} kills while Pack-a-Punched",
+      "kills_while_recon_combat_specialty_is_active": "{amount} kills while Recon Combat Specialty is active",
+      "kills_while_strategist_combat_specialty_is_active": "{amount} kills while Strategist Combat Specialty is active",
+      "kills_with_4x_or_higher_magnification_scope": "{amount} kills with a 4x or higher magnification scope",
+      "kills_with_brain_rot_equipped": "{amount} kills with Brain Rot equipped",
+      "kills_with_cryo_freeze_equipped": "{amount} kills with Cryo Freeze equipped",
+      "kills_with_dead_wire_equipped": "{amount} kills with Dead Wire equipped",
+      "kills_with_napalm_burst_equipped": "{amount} kills with Napalm Burst equipped",
+      "kills_with_underbarrel_launcher": "{amount} kills with an underbarrel launcher",
+      "kills_without_dying": "{amount} kills without dying {times} times",
+      "kills_without_releasing_trigger": "{amount} kills without releasing the trigger {times} times",
+      "kills_on_affected_enemies_with_tacticals": "{amount} kills on enemies affected by your Stun, Flashbang, or Shock Charge",
+      "longshot_kills": "{amount} longshot kills",
+      "mangler_kills": "{amount} Mangler kills",
+      "one_kill_without_taking_damage": "One kill without taking damage {times} times",
+      "parasite_kills": "{amount} Parasite kills",
+      "rapid_kills": "{amount} kills rapidly {times} times",
+      "scorestreaks": "{amount} enemy scorestreaks destroyed",
+      "scorestreaks_or_enemy_equipment": "{amount} scorestreaks or enemy equipment destroyed",
+      "special_zombie_eliminations": "{amount} Special Zombie eliminations",
+      "special_zombie_kills": "{amount} Special Zombie kills",
+      "triple_kills": "{amount} triple kills",
+      "vermin_eliminations": "{amount} Vermin eliminations",
+      "vermin_kills": "{amount} Vermin kills",
+      "zombie_kills_while_affected_by_tactical": "{amount} Zombie kills while they are affected by your Tactical",
+      "zombie_kills_after_using_field_upgrade": "Get {amount} Kills shortly after using a Field Upgrade",
+      "point_blank_kills": "Get {amount} Point-Blank Kills",
+      "one_shot_kills": "Get {amount} One-Shot Kills",
+      "unlock_tempest_30_weapons": "Unlock Tempest on 30 weapons",
+      "consecutive_kills_without_taking_damage": "Get {amount} consecutive kills without taking damage {times} times",
+      "unlock_doomsteel_30_weapons": "Unlock Doomsteel on 30 weapons",
+      "special_enemy_kills": "Eliminate {amount} Special enemies",
+      "endgame_zone_kills": "In Endgame, Eliminate {amount} Zone III or Zone IV enemies",
+      "endgame_elite_kills": "In Endgame, Eliminate {amount} Elite enemies",
+      "unlock_chroma_flux_30_weapons": "Unlock Chroma Flux on 30 weapons",
+      "kills_in_a_single_match": "Get {amount} Kills in a single match {times} times",
+      "kills_in_top_10": "Get {amount} Eliminations while in the Top 10",
+      "unlock_absolute_zero_30_weapons": "Unlock Absolute Zero on 30 weapons",
+      "kills_with_5_attachments": "Get {amount} Eliminations with 5 or more Attachments equipped",
+      "kills_shortly_after_sprinting": "Get {amount} Kills while or shortly after sprinting",
+      "kills_with_underbarrel": "Get {amount} Kills with an underbarrel Launcher Attachment equipped",
+      "critical_kills_rapidly": "Get {amount} Critical Kills rapidly {times} times",
+      "kills_without_reloading": "Get {amount} Kills without reloading {times} times",
+      "kills_with_cryo_freeze": "Get {amount} Eliminations with the Cryo Freeze Ammo Mod equipped",
+      "kills_with_8_attachments": "With eight attachments equipped: get {amount} Eliminations",
+      "kills_at_rare_rarity": "Get {amount} Eliminations with the weapon at Rare Rarity or higher",
+      "kills_with_suppressor": "Get {amount} Eliminations while using a Suppressor",
+      "kills_without_taking_damage": "Get {amount} Eliminations without taking damage",
+      "TBD": "Challenge To Be Determined"
+    }
+  },
+  "weapon_categories": {
+    "Assault Rifles": "Assault Rifles",
+    "Battle Rifles": "Battle Rifles",
+    "Handguns": "Handguns",
+    "Launchers": "Launchers",
+    "Light Machine Guns": "Light Machine Guns",
+    "Marksman Rifles": "Marksman Rifles",
+    "Melee": "Melee",
+    "Shotguns": "Shotguns",
+    "Sniper Rifles": "Sniper Rifles",
+    "Sub Machine Guns": "Sub Machine Guns",
+    "Specials": "Specials"
+  }
+}
