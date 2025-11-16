@@ -8,7 +8,6 @@
       <router-link to="/">{{ $t('general.multiplayer') }}</router-link>
       <router-link to="/zombies">{{ $t('general.zombies') }}</router-link>
       <router-link to="/campaign">{{ $t('general.campaign') }}</router-link>
-
       <span
         class="disabled-link-wrapper"
         v-tippy="{
@@ -18,7 +17,8 @@
         <router-link to="/warzone" class="disabled-link">
           {{ $t('general.warzone') }}
         </router-link>
-      </span>
+      </span> 
+      <router-link to="/prestige">{{ $t('general.prestige') }}</router-link>
 
       <router-link
         to="/settings"

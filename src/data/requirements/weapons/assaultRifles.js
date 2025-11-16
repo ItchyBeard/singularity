@@ -12,26 +12,143 @@ import {
 
 // Using the MXR-17 challenges as a template for all ARs
 const specialCamouflages = {
-  multiplayer: {
-    'Diamondback': { amount: 50, type: 'kills_with_5_attachments' },
-    'Raptor': { amount: 30, type: 'kills_shortly_after_sprinting' },
-    'Mainframe': { amount: 20, type: 'kills_with_underbarrel' },
+  "M15 Mod 0": {
+    "multiplayer": {
+      "Diamondback": { "amount": 50, "type": "kills_while_moving" },
+      "Raptor": { "amount": 30, "type": "kills_objective" },
+      "Mainframe": { "amount": 20, "type": "kills_with_underbarrel_launcher" }
+    },
+    "zombies": {
+      "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },
+      "Slither": { "amount": 10, "type": "kills_without_reloading", "times": 15 },
+      "Pathfinder": { "amount": 300, "type": "kills_with_cryo_freeze" }
+    },
+    "campaign": {
+      "Cinder": { "amount": 150, "type": "kills_with_8_attachments" },
+      "Caiman": { "amount": 150, "type": "kills_at_rare_rarity" },
+      "Network": { "amount": 3, "type": "rapid_kills", "times": 10 }
+    },
+    "warzone": {
+      "Shimmer": { "amount": 5, "type": "headshots" },
+      "Tyrant": { "amount": 5, "type": "kills_with_suppressor" },
+      "Trace": { "amount": 5, "type": "kills_without_taking_damage" }
+    }
   },
-  zombies: {
-    'Mutilate': { amount: 5, type: 'critical_kills_rapidly', times: 15 },
-    'Slither': { amount: 10, type: 'kills_without_reloading', times: 15 },
-    'Pathfinder': { amount: 300, type: 'kills_with_cryo_freeze' },
+
+  "AK-27": {
+    "multiplayer": {
+      "Diamondback": { "amount": 30, "type": "hipfire_kills" },
+      "Raptor": { "amount": 2, "type": "kills_without_reloading" },
+      "Mainframe": { "amount": 20, "type": "kills_with_underbarrel_launcher" }
+    },
+    "zombies": {
+      "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },
+      "Slither": { "amount": 10, "type": "kills_without_reloading", "times": 15 },
+      "Pathfinder": { "amount": 300, "type": "kills_with_cryo_freeze" }
+    },
+    "campaign": {
+      "Cinder": { "amount": 150, "type": "kills_with_8_attachments" },
+      "Caiman": { "amount": 150, "type": "kills_at_rare_rarity" },
+      "Network": { "amount": 3, "type": "rapid_kills", "times": 10 }
+    },
+    "warzone": {
+      "Shimmer": { "amount": 5, "type": "headshots" },
+      "Tyrant": { "amount": 5, "type": "kills_with_suppressor" },
+      "Trace": { "amount": 5, "type": "kills_without_taking_damage" }
+    }
   },
-  campaign: {
-    'Cinder': { amount: 150, type: 'kills_with_8_attachments' },
-    'Caiman': { amount: 150, type: 'kills_at_rare_rarity' },
-    'Network': { amount: 3, type: 'rapid_kills', times: 10 },
+
+  "MXR-17": {
+    "multiplayer": {
+      "Diamondback": { "amount": 50, "type": "kills_with_5_attachments" },
+      "Raptor": { "amount": 30, "type": "kills_shortly_after_sprinting" },
+      "Mainframe": { "amount": 20, "type": "kills_with_underbarrel" }
+    },
+    "zombies": {
+      "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },
+      "Slither": { "amount": 10, "type": "kills_without_reloading", "times": 15 },
+      "Pathfinder": { "amount": 300, "type": "kills_with_cryo_freeze" }
+    },
+    "campaign": {
+      "Cinder": { "amount": 150, "type": "kills_with_8_attachments" },
+      "Caiman": { "amount": 150, "type": "kills_at_rare_rarity" },
+      "Network": { "amount": 3, "type": "rapid_kills", "times": 10 }
+    },
+    "warzone": {
+      "Shimmer": { "amount": 5, "type": "headshots" },
+      "Tyrant": { "amount": 5, "type": "kills_with_suppressor" },
+      "Trace": { "amount": 5, "type": "kills_without_taking_damage" }
+    }
   },
-  warzone: {
-    'Shimmer': { amount: 5, type: 'headshots' },
-    'Tyrant': { amount: 5, type: 'kills_with_suppressor' },
-    'Trace': { amount: 5, type: 'kills_without_taking_damage' },
+
+  "X9 Maverick": {
+    "multiplayer": {
+      "Diamondback": { "amount": 50, "type": "TBD" },
+      "Raptor": { "amount": 30, "type": "TBD" },
+      "Mainframe": { "amount": 20, "type": "TBD" }
+    },
+    "zombies": {
+      "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },
+      "Slither": { "amount": 10, "type": "kills_without_reloading", "times": 15 },
+      "Pathfinder": { "amount": 300, "type": "kills_with_cryo_freeze" }
+    },
+    "campaign": {
+      "Cinder": { "amount": 150, "type": "kills_with_8_attachments" },
+      "Caiman": { "amount": 150, "type": "kills_at_rare_rarity" },
+      "Network": { "amount": 3, "type": "rapid_kills", "times": 10 }
+    },
+    "warzone": {
+      "Shimmer": { "amount": 5, "type": "headshots" },
+      "Tyrant": { "amount": 5, "type": "kills_with_suppressor" },
+      "Trace": { "amount": 5, "type": "kills_without_taking_damage" }
+    }
   },
+
+  "DS20 Mirage": {
+    "multiplayer": {
+      "Diamondback": { "amount": 50, "type": "TBD" },
+      "Raptor": { "amount": 30, "type": "TBD" },
+      "Mainframe": { "amount": 20, "type": "TBD" }
+    },
+    "zombies": {
+      "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },
+      "Slither": { "amount": 10, "type": "kills_without_reloading", "times": 15 },
+      "Pathfinder": { "amount": 300, "type": "kills_with_cryo_freeze" }
+    },
+    "campaign": {
+      "Cinder": { "amount": 150, "type": "kills_with_8_attachments" },
+      "Caiman": { "amount": 150, "type": "kills_at_rare_rarity" },
+      "Network": { "amount": 3, "type": "rapid_kills", "times": 10 }
+    },
+    "warzone": {
+      "Shimmer": { "amount": 5, "type": "headshots" },
+      "Tyrant": { "amount": 5, "type": "kills_with_suppressor" },
+      "Trace": { "amount": 5, "type": "kills_without_taking_damage" }
+    }
+  },
+
+  "Peacekeeper Mk1": {
+    "multiplayer": {
+      "Diamondback": { "amount": 50, "type": "kills_with_5_attachments" },
+      "Raptor": { "amount": 30, "type": "kills_without_taking_damage", },
+      "Mainframe": { "amount": 20, "type": "kills_with_underbarrel_launcher" }
+    },
+    "zombies": {
+      "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },
+      "Slither": { "amount": 10, "type": "kills_without_reloading", "times": 15 },
+      "Pathfinder": { "amount": 300, "type": "kills_with_cryo_freeze" }
+    },
+    "campaign": {
+      "Cinder": { "amount": 150, "type": "kills_with_8_attachments" },
+      "Caiman": { "amount": 150, "type": "kills_at_rare_rarity" },
+      "Network": { "amount": 3, "type": "rapid_kills", "times": 10 }
+    },
+    "warzone": {
+      "Shimmer": { "amount": 5, "type": "headshots" },
+      "Tyrant": { "amount": 5, "type": "kills_with_suppressor" },
+      "Trace": { "amount": 5, "type": "kills_without_taking_damage" }
+    }
+  }
 }
 
 export default {
@@ -39,24 +156,24 @@ export default {
     acc[weapon] = {
       multiplayer: {
         ...MP_BASE_CAMOS_DEFAULT,
-        ...specialCamouflages.multiplayer,
+        ...specialCamouflages[weapon].multiplayer,
         ...MP_MASTERY_CAMOS,
       },
       zombies: {
         ...ZM_BASE_CAMOS_DEFAULT,
-        ...specialCamouflages.zombies,
+        ...specialCamouflages[weapon].zombies,
         ...ZM_MASTERY_CAMOS,
       },
       campaign: {
         ...CP_BASE_CAMOS_DEFAULT,
-        ...specialCamouflages.campaign,
+        ...specialCamouflages[weapon].campaign,
         ...CP_MASTERY_CAMOS,
       },
       warzone: {
         ...WZ_BASE_CAMOS,
-        ...specialCamouflages.warzone,
+        ...specialCamouflages[weapon].warzone,
         ...WZ_MASTERY_CAMOS,
-      },
+      }
     }
     return acc
   }, {}),
