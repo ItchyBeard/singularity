@@ -149,10 +149,13 @@ export default {
       }
 
       const categoryWeapons = this.weapons[title]
+      if (!categoryWeapons) return '0/0'
+
       const total = categoryWeapons.filter((weapon) => !weapon.comingSoon).length
 
       const completed = categoryWeapons.reduce((a, weapon) => {
         const camouflage = modeCamouflages[this.progressKey][this.weaponCompletion - 1]
+        if (!weapon.progress[this.progressKey]) return a
         return a + (weapon.progress[this.progressKey][camouflage] ? 1 : 0)
       }, 0)
 
@@ -170,14 +173,22 @@ export default {
     },
 
     camouflages(weapon) {
-      const requirements = this.weaponRequirements[weapon.name][this.progressKey]
+      const weaponReqs = this.weaponRequirements[weapon.name]
+      if (!weaponReqs) {
+        return []
+      }
 
+      const requirements = weaponReqs[this.progressKey]
       if (!requirements) {
-        console.log(`Missing requirements for ${weapon.name}`)
+        console.log(`Missing requirements for ${weapon.name} [${this.progressKey}]`)
         return []
       }
 
       const progress = weapon.progress[this.progressKey]
+      if (!progress) {
+        return []
+      }
+
       const camouflages = Object.keys(progress)
         .map((camouflage) => {
           const completed = progress[camouflage]

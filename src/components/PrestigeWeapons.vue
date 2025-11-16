@@ -4,7 +4,7 @@
       <div class="text icon">
         <IconComponent name="search" height="20" width="20" />
         <input
-          type="search"
+          type="text"
           v-model="searchQuery"
           :placeholder="$t('pages.prestige.search_placeholder')"
           class="search-input" />
@@ -20,8 +20,15 @@
           </span>
         </h2>
 
+        <div v-if="preferences.layout === 'table' && favorites.length > 0">
+          <WeaponsTable
+            :categories="{ favorites: favorites }"
+            progressKey="prestige"
+            :isFavorites="true" />
+        </div>
+
         <transition-group
-          v-if="favorites.length > 0"
+          v-else-if="preferences.layout !== 'table' && favorites.length > 0"
           name="fade"
           tag="div"
           class="weapons">
@@ -41,17 +48,22 @@
         </AlertComponent>
       </div>
 
-      <div v-for="(category, title) in groupedWeapons" :key="title" class="category">
-        <h2>
-          <span>
-            {{ $t('weapon_categories.' + title) }}
-          </span>
-        </h2>
-
-        <transition-group name="fade" tag="div" class="weapons">
-          <PrestigeWeapon v-for="weapon in category" :key="weapon.name" :weapon="weapon" />
-        </transition-group>
+      <div v-if="preferences.layout === 'table'" :key="'table-layout'" class="category">
+        <WeaponsTable :categories="groupedWeapons" progressKey="prestige" />
       </div>
+      <template v-else>
+        <div v-for="(category, title) in groupedWeapons" :key="title" class="category">
+          <h2>
+            <span>
+              {{ $t('weapon_categories.' + title) }}
+            </span>
+          </h2>
+
+          <transition-group name="fade" tag="div" class="weapons">
+            <PrestigeWeapon v-for="weapon in category" :key="weapon.name" :weapon="weapon" />
+          </transition-group>
+        </div>
+      </template>
     </transition-group>
 
     <div
@@ -70,11 +82,13 @@ import { weaponPrestigeUnlocks } from '@/data/weaponPrestigeUnlocks'
 
 import AlertComponent from '@/components/AlertComponent.vue'
 import PrestigeWeapon from '@/components/PrestigeWeapon.vue'
+import WeaponsTable from '@/components/WeaponsTable.vue'
 
 export default {
   components: {
     AlertComponent,
     PrestigeWeapon,
+    WeaponsTable,
   },
 
   data() {
@@ -92,17 +106,10 @@ export default {
     },
 
     allWeaponsAsList() {
-      const list = []
-      for (const category in weaponPrestigeUnlocks) {
-        for (const weaponName in weaponPrestigeUnlocks[category]) {
-          list.push({
-            name: weaponName,
-            category: category,
-            ...weaponPrestigeUnlocks[category][weaponName],
-          })
-        }
-      }
-      return list
+      return Object.keys(weaponPrestigeUnlocks).map((name) => ({
+        name,
+        ...weaponPrestigeUnlocks[name],
+      }))
     },
 
     filteredWeapons() {
@@ -113,7 +120,8 @@ export default {
       const query = this.searchQuery.toLowerCase()
       return this.allWeaponsAsList.filter((weapon) => {
         if (weapon.name.toLowerCase().includes(query)) return true
-        if (weapon.unlocks.some((camo) => camo.name.toLowerCase().includes(query))) return true
+        if (weapon.universal.some((camo) => camo.name.toLowerCase().includes(query))) return true
+        if (weapon.specific.some((camo) => camo.name.toLowerCase().includes(query))) return true
         return false
       })
     },
@@ -133,7 +141,8 @@ export default {
     groupedWeapons() {
       const groups = {}
 
-      for (const weaponData of this.nonFavoriteWeapons) {
+      for (const weaponName in this.nonFavoriteWeapons) {
+        const weaponData = this.nonFavoriteWeapons[weaponName]
         const category = weaponData.category || 'Unknown'
 
         if (!groups[category]) {

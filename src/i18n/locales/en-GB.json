@@ -221,10 +221,6 @@
         }
       }
     },
-    "tools": {
-      "title": "Tools",
-      "subtitle": "Useful tools by some other amazing people to help you complete your camouflages faster."
-    },
     "campaign": {
       "completed_modal": {
         "body": "Congratulations on finishing the Genesis camouflage grind! That's quite the feat! You first started tracking your grind here {duration} on {date}.",
@@ -279,6 +275,9 @@
         "label": "Infestation progress",
         "tooltip": "Progress towards completing all zombie camouflages"
       }
+    },
+    "prestige": {
+      "search_placeholder": "Search for a weapon or camo..."
     }
   },
   "challenges": {

@@ -120,7 +120,7 @@ export default {
 <style lang="scss">
 .camo-tooltip {
   b {
-    color: $green;
+    color: white;
   }
 }
 </style>
@@ -153,8 +153,8 @@ export default {
 
   &.completed {
     .checkbox {
-      background: $green;
-      border-color: $green;
+      background: #8634b5;
+      border-color: #452c45;
       .icon-component {
         opacity: 1;
       }
@@ -176,8 +176,8 @@ export default {
     }
 
     &.completed .checkbox {
-      background: lighten($green, 5%);
-      border-color: lighten($green, 5%);
+      background: lighten(#8634b5, 5%);
+      border-color: lighten(#452c45, 5%);
     }
   }
 }
