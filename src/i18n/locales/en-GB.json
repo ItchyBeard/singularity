@@ -37,7 +37,8 @@
     "unlocked": "unlocked",
     "warzone": "Warzone",
     "zombies": "Zombies",
-    "campaign": "Campaign"
+    "campaign": "Campaign",
+    "prestige": "Prestige"
   },
   "filters": {
     "hide_completed": "Hide completed",
@@ -327,6 +328,7 @@
       "zombie_kills_after_using_field_upgrade": "Get {amount} Kills shortly after using a Field Upgrade",
       "point_blank_kills": "Get {amount} Point-Blank Kills",
       "one_shot_kills": "Get {amount} One-Shot Kills",
+      "kills_while_affected_by_tactical": "Get {amount} kills while enemy is affected by Tactical Equipment",
       "unlock_tempest_30_weapons": "Unlock Tempest on 30 weapons",
       "consecutive_kills_without_taking_damage": "Get {amount} consecutive kills without taking damage {times} times",
       "unlock_doomsteel_30_weapons": "Unlock Doomsteel on 30 weapons",
@@ -355,6 +357,7 @@
       "kills_with_specific_attachment": "Get {amount} kills with {attachment} Equipped",
       "zombie_perk_kills": "Get {amount} kills with {perk} activations",
       "TBD": "Challenge To Be Determined"
+
     }
   },
   "weapon_categories": {
@@ -367,6 +370,6 @@
     "Melee": "Melee",
     "Shotguns": "Shotguns",
     "Sniper Rifles": "Sniper Rifles",
-    "Sub Machine Guns": "Sub Machine Guns"
+    "Sub Machine Guns": "Submachine Guns"
   }
 }

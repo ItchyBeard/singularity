@@ -11,51 +11,99 @@ import {
 } from '../../camouflages/definitions'
 
 const specialCamouflages = {
-  multiplayer: {
-    'Diamondback': { amount: 50, type: 'kills_with_4x_or_higher_magnification_scope' },
-    'Raptor': { amount: 30, type: 'one_shot_kills' },
-    'Mainframe': { amount: 2, type: 'kills_without_reloading', times: 10 },
+  "VS Recon": {
+    "multiplayer": {
+      "Diamondback": { "amount": 50, "type": "kills_with_5_attachments" },
+      "Raptor": { "amount": 30, "type": "kills_shortly_after_sprinting" },
+      "Mainframe": { "amount": 20, "type": "kills_with_underbarrel" }
+    },
+    "zombies": {
+      "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },
+      "Slither": { "amount": 10, "type": "kills_without_reloading", "times": 15 },
+      "Pathfinder": { "amount": 300, "type": "kills_with_cryo_freeze" }
+    },
+    "campaign": {
+      "Cinder": { "amount": 150, "type": "kills_with_8_attachments" },
+      "Caiman": { "amount": 150, "type": "kills_at_rare_rarity" },
+      "Network": { "amount": 3, "type": "rapid_kills", "times": 10 }
+    },
+    "warzone": {
+      "Shimmer": { "amount": 5, "type": "headshots" },
+      "Tyrant": { "amount": 5, "type": "kills_with_suppressor" },
+      "Trace": { "amount": 5, "type": "kills_without_taking_damage" }
+    }
   },
-  zombies: {
-    'Mutilate': { amount: 3, times: 5, type: 'critical_kills_consecutively' },
-    'Slither': { amount: 300, attachment: 'Dead Wire Ammo Mod', type: 'kills_with_specific_attachment' },
-    'Pathfinder': { amount: 300, type: 'kills_while_pack_a_punched' },
+
+  "Shadow SK": {
+    "multiplayer": {
+      "Diamondback": { "amount": 50, "type": "kills_with_5_attachments" },
+      "Raptor": { "amount": 30, "type": "kills_shortly_after_sprinting" },
+      "Mainframe": { "amount": 20, "type": "kills_with_underbarrel" }
+    },
+    "zombies": {
+      "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },
+      "Slither": { "amount": 10, "type": "kills_without_reloading", "times": 15 },
+      "Pathfinder": { "amount": 300, "type": "kills_with_cryo_freeze" }
+    },
+    "campaign": {
+      "Cinder": { "amount": 150, "type": "kills_with_8_attachments" },
+      "Caiman": { "amount": 150, "type": "kills_at_rare_rarity" },
+      "Network": { "amount": 3, "type": "rapid_kills", "times": 10 }
+    },
+    "warzone": {
+      "Shimmer": { "amount": 5, "type": "headshots" },
+      "Tyrant": { "amount": 5, "type": "kills_with_suppressor" },
+      "Trace": { "amount": 5, "type": "kills_without_taking_damage" }
+    }
   },
-  campaign: {
-    'Cinder': { amount: 100, type: 'specific_enemy_kills', enemy: 'Fear enemies' },
-    'Caiman': { amount: 100, type: 'kills_with_suppressor' },
-    'Network': { amount: 100, type: 'kills_with_8_attachments' },
-  },
-  warzone: {
-    'Warzone Special 1': { type: 'TBD' },
-    'Warzone Special 2': { type: 'TBD' },
-    'Warzone Special 3': { type: 'TBD' },
-  },
+
+  "XR-3 Ion": {
+    "multiplayer": {
+      "Diamondback": { "amount": 50, "type": "kills_with_5_attachments" },
+      "Raptor": { "amount": 30, "type": "kills_shortly_after_sprinting" },
+      "Mainframe": { "amount": 20, "type": "kills_with_underbarrel" }
+    },
+    "zombies": {
+      "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },
+      "Slither": { "amount": 10, "type": "kills_without_reloading", "times": 15 },
+      "Pathfinder": { "amount": 300, "type": "kills_with_cryo_freeze" }
+    },
+    "campaign": {
+      "Cinder": { "amount": 150, "type": "kills_with_8_attachments" },
+      "Caiman": { "amount": 150, "type": "kills_at_rare_rarity" },
+      "Network": { "amount": 3, "type": "rapid_kills", "times": 10 }
+    },
+    "warzone": {
+      "Shimmer": { "amount": 5, "type": "headshots" },
+      "Tyrant": { "amount": 5, "type": "kills_with_suppressor" },
+      "Trace": { "amount": 5, "type": "kills_without_taking_damage" }
+    }
+  }
 }
 
 export default {
   ...sniperRifles.reduce((acc, weapon) => {
-    acc[weapon] = {
+   acc[weapon] = {
       multiplayer: {
         ...MP_BASE_CAMOS_SNIPER,
-        ...specialCamouflages.multiplayer,
+        ...specialCamouflages[weapon].multiplayer,
         ...MP_MASTERY_CAMOS,
       },
       zombies: {
         ...ZM_BASE_CAMOS_DEFAULT,
-        ...specialCamouflages.zombies,
+        ...specialCamouflages[weapon].zombies,
         ...ZM_MASTERY_CAMOS,
       },
       campaign: {
         ...CP_BASE_CAMOS_DEFAULT,
-        ...specialCamouflages.campaign,
+        ...specialCamouflages[weapon].campaign,
         ...CP_MASTERY_CAMOS,
       },
       warzone: {
         ...WZ_BASE_CAMOS,
-        ...specialCamouflages.warzone,
+        ...specialCamouflages[weapon].warzone,
         ...WZ_MASTERY_CAMOS,
-      },
+      }
     }
     return acc
   }, {}),
