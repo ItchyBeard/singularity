@@ -36,7 +36,7 @@ export const weaponPrestigeUnlocks = {
     },
   },
   'Launchers': {
-    'Aarow 109': {
+    'AAROW 109': {
       unlocks: [
         {
           name: 'Equinox',
@@ -108,7 +108,7 @@ export const weaponPrestigeUnlocks = {
     },
   },
   'Handguns': {
-    'Jager 45': {
+    'Jäger 45': {
       unlocks: [
         {
           name: 'Ronin',

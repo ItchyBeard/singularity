@@ -18,17 +18,7 @@
           {{ $t('general.warzone') }}
         </router-link>
       </span>
-      <span
-        class="disabled-link-wrapper"
-        style="margin-right: 2rem;"
-        v-tippy="{
-          content: $t('general.coming_soon'),
-          placement: 'bottom',
-        }">
-        <router-link to="/prestige" class="disabled-link">
-          {{ $t('general.prestige') }}
-        </router-link>
-      </span>
+      <router-link to="/prestige">{{ $t('general.prestige') }}</router-link>
 
       <router-link
         to="/settings"
@@ -42,14 +32,15 @@
   </nav>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+</script>
 
 <style lang="scss" scoped>
 .disabled-link-wrapper {
   display: inline-block;
   opacity: 0.3;
   cursor: not-allowed;
-  margin: 0 0 0 2rem;
+  margin: 0 2rem;
 }
 
 .disabled-link {
