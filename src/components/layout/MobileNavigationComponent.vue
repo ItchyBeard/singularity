@@ -11,17 +11,16 @@
       <div>
         <router-link to="/">{{ $t('general.multiplayer') }}</router-link>
         <router-link to="/zombies">{{ $t('general.zombies') }}</router-link>
-        <router-link to="/warzone">{{ $t('general.warzone') }}</router-link>
+        <router-link to="/campaign">{{ $t('general.campaign') }}</router-link>
       </div>
       <div class="footer">
         <router-link to="/settings">{{ $tc('general.setting', 2) }}</router-link>
         <router-link to="/about">{{ $t('general.about') }}</router-link>
-        <router-link to="/tools">{{ $t('general.tools') }}</router-link>
         <router-link to="/requirements">{{ $tc('general.requirement', 2) }}</router-link>
-        <a href="https://github.com/carlssonemil/nebula/issues/new?title=[Bug]%20" target="_blank">
+        <a href="https://github.com/itchybeard/singularity/issues/new?title=[Bug]%20" target="_blank">
           {{ $t('general.report_an_issue') }}
         </a>
-        <a href="https://github.com/carlssonemil/nebula">
+        <a href="https://github.com/itchybeard/singularity">
           <IconComponent name="github" />
           GitHub
         </a>

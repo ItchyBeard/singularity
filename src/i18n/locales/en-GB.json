@@ -278,8 +278,10 @@
     "types": {
       "aerial_scorestreaks": "{amount} aerial scorestreaks destroyed",
       "armored_zombie_kills": "{amount} Armored Zombie kills",
+      "specific_enemy_kills": "{amount} {enemy} kills",
       "critical_kills": "{amount} critical kills",
       "destructions_sm": "{amount} enemy scorestreaks or vehicles destroyed in a single match {times} times",
+      "destructions_guild": "Destroy {amount} Guild D.A.W.G.s, Sentry Turrets or Drones.",
       "direct_hit_kills": "{amount} direct hit kills",
       "double_kills": "{amount} double kills",
       "eliminations": "{amount} eliminations",
@@ -287,6 +289,7 @@
       "headshots": "{amount} headshots",
       "hipfire_kills": "{amount} hipfire kills",
       "kills": "{amount} kills",
+      "kills_objective": "{amount} objective kills",
       "kills_sm": "{amount} kills in a single match {times} times",
       "kills_at_rare_rarity_or_higher": "{amount} kills at Rare rarity or higher",
       "kills_in_a_single_shot": "{amount} kills in a single shot {times} times",
@@ -294,6 +297,7 @@
       "kills_while_enforcer_combat_specialty_is_active": "{amount} kills while Enforcer Combat Specialty is active",
       "kills_while_recon_combat_speciality_is_active": "{amount} kills while Recon Combat Specialty is active",
       "kills_while_moving": "{amount} kills while moving",
+      "kills_while_moving_ads": "{amount} kills while ADS and moving",
       "kills_while_most_wanted": "{amount} eliminations while being the Most Wanted Contract target",
       "kills_while_pack_a_punched": "{amount} kills while Pack-a-Punched",
       "kills_while_recon_combat_specialty_is_active": "{amount} kills while Recon Combat Specialty is active",
@@ -334,15 +338,22 @@
       "kills_in_top_10": "Get {amount} Eliminations while in the Top 10",
       "unlock_absolute_zero_30_weapons": "Unlock Absolute Zero on 30 weapons",
       "kills_with_5_attachments": "Get {amount} Eliminations with 5 or more Attachments equipped",
+      "kills_with_tier_armor": "Get {amount} Eliminations with Tier {tier} armor equipped",
+      "kills_with_no_attachments": "Get {amount} Eliminations without any Attachments equipped",
       "kills_shortly_after_sprinting": "Get {amount} Kills while or shortly after sprinting",
+      "kill_shortly_after_movement": "Get a Kill while or shortly after sliding, diving or wall-jumping {times} times",
       "kills_with_underbarrel": "Get {amount} Kills with an underbarrel Launcher Attachment equipped",
       "critical_kills_rapidly": "Get {amount} Critical Kills rapidly {times} times",
+      "critical_kills_consecutively": "Get {amount} Critical Kills consecutively {times} times",
       "kills_without_reloading": "Get {amount} Kills without reloading {times} times",
       "kills_with_cryo_freeze": "Get {amount} Eliminations with the Cryo Freeze Ammo Mod equipped",
       "kills_with_8_attachments": "With eight attachments equipped: get {amount} Eliminations",
       "kills_at_rare_rarity": "Get {amount} Eliminations with the weapon at Rare Rarity or higher",
       "kills_with_suppressor": "Get {amount} Eliminations while using a Suppressor",
       "kills_without_taking_damage": "Get {amount} Eliminations without taking damage",
+      "kills_without_taking_damage_times": "Get {amount} Eliminations without taking damage {times} times",
+      "kills_with_specific_attachment": "Get {amount} kills with {attachment} Equipped",
+      "zombie_perk_kills": "Get {amount} kills with {perk} activations",
       "TBD": "Challenge To Be Determined"
     }
   },
@@ -356,7 +367,6 @@
     "Melee": "Melee",
     "Shotguns": "Shotguns",
     "Sniper Rifles": "Sniper Rifles",
-    "Sub Machine Guns": "Sub Machine Guns",
-    "Specials": "Specials"
+    "Sub Machine Guns": "Sub Machine Guns"
   }
 }

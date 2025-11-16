@@ -12,21 +12,24 @@ import {
 
 const specialCamouflages = {
   multiplayer: {
-    'Special Camo 1': { type: 'TBD' },
-    'Special Camo 2': { type: 'TBD' },
-    'Special Camo 3': { type: 'TBD' },
+    'Diamondback':  { amount: 30,  type: 'kills_objective' },
+    'Raptor': { amount: 2, times: 5, type: 'kills_without_releasing_trigger' },
+    'Mainframe': { amount: 50, type: 'kills_with_5_attachments' },
   },
   zombies: {
-    'Zombie Special 1': { type: 'TBD' },
-    'Zombie Special 2': { type: 'TBD' },
+    'Mutilate': { amount: 150, tier: 2, type: 'kills_with_tier_armor' },
+    'Slither': { amount: 75, perk: 'Shadow Rift', type: 'zombie_perk_kills' },
+    'Pathfinder': { amount: 100, type: 'zombie_kills_after_using_field_upgrade' },
   },
   campaign: {
-    'Campaign Special 1': { type: 'TBD' },
-    'Campaign Special 2': { type: 'TBD' },
+    'Cinder': { amount: 3, times: 10, type: 'kills_without_releasing_trigger' },
+    'Caiman': { amount: 100, attachment: 'Extended Magazine', type: 'kills_with_specific_attachment' },
+    'Network': { amount: 100, type: 'specific_enemy_kills', enemy: 'Human enemy' },
   },
   warzone: {
     'Warzone Special 1': { type: 'TBD' },
     'Warzone Special 2': { type: 'TBD' },
+    'Warzone Special 3': { type: 'TBD' },
   },
 }
 
