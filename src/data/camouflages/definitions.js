@@ -157,9 +157,17 @@ export const WZ_BASE_CAMOS = {
   'Hunter': { amount: 75, type: 'eliminations' },
   'Sapphire Snake': { amount: 100, type: 'eliminations' },
 }
+
 export const WZ_MASTERY_CAMOS = {
   'Golden Damascus': { amount: 3, type: 'kills_in_a_single_match', times: 5 },
   'Starglass': { amount: 5, type: 'kills_without_dying', times: 5 },
   'Absolute Zero': { amount: 10, type: 'kills_in_top_10' },
   'Apocalypse': { type: 'unlock_absolute_zero_30_weapons' },
+}
+
+// --- PRESTIGE ---
+export const PRESTIGE_CAMOS = {
+  'Cobalt Circuit': { amount: 100, type: 'weapon_prestige_master' },
+  'Vermilion Cypher': { amount: 150, type: 'weapon_prestige_master' },
+  'Violet Network': { amount: 200, type: 'weapon_prestige_master' },
 }
