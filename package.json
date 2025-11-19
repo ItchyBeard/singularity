@@ -10,6 +10,7 @@
   "dependencies": {
     "@kyvg/vue3-notification": "^3.0.2",
     "flag-icons": "^6.11.0",
+    "html2canvas": "^1.4.1",
     "pinia": "^2.1.6",
     "vue": "^3.3.4",
     "vue-i18n": "9",

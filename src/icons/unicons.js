@@ -37,7 +37,8 @@ import {
   uniTable,
   uniTimes,
   uniTrash,
-  uniGlobe
+  uniGlobe,
+  uniDownloadAlt,
 } from 'vue-unicons/dist/icons'
 
 Unicon.add([
@@ -75,7 +76,8 @@ Unicon.add([
   uniTimes,
   uniTrash,
   uniTable,
-  uniGlobe
+  uniGlobe,
+  uniDownloadAlt
 ])
 
 export default Unicon
