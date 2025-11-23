@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-
 import HomeView from '../views/HomeView.vue'
 import NotFoundView from '../views/NotFoundView.vue'
 
@@ -8,11 +7,6 @@ const routes = [
     path: '/',
     name: 'home',
     component: HomeView,
-  },
-  {
-    path: '/:pathMatch(.*)*',
-    name: '404',
-    component: NotFoundView,
   },
   {
     path: '/zombies',
@@ -48,6 +42,11 @@ const routes = [
     path: '/settings',
     name: 'settings',
     component: () => import('../views/SettingsView.vue'),
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    name: '404',
+    component: NotFoundView,
   }
 ]
 

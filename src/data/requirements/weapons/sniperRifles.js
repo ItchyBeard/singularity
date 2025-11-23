@@ -23,9 +23,9 @@ const specialCamouflages = {
       "Pathfinder": { "amount": 300, "type": "kills_with_cryo_freeze" }
     },
     "campaign": {
-      "Cinder": { "amount": 150, "type": "kills_with_8_attachments" },
-      "Caiman": { "amount": 150, "type": "kills_at_rare_rarity" },
-      "Network": { "amount": 3, "type": "rapid_kills", "times": 10 }
+      "Cinder": { "amount": 100, "type": "specific_enemy_kills", "enemy": 'Fear' },
+      "Caiman": { "amount": 100, "type": "kills_with_suppressor" },
+      "Network": { "amount": 100, "type": "kills_with_8_attachments" }
     },
     "warzone": {
       "Shimmer": { "amount": 5, "type": "headshots" },
@@ -36,9 +36,9 @@ const specialCamouflages = {
 
   "Shadow SK": {
     "multiplayer": {
-      "Diamondback": { "amount": 50, "type": "kills_with_5_attachments" },
-      "Raptor": { "amount": 30, "type": "kills_shortly_after_sprinting" },
-      "Mainframe": { "amount": 20, "type": "kills_with_underbarrel" }
+      "Cinder": { "amount": 50, "type": "kills_with_suppressor" },
+      "Caiman": { "amount": 15, "type": "longshot_kills" },
+      "Network": { "amount": 2, "type": "kills_without_reloading", "times": 10 }
     },
     "zombies": {
       "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },
@@ -46,9 +46,9 @@ const specialCamouflages = {
       "Pathfinder": { "amount": 300, "type": "kills_with_cryo_freeze" }
     },
     "campaign": {
-      "Cinder": { "amount": 150, "type": "kills_with_8_attachments" },
-      "Caiman": { "amount": 150, "type": "kills_at_rare_rarity" },
-      "Network": { "amount": 3, "type": "rapid_kills", "times": 10 }
+      "Cinder": { "amount": 50, "type": "kills_while_moving_ads" },
+      "Caiman": { "amount": 10, "type": "kills_without_reloading", "times": 10 },
+      "Network": { "amount": 25, "type": "destructions_guild" }
     },
     "warzone": {
       "Shimmer": { "amount": 5, "type": "headshots" },
@@ -69,9 +69,9 @@ const specialCamouflages = {
       "Pathfinder": { "amount": 300, "type": "kills_with_cryo_freeze" }
     },
     "campaign": {
-      "Cinder": { "amount": 150, "type": "kills_with_8_attachments" },
-      "Caiman": { "amount": 150, "type": "kills_at_rare_rarity" },
-      "Network": { "amount": 3, "type": "rapid_kills", "times": 10 }
+      "Cinder": { "amount": 100, "type": "kills_with_4x_or_higher_magnification_scope" },
+      "Caiman": { "amount": 100, "type": "kills_with_suppressor" },
+      "Network": { "amount": 100, "type": "specific_enemy_kills", "enemy": 'Fear' }
     },
     "warzone": {
       "Shimmer": { "amount": 5, "type": "headshots" },

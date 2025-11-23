@@ -23,9 +23,9 @@ const specialCamouflages = {
       "Pathfinder": { "amount": 300, "type": "kills_with_cryo_freeze" }
     },
     "campaign": {
-      "Cinder": { "amount": 150, "type": "kills_with_8_attachments" },
-      "Caiman": { "amount": 150, "type": "kills_at_rare_rarity" },
-      "Network": { "amount": 3, "type": "rapid_kills", "times": 10 }
+      "Cinder": { "amount": 100, "type": "kills_at_rare_rarity" },
+      "Caiman": { "amount": 50, "type": "kills_shortly_after_sprinting" },
+      "Network": { "amount": 50, "type": "specific_enemy_kills", "enemy": 'Guild Tech' }
     },
     "warzone": {
       "Shimmer": { "amount": 5, "type": "headshots" },
@@ -46,9 +46,9 @@ const specialCamouflages = {
       "Pathfinder": { "amount": 300, "type": "kills_with_cryo_freeze" }
     },
     "campaign": {
-      "Cinder": { "amount": 150, "type": "kills_with_8_attachments" },
-      "Caiman": { "amount": 150, "type": "kills_at_rare_rarity" },
-      "Network": { "amount": 3, "type": "rapid_kills", "times": 10 }
+      "Cinder": { "amount": 100, "type": "specific_enemy_kills", "enemy": 'Human' },
+      "Caiman": { "amount": 25, "type": "kills_shortly_after_switching_weapons" },
+      "Network": { "amount": 25, "type": "kill_shortly_after_movement" }
     },
     "warzone": {
       "Shimmer": { "amount": 5, "type": "headshots" },
