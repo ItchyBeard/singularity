@@ -82,9 +82,9 @@ const specialCamouflages = {
 
   "X9 Maverick": {
     "multiplayer": {
-      "Diamondback": { "amount": 50, "type": "TBD" },
-      "Raptor": { "amount": 30, "type": "TBD" },
-      "Mainframe": { "amount": 20, "type": "TBD" }
+      "Diamondback": { "amount": 30, "type": "kills_while_affected_by_tactical" },
+      "Raptor": { "amount": 50, "type": "kills_with_no_attachments" },
+      "Mainframe": { "amount": 30, "type": "kill_without_taking_damage" }
     },
     "zombies": {
       "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },

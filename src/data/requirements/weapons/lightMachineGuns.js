@@ -13,9 +13,9 @@ import {
 const specialCamouflages = {
   "MK.78": {
     "multiplayer": {
-      "Diamondback": { "amount": 50, "type": "kills_with_5_attachments" },
-      "Raptor": { "amount": 30, "type": "kills_shortly_after_sprinting" },
-      "Mainframe": { "amount": 20, "type": "kills_with_underbarrel" }
+      "Diamondback": { "amount": 30, "type": "kills_objective" },
+      "Raptor": { "amount": 2, "type": "kills_without_releasing_trigger", "times": 5 },
+      "Mainframe": { "amount": 50, "type": "kills_with_5_attachments" }
     },
     "zombies": {
       "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },
@@ -36,9 +36,9 @@ const specialCamouflages = {
 
   "XM325": {
     "multiplayer": {
-      "Diamondback": { "amount": 50, "type": "kills_with_5_attachments" },
-      "Raptor": { "amount": 30, "type": "kills_shortly_after_sprinting" },
-      "Mainframe": { "amount": 20, "type": "kills_with_underbarrel" }
+      "Diamondback": { "amount": 30, "type": "kills_while_affected_by_tactical" },
+      "Raptor": { "amount": 2, "type": "kills_without_releasing_trigger", "times": 5 },
+      "Mainframe": { "amount": 50, "type": "kills_while_wildcard_is_equipped_and_8_attachments", "wildcard": "Gunfighter" }
     },
     "zombies": {
       "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },

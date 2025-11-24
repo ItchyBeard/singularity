@@ -13,9 +13,9 @@ import {
 const specialCamouflages = {
   "M8A1": {
     "multiplayer": {
-      "Diamondback": { "amount": 50, "type": "kills_with_5_attachments" },
-      "Raptor": { "amount": 30, "type": "kills_shortly_after_sprinting" },
-      "Mainframe": { "amount": 20, "type": "kills_with_underbarrel" }
+      "Diamondback": { "amount": 50, "type": "kills_with_4x_or_higher_magnification_scope" },
+      "Raptor": { "amount": 15, "type": "longshot_kills" },
+      "Mainframe": { "amount": 30, "type": "kills_without_taking_damage" }
     },
     "zombies": {
       "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },
@@ -36,9 +36,9 @@ const specialCamouflages = {
 
   "Warden 308": {
     "multiplayer": {
-      "Diamondback": { "amount": 50, "type": "kills_with_5_attachments" },
-      "Raptor": { "amount": 30, "type": "kills_shortly_after_sprinting" },
-      "Mainframe": { "amount": 20, "type": "kills_with_underbarrel" }
+      "Diamondback": { "amount": 30, "type": "objective_kills" },
+      "Raptor": { "amount": 50, "type": "kills_with_5_attachments" },
+      "Mainframe": { "amount": 30, "type": "one_shot_kills" }
     },
     "zombies": {
       "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },

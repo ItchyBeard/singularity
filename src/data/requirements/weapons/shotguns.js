@@ -13,9 +13,9 @@ import {
 const specialCamouflages = {
   "M10 Breacher": {
     "multiplayer": {
-      "Diamondback": { "amount": 50, "type": "kills_with_5_attachments" },
-      "Raptor": { "amount": 30, "type": "kills_shortly_after_sprinting" },
-      "Mainframe": { "amount": 20, "type": "kills_with_underbarrel" }
+      "Diamondback": { "amount": 30, "type": "kills_without_taking_damage" },
+      "Raptor": { "amount": 30, "type": "kills_with_no_attachments" },
+      "Mainframe": { "amount": 30, "type": "kills_shortly_after_sprinting" }
     },
     "zombies": {
       "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },
@@ -36,9 +36,9 @@ const specialCamouflages = {
 
   "Echo 12": {
     "multiplayer": {
-      "Diamondback": { "amount": 50, "type": "kills_with_5_attachments" },
-      "Raptor": { "amount": 30, "type": "kills_shortly_after_sprinting" },
-      "Mainframe": { "amount": 20, "type": "kills_with_underbarrel" }
+      "Diamondback": { "amount": 30, "type": "kills_objective" },
+      "Raptor": { "amount": 10, "type": "kills_shortly_after_sprinting" },
+      "Mainframe": { "amount": 50, "type": "kills_with_no_attachments" }
     },
     "zombies": {
       "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },

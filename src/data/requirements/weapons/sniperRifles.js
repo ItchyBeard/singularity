@@ -13,9 +13,9 @@ import {
 const specialCamouflages = {
   "VS Recon": {
     "multiplayer": {
-      "Diamondback": { "amount": 50, "type": "kills_with_5_attachments" },
-      "Raptor": { "amount": 30, "type": "kills_shortly_after_sprinting" },
-      "Mainframe": { "amount": 20, "type": "kills_with_underbarrel" }
+      "Diamondback": { "amount": 50, "type": "kills_with_4x_or_higher_magnification_scope" },
+      "Raptor": { "amount": 30, "type": "one_shot_kills" },
+      "Mainframe": { "amount": 2, "type": "kills_without_reloading", "times": 10 }
     },
     "zombies": {
       "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },
@@ -36,9 +36,9 @@ const specialCamouflages = {
 
   "Shadow SK": {
     "multiplayer": {
-      "Diamondback": { "amount": 50, "type": "kills_with_5_attachments" },
-      "Raptor": { "amount": 30, "type": "kills_shortly_after_sprinting" },
-      "Mainframe": { "amount": 20, "type": "kills_with_underbarrel" }
+      "Diamondback": { "amount": 50, "type": "kills_with_suppressor" },
+      "Raptor": { "amount": 15, "type": "long_shot_kills" },
+      "Mainframe": { "amount": 2, "type": "kills_without_reloading", "times": 10 }
     },
     "zombies": {
       "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },

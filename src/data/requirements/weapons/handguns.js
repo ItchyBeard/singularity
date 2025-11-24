@@ -59,9 +59,9 @@ const specialCamouflages = {
 
   "CODA 9": {
     "multiplayer": {
-      "Diamondback": { "amount": 50, "type": "TBD" },
-      "Raptor": { "amount": 30, "type": "TBD" },
-      "Mainframe": { "amount": 20, "type": "TBD" }
+      "Diamondback": { "amount": 10, "type": "kills_with_suppressor" },
+      "Raptor": { "amount": 30, "type": "hipfire_kills" },
+      "Mainframe": { "amount": 15, "type": "kills_shortly_after_switching_weapons" }
     },
     "zombies": {
       "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },

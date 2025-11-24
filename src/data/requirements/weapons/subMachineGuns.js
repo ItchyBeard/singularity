@@ -13,9 +13,9 @@ import {
 const specialCamouflages = {
   "Ryden 45K": {
     "multiplayer": {
-      "Diamondback": { "amount": 50, "type": "kills_with_5_attachments" },
+      "Diamondback": { "amount": 50, "type": "kills_with_no_attachments" },
       "Raptor": { "amount": 30, "type": "kills_shortly_after_sprinting" },
-      "Mainframe": { "amount": 20, "type": "kills_with_underbarrel" }
+      "Mainframe": { "amount": 20, "type": "kills_without_taking_damage" }
     },
     "zombies": {
       "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },
@@ -36,9 +36,9 @@ const specialCamouflages = {
 
   "RK-9": {
     "multiplayer": {
-      "Diamondback": { "amount": 50, "type": "kills_with_5_attachments" },
-      "Raptor": { "amount": 30, "type": "kills_shortly_after_sprinting" },
-      "Mainframe": { "amount": 20, "type": "kills_with_underbarrel" }
+      "Diamondback": { "amount": 50, "type": "kills_while_moving" },
+      "Raptor": { "amount": 30, "type": "kills_on_affected_enemies_with_tacticals" },
+      "Mainframe": { "amount": 20, "type": "kills_with_suppressor" }
     },
     "zombies": {
       "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },
@@ -59,9 +59,9 @@ const specialCamouflages = {
 
   "Razor 9mm": {
     "multiplayer": {
-      "Diamondback": { "amount": 50, "type": "kills_with_5_attachments" },
-      "Raptor": { "amount": 30, "type": "kills_shortly_after_sprinting" },
-      "Mainframe": { "amount": 20, "type": "kills_with_underbarrel" }
+      "Diamondback": { "amount": 530, "type": "hipfire_kills" },
+      "Raptor": { "amount": 30, "type": "kills_objective" },
+      "Mainframe": { "amount": 50, "type": "kills_while_moving" }
     },
     "zombies": {
       "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },
@@ -82,9 +82,9 @@ const specialCamouflages = {
 
   "Dravec 45": {
     "multiplayer": {
-      "Diamondback": { "amount": 50, "type": "kills_with_5_attachments" },
-      "Raptor": { "amount": 30, "type": "kills_shortly_after_sprinting" },
-      "Mainframe": { "amount": 20, "type": "kills_with_underbarrel" }
+      "Diamondback": { "amount": 30, "type": "kills_objective" },
+      "Raptor": { "amount": 2, "type": "kills_without_reloading", "times": 10 },
+      "Mainframe": { "amount": 15, "type": "kill_shortly_after_movement" }
     },
     "zombies": {
       "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },
@@ -105,9 +105,9 @@ const specialCamouflages = {
 
   "Carbon 57": {
     "multiplayer": {
-      "Diamondback": { "amount": 50, "type": "kills_with_5_attachments" },
-      "Raptor": { "amount": 30, "type": "kills_shortly_after_sprinting" },
-      "Mainframe": { "amount": 20, "type": "kills_with_underbarrel" }
+      "Diamondback": { "amount": 50, "type": "hipfire_kills" },
+      "Raptor": { "amount": 2, "type": "kills_without_reloading", "times": 10 },
+      "Mainframe": { "amount": 30, "type": "kills_while_wildcard_is_equipped_and_8_attachments", "wildcard": "Gunfighter" }
     },
     "zombies": {
       "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },

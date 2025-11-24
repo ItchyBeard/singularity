@@ -13,9 +13,9 @@ import {
 const specialCamouflages = {
   "Knife": {
     "multiplayer": {
-      "Diamondback": { "amount": 50, "type": "kills_with_5_attachments" },
-      "Raptor": { "amount": 30, "type": "kills_shortly_after_sprinting" },
-      "Mainframe": { "amount": 20, "type": "kills_with_underbarrel" }
+      "Diamondback": { "amount": 15, "type": "kills_shortly_after_switching_weapons" },
+      "Raptor": { "amount": 15, "type": "kill_shortly_after_movement" },
+      "Mainframe": { "amount": 30, "type": "kills_without_taking_damage" }
     },
     "zombies": {
       "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },
@@ -36,9 +36,9 @@ const specialCamouflages = {
 
   "Flatline MK.II": {
     "multiplayer": {
-      "Diamondback": { "amount": 50, "type": "kills_with_5_attachments" },
-      "Raptor": { "amount": 30, "type": "kills_shortly_after_sprinting" },
-      "Mainframe": { "amount": 20, "type": "kills_with_underbarrel" }
+      "Diamondback": { "amount": 15, "type": "kills_shortly_after_switching_weapon" },
+      "Raptor": { "amount": 30, "type": "kills_on_enemies_affected_by_tactical" },
+      "Mainframe": { "amount": 50, "type": "kills_while_moving" }
     },
     "zombies": {
       "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },

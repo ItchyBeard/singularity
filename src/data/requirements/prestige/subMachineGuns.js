@@ -10,12 +10,13 @@ const universalCamouflages = {
         "Obscured": { "amount": 250, "type": "weapon_prestige_master" }
     }
 }
-  
+
 const universalCamoEntries = Object.entries(universalCamouflages)[0][1]
 
 // Extract first two and last one:
 const startingUniversalCamoEntries = Object.fromEntries(Object.entries(universalCamoEntries).slice(0, 2))
 const finalUniversalCamoEntry = Object.fromEntries(Object.entries(universalCamoEntries).slice(-1))
+
 
 export default {
   ...subMachineGuns.reduce((acc, weapon) => {
