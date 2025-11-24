@@ -59,9 +59,9 @@ const specialCamouflages = {
 
   "M34 Novaline": {
     "multiplayer": {
-      "Diamondback": { "amount": 50, "type": "kills_with_5_attachments" },
-      "Raptor": { "amount": 30, "type": "kills_shortly_after_sprinting" },
-      "Mainframe": { "amount": 20, "type": "kills_with_underbarrel" }
+      "Diamondback": { "amount": 15, "type": "long_shots" },
+      "Raptor": { "amount": 50, "type": "kills_with_4x_or_higher_magnification_scope" },
+      "Mainframe": { "amount": 50, "type": "kills_while_wildcard_is_equipped_and_8_attachments", "wildcard": "Gunfighter" }
     },
     "zombies": {
       "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },

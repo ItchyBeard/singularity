@@ -128,9 +128,9 @@ const specialCamouflages = {
 
   "MPC-25": {
     "multiplayer": {
-      "Diamondback": { "amount": 50, "type": "kills_with_5_attachments" },
-      "Raptor": { "amount": 30, "type": "kills_shortly_after_sprinting" },
-      "Mainframe": { "amount": 20, "type": "kills_with_underbarrel" }
+      "Diamondback": { "amount": 50, "type": "TBD" },
+      "Raptor": { "amount": 30, "type": "TBD" },
+      "Mainframe": { "amount": 20, "type": "TBD" }
     },
     "zombies": {
       "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },

@@ -59,9 +59,9 @@ const specialCamouflages = {
 
   "Akita": {
     "multiplayer": {
-      "Diamondback": { "amount": 50, "type": "kills_with_5_attachments" },
-      "Raptor": { "amount": 30, "type": "kills_shortly_after_sprinting" },
-      "Mainframe": { "amount": 20, "type": "kills_with_underbarrel" }
+      "Diamondback": { "amount": 50, "type": "kills_while_moving" },
+      "Raptor": { "amount": 30, "type": "hipfire_kills" },
+      "Mainframe": { "amount": 20, "type": "kill_shortly_after_movement" }
     },
     "zombies": {
       "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },

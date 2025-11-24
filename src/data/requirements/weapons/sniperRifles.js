@@ -59,9 +59,9 @@ const specialCamouflages = {
 
   "XR-3 Ion": {
     "multiplayer": {
-      "Diamondback": { "amount": 50, "type": "kills_with_5_attachments" },
-      "Raptor": { "amount": 30, "type": "kills_shortly_after_sprinting" },
-      "Mainframe": { "amount": 20, "type": "kills_with_underbarrel" }
+      "Diamondback": { "amount": 15, "type": "longshot_kills" },
+      "Raptor": { "amount": 50, "type": "kills_with_no_attachments" },
+      "Mainframe": { "amount": 2, "type": "kills_without_reloading", "times": "10" }
     },
     "zombies": {
       "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },
