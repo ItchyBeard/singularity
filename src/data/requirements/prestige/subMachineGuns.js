@@ -11,6 +11,7 @@ const universalCamouflages = {
     }
 }
 
+  
 const universalCamoEntries = Object.entries(universalCamouflages)[0][1]
 
 // Extract first two and last one:

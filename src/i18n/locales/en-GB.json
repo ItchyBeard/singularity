@@ -301,6 +301,7 @@
       "kills_in_a_single_shot": "{amount} kills in a single shot {times} times",
       "kills_shortly_after_switching_weapons": "{amount} kills shortly after switching weapons",
       "kills_while_specialty_is_active": "{amount} kills while {specialty} Specialty is active",
+      "kills_while_enforcer_combat_specialty_is_active": "{amount} kills while Enforcer Combat Specialty is active",
       "kills_while_moving": "{amount} kills while moving",
       "kills_while_moving_ads": "{amount} kills while ADS and moving",
       "kills_while_most_wanted": "{amount} eliminations while being the Most Wanted Contract target",
