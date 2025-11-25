@@ -65,11 +65,11 @@
 <script>
 import { mapActions, mapState } from 'pinia'
 import { useStore } from '@/stores/store'
-import { groupBy } from '@/utils/utils'
-import { weaponPrestigeUnlocks } from '@/data/weaponPrestigeUnlocks'
 
 import AlertComponent from '@/components/AlertComponent.vue'
 import PrestigeWeapon from '@/components/PrestigeWeapon.vue'
+
+import prestigeMasterList from '@/data/requirements/prestige'
 
 export default {
   components: {
@@ -91,14 +91,28 @@ export default {
       return this.preferences.favorites
     },
 
+    masterList() { return prestigeMasterList },
+
     allWeaponsAsList() {
       const list = []
-      for (const category in weaponPrestigeUnlocks) {
-        for (const weaponName in weaponPrestigeUnlocks[category]) {
+
+      for (const [categoryName, categoryData] of Object.entries(this.masterList)) {
+        for (const [weaponName, weaponData] of Object.entries(categoryData)) {
+          const camos = weaponData.multiplayer || {}
+          const formattedUnlocks = []
+
+          for (const [camoName, camoData] of Object.entries(camos)) {
+            formattedUnlocks.push({
+              name: camoName,
+              requirement: this.formatRequirement(camoData),
+              type: this.determineType(camoData),
+            })
+          }
+
           list.push({
             name: weaponName,
-            category: category,
-            ...weaponPrestigeUnlocks[category][weaponName],
+            category: categoryName,
+            unlocks: formattedUnlocks,
           })
         }
       }
@@ -155,6 +169,27 @@ export default {
 
   methods: {
     ...mapActions(useStore, ['unfavoriteAll']),
+
+    formatRequirement(data) {
+      if (data.type === 'weapon_prestige') {
+        return `Prestige ${data.amount}`
+      }
+
+      if (data.type === 'weapon_prestige_master') {
+        if (data.amount >= 250) return 'Prestige Max'
+        return `Prestige Master Level ${data.amount}`
+      }
+
+      return 'Unknown'
+    },
+
+    determineType(data) {
+      if (data.type === 'weapon_prestige') return 'Universal'
+      if (data.type === 'weapon_prestige_master') {
+        return data.amount >= 250 ? 'Universal' : 'Specific'
+      }
+      return 'Universal'
+    }
   },
 }
 </script>

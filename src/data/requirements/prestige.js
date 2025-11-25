@@ -9,13 +9,13 @@ import sniperRifles from '@/data/requirements/prestige/sniperRifles'
 import subMachineGuns from '@/data/requirements/prestige/subMachineGuns'
 
 export default {
-  ...assaultRifles,
-  ...handguns,
-  ...launchers,
-  ...lightMachineGuns,
-  ...marksmanRifles,
-  ...melee,
-  ...shotguns,
-  ...sniperRifles,
-  ...subMachineGuns,
+  'Assault Rifles': assaultRifles,
+  'Handguns': handguns,
+  'Launchers': launchers,
+  'Light Machine Guns': lightMachineGuns,
+  'Marksman Rifles': marksmanRifles,
+  'Melee': melee,
+  'Shotguns': shotguns,
+  'Sniper Rifles': sniperRifles,
+  'Sub Machine Guns': subMachineGuns
 }

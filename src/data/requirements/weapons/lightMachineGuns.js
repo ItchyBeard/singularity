@@ -18,9 +18,9 @@ const specialCamouflages = {
       "Mainframe": { "amount": 50, "type": "kills_with_5_attachments" }
     },
     "zombies": {
-      "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },
-      "Slither": { "amount": 10, "type": "kills_without_reloading", "times": 15 },
-      "Pathfinder": { "amount": 300, "type": "kills_with_cryo_freeze" }
+      "Mutilate": { "amount": 150, "type": "kills_with_tier_armor", "tier": 2 },
+      "Slither": { "amount": 75, "type": "kills_with_ammo_mod_activations", "mod": "Shadow Rift" },
+      "Pathfinder": { "amount": 100, "type": "kills_while_field_upgrade_is_active" }
     },
     "campaign": {
       "Cinder": { "amount": 3, "times": 10, "type": "kills_without_releasing_trigger" },
@@ -41,9 +41,9 @@ const specialCamouflages = {
       "Mainframe": { "amount": 50, "type": "kills_while_wildcard_is_equipped_and_8_attachments", "wildcard": "Gunfighter" }
     },
     "zombies": {
-      "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },
-      "Slither": { "amount": 10, "type": "kills_without_reloading", "times": 15 },
-      "Pathfinder": { "amount": 300, "type": "kills_with_cryo_freeze" }
+      "Mutilate": { "amount": 300, "type": "kills_with_ammo_mod", "mod": "Dead Wire" },
+      "Slither": { "amount": 300, "type": "hipfire_kills" },
+      "Pathfinder": { "amount": 10, "type": "kills_without_reloading", "times": 5 }
     },
     "campaign": {
       "Cinder": { "amount": 25, "type": "destructions_guild" },

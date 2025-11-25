@@ -6,7 +6,8 @@ import defaultPreferences from '@/data/defaults/preferences'
 import weaponRequirements from '@/data/requirements/weapons'
 import camouflageNameChanges from '@/data/camouflageNameChanges'
 import camouflageOrder from '@/data/camouflageOrder'
-import { weaponPrestigeUnlocks } from '@/data/weaponPrestigeUnlocks'
+
+import prestigeMasterList from '@/data/requirements/prestige'
 
 const token = import.meta.env.MODE === 'production' ? 'singularity' : 'singularity-dev'
 
@@ -39,13 +40,14 @@ export const useStore = defineStore({
     setWeapons(weapons) {
       this.weapons = JSON.parse(JSON.stringify(defaultWeapons))
 
-      for (const category in weaponPrestigeUnlocks) {
-        for (const weaponName in weaponPrestigeUnlocks[category]) {
+      for (const [categoryName, categoryData] of Object.entries(prestigeMasterList)) {
+        for (const [weaponName, weaponData] of Object.entries(categoryData)) {
           const exists = this.weapons.some(w => w.name === weaponName)
+
           if (!exists) {
             this.weapons.push({
               name: weaponName,
-              category: category,
+              category: categoryName,
               comingSoon: false,
               progress: {
                 multiplayer: {},
@@ -56,33 +58,28 @@ export const useStore = defineStore({
               }
             })
           }
+
+          const currentWeapon = this.weapons.find(w => w.name === weaponName)
+
+          if (!currentWeapon.progress.prestige) {
+            currentWeapon.progress.prestige = {}
+          }
+
+          const camos = weaponData.multiplayer || {}
+          Object.keys(camos).forEach(camoName => {
+            if (!Object.prototype.hasOwnProperty.call(currentWeapon.progress.prestige, camoName)) {
+              currentWeapon.progress.prestige[camoName] = false
+            }
+          })
         }
       }
-
-      this.weapons.forEach((weapon) => {
-        if (!weapon.progress.prestige) {
-          weapon.progress.prestige = {}
-        }
-
-        const prestigeCategory = weaponPrestigeUnlocks[weapon.category]
-        if (prestigeCategory) {
-          const prestigeData = prestigeCategory[weapon.name]
-          if (prestigeData) {
-            prestigeData.unlocks.forEach(camo => {
-              if (!weapon.progress.prestige.hasOwnProperty(camo.name)) {
-                weapon.progress.prestige[camo.name] = false
-              }
-            })
-          }
-        }
-      })
 
       if (weapons) {
         weapons.forEach((weapon) => {
           const index = this.weapons.findIndex((w) => w.name === weapon.name)
 
           if (index !== -1) {
-            ;['multiplayer', 'zombies', 'warzone', 'campaign', 'prestige'].forEach((type) => {
+            ['multiplayer', 'zombies', 'warzone', 'campaign', 'prestige'].forEach((type) => {
               if (weapon.progress[type]) {
                 Object.keys(weapon.progress[type]).forEach((camouflage) => {
                   if (camouflage in camouflageNameChanges && weapon.progress[type][camouflage]) {
@@ -212,11 +209,11 @@ export const useStore = defineStore({
       if (progressKey === 'prestige') {
         const weaponCategory = selectedWeapon.category
         if (
-          weaponPrestigeUnlocks[weaponCategory] &&
-          weaponPrestigeUnlocks[weaponCategory][weaponName] &&
-          weaponPrestigeUnlocks[weaponCategory][weaponName].unlocks
+          prestigeMasterList[weaponCategory] &&
+          prestigeMasterList[weaponCategory][weaponName] &&
+          prestigeMasterList[weaponCategory][weaponName].multiplayer
         ) {
-          return weaponPrestigeUnlocks[weaponCategory][weaponName].unlocks.map(camo => camo.name)
+          return Object.keys(prestigeMasterList[weaponCategory][weaponName].multiplayer)
         }
         return Object.keys(selectedWeapon.progress.prestige)
       } else {
@@ -233,7 +230,7 @@ export const useStore = defineStore({
       const previousCamouflages = sortedCamouflages.slice(0, camouflageIndex)
 
       previousCamouflages.forEach((camo) => {
-        if (selectedWeapon.progress[progressKey].hasOwnProperty(camo)) {
+        if (Object.prototype.hasOwnProperty.call(selectedWeapon.progress[progressKey], camo)) {
           selectedWeapon.progress[progressKey][camo] = !current
         }
       })
@@ -248,7 +245,7 @@ export const useStore = defineStore({
       const nextCamouflages = sortedCamouflages.slice(camouflageIndex + 1)
 
       nextCamouflages.forEach((camo) => {
-        if (selectedWeapon.progress[progressKey].hasOwnProperty(camo)) {
+        if (Object.prototype.hasOwnProperty.call(selectedWeapon.progress[progressKey], camo)) {
           selectedWeapon.progress[progressKey][camo] = false
         }
       })

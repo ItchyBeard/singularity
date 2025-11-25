@@ -18,9 +18,9 @@ const specialCamouflages = {
       "Mainframe": { "amount": 30, "type": "kills_without_taking_damage" }
     },
     "zombies": {
-      "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },
-      "Slither": { "amount": 10, "type": "kills_without_reloading", "times": 15 },
-      "Pathfinder": { "amount": 300, "type": "kills_with_cryo_freeze" }
+      "Mutilate": { "amount": 300, "type": "kills_at_rare_rarity_or_higher" },
+      "Slither": { "amount": 3, "type": "critical_kills_consecutively", "times": 5 },
+      "Pathfinder": { "amount": 300, "type": "kills_with_ammo_mod", "mod": "Napalm Burst" }
     },
     "campaign": {
       "Cinder": { "amount": 25, "type": "kills_shortly_after_switching_weapons" },
@@ -41,9 +41,9 @@ const specialCamouflages = {
       "Mainframe": { "amount": 20, "type": "kills_while_affected_by_tactical" }
     },
     "zombies": {
-      "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },
-      "Slither": { "amount": 10, "type": "kills_without_reloading", "times": 15 },
-      "Pathfinder": { "amount": 300, "type": "kills_with_cryo_freeze" }
+      "Mutilate": { "amount": 75, "type": "armored_zombie_kills" },
+      "Slither": { "amount": 75, "type": "kills_with_ammo_mod_activations", "mod": "Shadow Rift" },
+      "Pathfinder": { "amount": 300, "type": "kills_at_rare_rarity_or_higher" }
     },
     "campaign": {
       "Cinder": { "amount": 100, "type": "kills_with_suppressor" },
@@ -64,9 +64,9 @@ const specialCamouflages = {
       "Mainframe": { "amount": 15, "type": "kills_shortly_after_switching_weapons" }
     },
     "zombies": {
-      "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },
-      "Slither": { "amount": 10, "type": "kills_without_reloading", "times": 15 },
-      "Pathfinder": { "amount": 300, "type": "kills_with_cryo_freeze" }
+      "Mutilate": { "amount": 75, "type": "kills_with_ammo_mod_activations", "mod": "Shadow Rift" },
+      "Slither": { "amount": 300, "type": "hipfire_kills" },
+      "Pathfinder": { "amount": 100, "type": "kills_while_affected_by_tactical" }
     },
     "campaign": {
       "Cinder": { "amount": 50, "type": "point_blank_kills" },

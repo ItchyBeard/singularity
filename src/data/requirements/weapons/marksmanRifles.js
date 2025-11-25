@@ -18,9 +18,9 @@ const specialCamouflages = {
       "Mainframe": { "amount": 30, "type": "kills_without_taking_damage" }
     },
     "zombies": {
-      "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },
-      "Slither": { "amount": 10, "type": "kills_without_reloading", "times": 15 },
-      "Pathfinder": { "amount": 300, "type": "kills_with_cryo_freeze" }
+      "Mutilate": { "amount": 300, "type": "kills_while_pack_a_punched" },
+      "Slither": { "amount": 300, "type": "kills_with_ammo_mod", "mod": "Cryo Freeze" },
+      "Pathfinder": { "amount": 100, "type": "kills_while_field_upgrade_is_active" }
     },
     "campaign": {
       "Cinder": { "amount": 100, "type": "kills_with_4x_or_higher_magnification_scope" },
@@ -41,9 +41,9 @@ const specialCamouflages = {
       "Mainframe": { "amount": 30, "type": "one_shot_kills" }
     },
     "zombies": {
-      "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },
-      "Slither": { "amount": 10, "type": "kills_without_reloading", "times": 15 },
-      "Pathfinder": { "amount": 300, "type": "kills_with_cryo_freeze" }
+      "Mutilate": { "amount": 75, "type": "kills_with_ammo_mod_activations", "mod": "Fire Works" },
+      "Slither": { "amount": 300, "type": "kills_at_rare_rarity_or_higher" },
+      "Pathfinder": { "amount": 2, "type": "critical_kills_with_a_single_shot", "times": 15 }
     },
     "campaign": {
       "Cinder": { "amount": 10, "type": "kills_without_reloading", "times": 10 },
@@ -64,9 +64,9 @@ const specialCamouflages = {
       "Mainframe": { "amount": 50, "type": "kills_while_wildcard_is_equipped_and_8_attachments", "wildcard": "Gunfighter" }
     },
     "zombies": {
-      "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },
-      "Slither": { "amount": 10, "type": "kills_without_reloading", "times": 15 },
-      "Pathfinder": { "amount": 300, "type": "kills_with_cryo_freeze" }
+      "Mutilate": { "amount": 3, "type": "critical_kills_consecutively", "times": 5 },
+      "Slither": { "amount": 300, "type": "kills_with_ammo_mod", "mod": "Brain Rot" },
+      "Pathfinder": { "amount": 100, "type": "kills_while_affected_by_tactical" }
     },
     "campaign": {
       "Cinder": { "amount": 100, "type": "specific_enemy_kills", "enemy": 'Human' },

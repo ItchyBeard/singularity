@@ -1,33 +1,40 @@
 import subMachineGuns from '@/data/weapons/subMachineGuns'
 import {
     PRESTIGE_CAMOS
-} from '../../camouflages/definitions'
+} from '../../camouflages/definitions';
+import { generatePrestigeConfig } from '@/utils/prestigeHelper';
 
 const universalCamouflages = {
-    "M15 Mod 0": {
-        "Graffiti": { "amount": 1, "type": "weapon_prestige" },
-        "Aces": { "amount": 2, "type": "weapon_prestige" },
-        "Obscured": { "amount": 250, "type": "weapon_prestige_master" }
+    "Ryden 45K": {
+        "Aqua": { "amount": 1, "type": "weapon_prestige" },
+        "Azalea": { "amount": 2, "type": "weapon_prestige" },
+        "Tagged": { "amount": 250, "type": "weapon_prestige_master" }
+    },
+    "RK-9": {
+        "Billow": { "amount": 1, "type": "weapon_prestige" },
+        "Neon Zebra": { "amount": 2, "type": "weapon_prestige" },
+        "Spotted": { "amount": 250, "type": "weapon_prestige_master" }
+    },
+    "Razor 9mm": {
+        "Leopard": { "amount": 1, "type": "weapon_prestige" },
+        "Scorch": { "amount": 2, "type": "weapon_prestige" },
+        "Heatwave": { "amount": 250, "type": "weapon_prestige_master" }
+    },
+    "Dravec 45": {
+        "Kawaii": { "amount": 1, "type": "weapon_prestige" },
+        "Concrete": { "amount": 2, "type": "weapon_prestige" },
+        "Sealed": { "amount": 250, "type": "weapon_prestige_master" }
+    },
+    "Carbon 57": {
+        "Paladin": { "amount": 1, "type": "weapon_prestige" },
+        "Wavelength": { "amount": 2, "type": "weapon_prestige" },
+        "Shrouded": { "amount": 250, "type": "weapon_prestige_master" }
+    },
+    "MPC-25": {
+        "Comics": { "amount": 1, "type": "weapon_prestige" },
+        "Plum": { "amount": 2, "type": "weapon_prestige" },
+        "Bacon": { "amount": 250, "type": "weapon_prestige_master" }
     }
 }
 
-  
-const universalCamoEntries = Object.entries(universalCamouflages)[0][1]
-
-// Extract first two and last one:
-const startingUniversalCamoEntries = Object.fromEntries(Object.entries(universalCamoEntries).slice(0, 2))
-const finalUniversalCamoEntry = Object.fromEntries(Object.entries(universalCamoEntries).slice(-1))
-
-
-export default {
-  ...subMachineGuns.reduce((acc, weapon) => {
-    acc[weapon] = {
-      multiplayer: {
-        ...startingUniversalCamoEntries,   
-        ...PRESTIGE_CAMOS,
-        ...finalUniversalCamoEntry
-      }
-    }
-    return acc
-  }, {})
-}
+export default generatePrestigeConfig(subMachineGuns, universalCamouflages, PRESTIGE_CAMOS)

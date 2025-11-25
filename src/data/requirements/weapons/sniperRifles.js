@@ -18,9 +18,9 @@ const specialCamouflages = {
       "Mainframe": { "amount": 2, "type": "kills_without_reloading", "times": 10 }
     },
     "zombies": {
-      "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },
-      "Slither": { "amount": 10, "type": "kills_without_reloading", "times": 15 },
-      "Pathfinder": { "amount": 300, "type": "kills_with_cryo_freeze" }
+      "Mutilate": { "amount": 3, "type": "critical_kills_consecutively", "times": 5 },
+      "Slither": { "amount": 300, "type": "kills_with_ammo_mod", "mod": "Dead Wire" },
+      "Pathfinder": { "amount": 300, "type": "kills_while_pack_a_punched" }
     },
     "campaign": {
       "Cinder": { "amount": 100, "type": "specific_enemy_kills", "enemy": 'Fear' },
@@ -42,8 +42,8 @@ const specialCamouflages = {
     },
     "zombies": {
       "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },
-      "Slither": { "amount": 10, "type": "kills_without_reloading", "times": 15 },
-      "Pathfinder": { "amount": 300, "type": "kills_with_cryo_freeze" }
+      "Slither": { "amount": 75, "type": "kills_with_ammo_mod_activations", "mod": "Fire Works" },
+      "Pathfinder": { "amount": 300, "type": "kills_at_rare_rarity_or_higher" }
     },
     "campaign": {
       "Cinder": { "amount": 50, "type": "kills_while_moving_ads" },
@@ -64,9 +64,9 @@ const specialCamouflages = {
       "Mainframe": { "amount": 2, "type": "kills_without_reloading", "times": "10" }
     },
     "zombies": {
-      "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },
-      "Slither": { "amount": 10, "type": "kills_without_reloading", "times": 15 },
-      "Pathfinder": { "amount": 300, "type": "kills_with_cryo_freeze" }
+      "Mutilate": { "amount": 2, "type": "critical_kills_with_a_single_shot", "times": 15 },
+      "Slither": { "amount": 75, "type": "armored_zombie_kills" },
+      "Pathfinder": { "amount": 10, "type": "kills_without_taking_damage", "times": 5 }
     },
     "campaign": {
       "Cinder": { "amount": 100, "type": "kills_with_4x_or_higher_magnification_scope" },

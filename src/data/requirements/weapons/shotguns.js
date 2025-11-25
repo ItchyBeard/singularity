@@ -19,8 +19,8 @@ const specialCamouflages = {
     },
     "zombies": {
       "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },
-      "Slither": { "amount": 10, "type": "kills_without_reloading", "times": 15 },
-      "Pathfinder": { "amount": 300, "type": "kills_with_cryo_freeze" }
+      "Slither": { "amount": 300, "type": "kills_with_ammo_mod", "mod": "Brain Rot" },
+      "Pathfinder": { "amount": 3, "type": "critical_kills_consecutively", "times": 5 }
     },
     "campaign": {
       "Cinder": { "amount": 25, "type": "destructions_guild" },
@@ -41,9 +41,9 @@ const specialCamouflages = {
       "Mainframe": { "amount": 50, "type": "kills_with_no_attachments" }
     },
     "zombies": {
-      "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },
-      "Slither": { "amount": 10, "type": "kills_without_reloading", "times": 15 },
-      "Pathfinder": { "amount": 300, "type": "kills_with_cryo_freeze" }
+      "Mutilate": { "amount": 300, "type": "point_blank" },
+      "Slither": { "amount": 300, "type": "kills_with_ammo_mod", "mod": "Cryo Freeze" },
+      "Pathfinder": { "amount": 10, "type": "kills_without_taking_damage", "times": 5 }
     },
     "campaign": {
       "Cinder": { "amount": 50, "type": "hipfire_kills" },
@@ -64,9 +64,9 @@ const specialCamouflages = {
       "Mainframe": { "amount": 20, "type": "kill_shortly_after_movement" }
     },
     "zombies": {
-      "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },
-      "Slither": { "amount": 10, "type": "kills_without_reloading", "times": 15 },
-      "Pathfinder": { "amount": 300, "type": "kills_with_cryo_freeze" }
+      "Mutilate": { "amount": 10, "type": "kills_without_taking_damage", "times": 5 },
+      "Slither": { "amount": 300, "type": "kills_with_ammo_mod", "mod": "Napalm Burst" },
+      "Pathfinder": { "amount": 300, "type": "point_blank_kills" }
     },
     "campaign": {
       "Cinder": { "amount": 100, "type": "kills_at_rare_rarity" },
