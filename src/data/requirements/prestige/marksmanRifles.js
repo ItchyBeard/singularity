@@ -4,13 +4,22 @@ import {
 } from '../../camouflages/definitions'
 
 const universalCamouflages = {
-    "M15 Mod 0": {
-        "Graffiti": { "amount": 1, "type": "weapon_prestige" },
-        "Aces": { "amount": 2, "type": "weapon_prestige" },
-        "Obscured": { "amount": 250, "type": "weapon_prestige_master" }
+    "M8A1": {
+        "Cherry Blossom": { "amount": 1, "type": "weapon_prestige" },
+        "Clay": { "amount": 2, "type": "weapon_prestige" },
+        "Dragon": { "amount": 250, "type": "weapon_prestige_master" }
+    },
+    "Warden 308": {
+        "Psychedelic": { "amount": 1, "type": "weapon_prestige" },
+        "Uranium": { "amount": 2, "type": "weapon_prestige" },
+        "Marbled": { "amount": 250, "type": "weapon_prestige_master" }
+    },
+    "M34 Novaline": {
+        "Shattered": { "amount": 1, "type": "weapon_prestige" },
+        "Cohesion": { "amount": 2, "type": "weapon_prestige" },
+        "Koi Pond": { "amount": 250, "type": "weapon_prestige_master" }
     }
 }
-
 const universalCamoEntries = Object.entries(universalCamouflages)[0][1]
 
 // Extract first two and last one:

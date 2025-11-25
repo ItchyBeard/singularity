@@ -4,10 +4,20 @@ import {
 } from '../../camouflages/definitions'
 
 const universalCamouflages = {
-    "M15 Mod 0": {
-        "Graffiti": { "amount": 1, "type": "weapon_prestige" },
-        "Aces": { "amount": 2, "type": "weapon_prestige" },
-        "Obscured": { "amount": 250, "type": "weapon_prestige_master" }
+    "Jäger 45": {
+        "Ronin": { "amount": 1, "type": "weapon_prestige" },
+        "Jasper": { "amount": 2, "type": "weapon_prestige" },
+        "Aced": { "amount": 250, "type": "weapon_prestige_master" }
+    },
+    "Velox 5.7": {
+        "Plasma": { "amount": 1, "type": "weapon_prestige" },
+        "Onyx": { "amount": 2, "type": "weapon_prestige" },
+        "Moonlit": { "amount": 250, "type": "weapon_prestige_master" }
+    },
+    "CODA 9": {
+        "Art of War": { "amount": 1, "type": "weapon_prestige" },
+        "Moss": { "amount": 2, "type": "weapon_prestige" },
+        "Benjamins": { "amount": 250, "type": "weapon_prestige_master" }
     }
 }
 

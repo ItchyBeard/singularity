@@ -97,10 +97,12 @@ export default {
     translateChallenge(challenge) {
       if (!challenge) return 'TBA'
 
-      const { amount, type, seconds, times, enemy, attachment, wildcard, specialty } = challenge
+      const { amount, type, seconds, times, enemy, attachment, wildcard, specialty, mod } = challenge
 
       if (enemy) {
         return this.$t(`challenges.types.${type}`, { amount, enemy })
+      } else if (mod) {
+        return this.$t(`challenges.types.${type}`, { amount, mod })
       } else if (attachment) {
         return this.$t(`challenges.types.${type}`, { amount, attachment })
       } else if (seconds) {

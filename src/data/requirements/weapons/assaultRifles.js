@@ -18,9 +18,9 @@ const specialCamouflages = {
       "Mainframe": { "amount": 20, "type": "kills_with_underbarrel_launcher" }
     },
     "zombies": {
-      "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },
-      "Slither": { "amount": 10, "type": "kills_without_reloading", "times": 15 },
-      "Pathfinder": { "amount": 300, "type": "kills_with_cryo_freeze" }
+      "Mutilate": { "amount": 300, "type": "hipfire_kills" },
+      "Slither": { "amount": 3, "type": "critical_kills_consecutively", "times": 5 },
+      "Pathfinder": { "amount": 300, "type": "kills_with_fire_works" }
     },
     "campaign": {
       "Cinder": { "amount": 50, "type": "kills_shortly_after_sprinting" },
@@ -41,9 +41,9 @@ const specialCamouflages = {
       "Mainframe": { "amount": 20, "type": "kills_with_underbarrel_launcher" }
     },
     "zombies": {
-      "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },
-      "Slither": { "amount": 10, "type": "kills_without_reloading", "times": 15 },
-      "Pathfinder": { "amount": 300, "type": "kills_with_cryo_freeze" }
+      "Mutilate": { "amount": 2, "type": "critical_kills_with_a_single_shot", "times": 15 },
+      "Slither": { "amount": 300, "type": "kills_with_ammo_mod", "mod": "Napalm Burst" },
+      "Pathfinder": { "amount": 10, "type": "kills_without_taking_damage_times", "times": 5 }
     },
     "campaign": {
       "Cinder": { "amount": 50, "type": "kills_shortly_after_sprinting" },
@@ -66,7 +66,7 @@ const specialCamouflages = {
     "zombies": {
       "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },
       "Slither": { "amount": 10, "type": "kills_without_reloading", "times": 15 },
-      "Pathfinder": { "amount": 300, "type": "kills_with_cryo_freeze" }
+      "Pathfinder": { "amount": 300, "type": "kills_with_ammo_mod", "mod": "Cryo Freeze" }
     },
     "campaign": {
       "Cinder": { "amount": 150, "type": "kills_with_8_attachments" },
@@ -87,9 +87,9 @@ const specialCamouflages = {
       "Mainframe": { "amount": 30, "type": "kill_without_taking_damage" }
     },
     "zombies": {
-      "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },
-      "Slither": { "amount": 10, "type": "kills_without_reloading", "times": 15 },
-      "Pathfinder": { "amount": 300, "type": "kills_with_cryo_freeze" }
+      "Mutilate": { "amount": 75, "type": "kills_with_ammo_mod_activations", "mod": "Shadow Rift" },
+      "Slither": { "amount": 300, "type": "kills_while_pack_a_punched" },
+      "Pathfinder": { "amount": 75, "type": "armored_zombie_kills" }
     },
     "campaign": {
       "Cinder": { "amount": 3, "type": "rapid_kills", "times": 10 },
@@ -105,14 +105,14 @@ const specialCamouflages = {
 
   "DS20 Mirage": {
     "multiplayer": {
-      "Diamondback": { "amount": 50, "type": "TBD" },
-      "Raptor": { "amount": 30, "type": "TBD" },
-      "Mainframe": { "amount": 20, "type": "TBD" }
+      "Diamondback": { "amount": 50, "type": "kills_with_4x_or_higher_magnification_scope" },
+      "Raptor": { "amount": 30, "type": "kills_with_suppressor" },
+      "Mainframe": { "amount": 50, "type": "kills_while_wildcard_is_equipped_and_8_attachments", "wildcard": "Gunfighter" }
     },
     "zombies": {
-      "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },
-      "Slither": { "amount": 10, "type": "kills_without_reloading", "times": 15 },
-      "Pathfinder": { "amount": 300, "type": "kills_with_cryo_freeze" }
+      "Mutilate": { "amount": 10, "type": "kills_without_taking_damage", "times": 10 },
+      "Slither": { "amount": 150, "type": "kills_with_tier_armor", "tier": 2 },
+      "Pathfinder": { "amount": 300, "type": "kills_with_ammo_mod", "mod": "Dead Wire" }
     },
     "campaign": {
       "Cinder": { "amount": 3, "type": "rapid_kills", "times": 10 },
@@ -133,9 +133,9 @@ const specialCamouflages = {
       "Mainframe": { "amount": 20, "type": "kills_with_underbarrel_launcher" }
     },
     "zombies": {
-      "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },
-      "Slither": { "amount": 10, "type": "kills_without_reloading", "times": 15 },
-      "Pathfinder": { "amount": 300, "type": "kills_with_cryo_freeze" }
+      "Mutilate": { "amount": 300, "type": "kills_at_rare_rarity_or_higher" },
+      "Slither": { "amount": 100, "type": "kills_while_field_upgrade_is_active" },
+      "Pathfinder": { "amount": 100, "type": "kills_while_affected_by_tactica" }
     },
     "campaign": {
       "Cinder": { "amount": 10, "type": "kills_without_reloading", "times": 10 },

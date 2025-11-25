@@ -4,10 +4,15 @@ import {
 } from '../../camouflages/definitions'
 
 const universalCamouflages = {
-    "M15 Mod 0": {
-        "Graffiti": { "amount": 1, "type": "weapon_prestige" },
-        "Aces": { "amount": 2, "type": "weapon_prestige" },
-        "Obscured": { "amount": 250, "type": "weapon_prestige_master" }
+    "MK.78": {
+      "Invertebrate": { "amount": 1, "type": "weapon_prestige" },
+      "Mitosis": { "amount": 2, "type": "weapon_prestige" },
+      "Luna": { "amount": 250, "type": "weapon_prestige_master" }
+    },
+    "XM325": {
+      "Voltaic": { "amount": 1, "type": "weapon_prestige" },
+      "Fated": { "amount": 2, "type": "weapon_prestige" },
+      "Lacerate": { "amount": 250, "type": "weapon_prestige_master" }
     }
 }
 

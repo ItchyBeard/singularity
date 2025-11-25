@@ -18,9 +18,9 @@ const specialCamouflages = {
       "Mainframe": { "amount": 30, "type": "kills_without_taking_damage" }
     },
     "zombies": {
-      "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },
-      "Slither": { "amount": 10, "type": "kills_without_reloading", "times": 15 },
-      "Pathfinder": { "amount": 300, "type": "kills_with_cryo_freeze" }
+      "Mutilate": { "amount": 300, "type": "kills_while_pack_a_punched" },
+      "Slither": { "amount": 300, "type": "kills_with_ammo_mod", "mod": "Brain Rot" },
+      "Pathfinder": { "amount": 100, "type": "kills_while_field_upgrade_is_active" }
     },
     "campaign": {
       "Cinder": { "amount": 100, "type": "kills_at_rare_rarity" },
@@ -41,9 +41,9 @@ const specialCamouflages = {
       "Mainframe": { "amount": 50, "type": "kills_while_moving" }
     },
     "zombies": {
-      "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },
-      "Slither": { "amount": 10, "type": "kills_without_reloading", "times": 15 },
-      "Pathfinder": { "amount": 300, "type": "kills_with_cryo_freeze" }
+      "Mutilate": { "amount": 300, "type": "kills_at_rare_rarity_or_higher" },
+      "Slither": { "amount": 300, "type": "kills_with_ammo_mod", "mod": "Cryo Freeze" },
+      "Pathfinder": { "amount": 100, "type": "kills_while_affected_by_tactical" }
     },
     "campaign": {
       "Cinder": { "amount": 100, "type": "specific_enemy_kills", "enemy": 'Human' },

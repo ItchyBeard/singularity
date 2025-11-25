@@ -4,10 +4,15 @@ import {
 } from '../../camouflages/definitions'
 
 const universalCamouflages = {
-    "M15 Mod 0": {
-        "Graffiti": { "amount": 1, "type": "weapon_prestige" },
-        "Aces": { "amount": 2, "type": "weapon_prestige" },
-        "Obscured": { "amount": 250, "type": "weapon_prestige_master" }
+    "Knife": {
+        "Vivid": { "amount": 1, "type": "weapon_prestige" },
+        "Tangerine": { "amount": 2, "type": "weapon_prestige" },
+        "Igneous": { "amount": 250, "type": "weapon_prestige_master" }
+    },
+    "Flatline MK.II": {
+        "Glyph": { "amount": 1, "type": "weapon_prestige" },
+        "Runoff": { "amount": 2, "type": "weapon_prestige" },
+        "QWERTY": { "amount": 250, "type": "weapon_prestige_master" }
     }
 }
 

@@ -4,10 +4,20 @@ import {
 } from '../../camouflages/definitions'
 
 const universalCamouflages = {
-    "M15 Mod 0": {
-        "Graffiti": { "amount": 1, "type": "weapon_prestige" },
-        "Aces": { "amount": 2, "type": "weapon_prestige" },
-        "Obscured": { "amount": 250, "type": "weapon_prestige_master" }
+    "VS Recon": {
+        "Arachnid": { "amount": 1, "type": "weapon_prestige" },
+        "Sulfur": { "amount": 2, "type": "weapon_prestige" },
+        "Nightlight": { "amount": 250, "type": "weapon_prestige_master" }
+    },
+    "Shadow SK": {
+        "Frenetic": { "amount": 1, "type": "weapon_prestige" },
+        "Mud": { "amount": 2, "type": "weapon_prestige" },
+        "Kintsugi": { "amount": 250, "type": "weapon_prestige_master" }
+    },
+    "XR-3 Ion": {
+        "Burner": { "amount": 1, "type": "weapon_prestige" },
+        "Serenity": { "amount": 2, "type": "weapon_prestige" },
+        "Snake Eyes": { "amount": 250, "type": "weapon_prestige_master" }
     }
 }
 

@@ -4,10 +4,15 @@ import {
 } from '../../camouflages/definitions'
 
 const universalCamouflages = {
-    "M15 Mod 0": {
-        "Graffiti": { "amount": 1, "type": "weapon_prestige" },
-        "Aces": { "amount": 2, "type": "weapon_prestige" },
-        "Obscured": { "amount": 250, "type": "weapon_prestige_master" }
+    "AAROW 109": {
+        "Equinox": { "amount": 1, "type": "weapon_prestige" },
+        "Asphalt": { "amount": 2, "type": "weapon_prestige" },
+        "Birdie": { "amount": 250, "type": "weapon_prestige_master" }
+    },
+    "A.R.C. M1": {
+        "Haze": { "amount": 1, "type": "weapon_prestige" },
+        "Blend": { "amount": 2, "type": "weapon_prestige" },
+        "Dimensions": { "amount": 250, "type": "weapon_prestige_master" }
     }
 }
 
