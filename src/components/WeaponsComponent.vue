@@ -161,7 +161,8 @@ export default {
         return a + (weapon.progress[this.progressKey][camouflage] ? 1 : 0)
       }, 0)
 
-      return completed > required ? `${required}/${required}` : `${Math.floor(completed)}/${required}`
+      // Changed this logic to allow going over required amount
+      return `${Math.floor(completed)}/${required}`
     },
 
     categoryCompleted(category) {

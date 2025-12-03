@@ -52,7 +52,7 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue';
 import { useRoute } from 'vue-router';
-import ShareProgressModal from '@/components/ShareProgressModal.vue';
+import ShareProgressModal from '@/components/ShareProgressModal.vue'
 
 const route = useRoute();
 const shareGenerator = ref<InstanceType<typeof ShareProgressModal> | null>(null);
@@ -76,19 +76,18 @@ const triggerShare = () => {
 nav.container {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Pushes Logo left and Links right */
-  padding: 20px 0; /* Add some breathing room if needed */
+  justify-content: space-between;
 }
 
 .nav-links {
   display: flex;
   align-items: center;
   margin-left: auto;
-  gap: 25px; /* Consistent spacing between ALL links and icons */
+  gap: 25px;
 
   a {
     text-decoration: none;
-    color: #9ca3af; /* Gray-400 equivalent */
+    color: #9ca3af;
     font-weight: 500;
     transition: color 0.2s;
 
@@ -103,7 +102,6 @@ nav.container {
   display: inline-block;
   opacity: 0.3;
   cursor: not-allowed;
-  /* Remove margins here since we use gap on the parent now */
 }
 
 .disabled-link {
@@ -111,7 +109,6 @@ nav.container {
   color: inherit;
 }
 
-/* Shared style for both the button and the router-link icon */
 .icon-btn {
   background: none;
   border: none;
@@ -131,7 +128,6 @@ nav.container {
     transform: scale(0.95);
   }
 
-  /* Ensure SVG icons are sized correctly */
   :deep(svg) {
     width: 20px;
     height: 20px;
@@ -139,7 +135,6 @@ nav.container {
   }
 }
 
-/* Mobile Responsive Styles */
 .mobile-nav-toggle {
   display: none;
   cursor: pointer;
@@ -152,9 +147,9 @@ nav.container {
   }
 }
 
-@media (max-width: 768px) { /* Adjust based on your $tablet variable */
+@media (max-width: 768px) {
   .nav-links {
-    display: none; /* Hidden on mobile, handled by your mobile menu */
+    display: none;
   }
 
   .mobile-nav-toggle {

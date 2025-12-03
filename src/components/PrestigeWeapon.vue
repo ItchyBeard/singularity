@@ -1,8 +1,31 @@
 <template>
   <div :class="['weapon-wrapper', { favorite: isFavorite }]">
-    <div :class="['weapon', { label, 'coming-soon': weapon.comingSoon }]">
+    <div :class="['weapon', { label, 'coming-soon': isComingSoon }]">
       <div
-        :class="['name', 'grid', { singularity: allComplete }]" :data-label="label"
+        :class="[
+          'name',
+          'grid',
+          {
+            'molten-gold': isCamoComplete('Molten Gold'),
+            'moonstone': isCamoComplete('Moonstone'),
+            'chroma-flux': isCamoComplete('Chroma Flux'),
+            'genesis': isCamoComplete('Genesis'),
+            'shattered-gold': isCamoComplete('Shattered Gold'),
+            'arclight': isCamoComplete('Arclight'),
+            'tempest': isCamoComplete('Tempest'),
+            'singularity': isCamoComplete('Singularity'),
+            'golden-dragon': isCamoComplete('Golden Dragon'),
+            'bloodstone': isCamoComplete('Bloodstone'),
+            'doomsteel': isCamoComplete('Doomsteel'),
+            'infestation': isCamoComplete('Infestation'),
+            'golden-damascus': isCamoComplete('Golden Damascus'),
+            'starglass': isCamoComplete('Starglass'),
+            'absolute-zero': isCamoComplete('Absolute Zero'),
+            'apocalypse': isCamoComplete('Apocalypse'),
+            'singularity': allComplete && !isCamoComplete('Singularity'),
+          },
+        ]"
+        :data-label="label"
         @dblclick="toggleWeapon"
         v-tippy="{
           content: $t('pages.multiplayer.double_click_tooltip', {
@@ -15,30 +38,36 @@
       </div>
 
       <div
-        v-if="!weapon.comingSoon && weapon.unlocks.length > 0"
+        v-if="!isComingSoon && weapon.unlocks.length > 0"
         class="progress"
-        :style="{ 'grid-template-columns': `repeat(${weapon.unlocks.length > 6 ? 6 : weapon.unlocks.length}, 1fr)` }"> <div
-        v-for="camouflage in weapon.unlocks"
-        :key="camouflage.name"
-        class="camouflage weapon-layout-grid" @click="toggleCamo(camouflage.name)"
-        :content="`${camouflage.name} - ${camouflage.requirement}`"
-        v-tippy="{ placement: 'bottom' }">
-        <div :class="['inner', { completed: isCamoComplete(camouflage.name) }]">
-          <img
-            :src="`https://cdn.itchy-beard.co.uk/singularity/camouflages/${convertToKebabCase(
+        :style="{
+          'grid-template-columns': `repeat(${
+            weapon.unlocks.length > 6 ? 6 : weapon.unlocks.length
+          }, 1fr)`,
+        }">
+        <div
+          v-for="camouflage in weapon.unlocks"
+          :key="camouflage.name"
+          class="camouflage weapon-layout-grid"
+          @click="toggleCamo(camouflage.name)"
+          :content="`${camouflage.name} - ${camouflage.requirement}`"
+          v-tippy="{ placement: 'bottom' }">
+          <div :class="['inner', { completed: isCamoComplete(camouflage.name) }]">
+            <img
+              :src="`https://cdn.itchy-beard.co.uk/singularity/camouflages/${convertToKebabCase(
                 camouflage.name
               )}.png`"
-            :alt="camouflage.name"
-            onerror="javascript:this.src='/military-gradient.svg'" />
-          <IconComponent class="complete" name="check" fill="#10ac84" />
-          <IconComponent class="remove" name="times" fill="#ee5253" />
-          <IconComponent
-            v-if="camouflage.type === 'Universal'"
-            name="globe"
-            class="universal-icon"
-            size="16" />
+              :alt="camouflage.name"
+              onerror="javascript:this.src='/military-gradient.svg'" />
+            <IconComponent class="complete" name="check" fill="#10ac84" />
+            <IconComponent class="remove" name="times" fill="#ee5253" />
+            <IconComponent
+              v-if="camouflage.type === 'Universal'"
+              name="globe"
+              class="universal-icon"
+              size="16" />
+          </div>
         </div>
-      </div>
       </div>
     </div>
 
@@ -61,6 +90,7 @@
 import { useStore } from '@/stores/store'
 import { convertToKebabCase } from '@/utils/utils'
 import { mapActions, mapState } from 'pinia'
+import { weaponMetadata } from '@/data/weapons' // Make sure this path points to your weapons.js file
 
 export default {
   props: {
@@ -77,9 +107,7 @@ export default {
   },
 
   computed: {
-    ...mapState(useStore, ['preferences', 'weapons', 'weaponRequirements']),
-
-    // Removed the 'layout' computed property as it's now hardcoded in template/style
+    ...mapState(useStore, ['preferences', 'weapons', 'weaponRequirements', 'filters']),
 
     weaponFromStore() {
       return this.weapons.find((w) => w.name === this.weapon.name)
@@ -99,9 +127,32 @@ export default {
       return this.store.isFavorite('prestige', this.weapon.name)
     },
 
+    // Compute metadata locally
+    localMetadata() {
+      return weaponMetadata[this.weapon.name] || {}
+    },
+
+    isComingSoon() {
+      const now = new Date()
+      const releaseDate = this.localMetadata.releaseDate
+        ? new Date(this.localMetadata.releaseDate)
+        : null
+
+      if (releaseDate) {
+        return now < releaseDate
+      }
+      return this.localMetadata.comingSoon || false
+    },
+
     label() {
-      if (this.weapon.comingSoon) {
+      if (this.isComingSoon) {
+        if (this.localMetadata.releaseDate) {
+          const date = new Date(this.localMetadata.releaseDate)
+          return `Available ${date.getDate()}/${date.getMonth() + 1}`
+        }
         return this.$t('general.coming_soon')
+      } else if (this.localMetadata.season && this.localMetadata.season > 0) {
+        return `Season ${this.localMetadata.season}`
       } else {
         return null
       }
@@ -206,7 +257,6 @@ export default {
 
     .name {
       $padding: 25px;
-      // Removed $list-padding as it's no longer needed
       align-items: center;
       background: $elevation-3-color;
       border-radius: $border-radius;
@@ -220,19 +270,77 @@ export default {
 
       @media (max-width: $tablet) {
         font-size: 18px;
-        padding: $padding; // Adjusted for mobile to use grid padding
+        padding: $padding;
       }
 
+      &.molten-gold {
+        @include molten-gold-camouflage-background;
+        color: black;
+      }
+      &.moonstone {
+        @include moonstone-camouflage-background;
+        color: black;
+      }
+      &.chroma-flux {
+        @include chroma-flux-camouflage-background;
+        color: black;
+      }
+      &.genesis {
+        @include genesis-camouflage-background;
+        color: black;
+      }
+      &.shattered-gold {
+        @include shattered-gold-camouflage-background;
+        color: black;
+      }
+      &.arclight {
+        @include arclight-camouflage-background;
+        color: black;
+      }
+      &.tempest {
+        @include tempest-camouflage-background;
+        color: white;
+      }
       &.singularity {
         @include singularity-camouflage-background;
         color: white;
       }
-
-      &.grid { // This class will always apply now
-        padding: $padding 0;
+      &.golden-dragon {
+        @include golden-dragon-camouflage-background;
+        color: black;
+      }
+      &.bloodstone {
+        @include bloodstone-camouflage-background;
+        color: white;
+      }
+      &.doomsteel {
+        @include doomsteel-camouflage-background;
+        color: white;
+      }
+      &.infestation {
+        @include infestation-camouflage-background;
+        color: white;
+      }
+      &.golden-damascus {
+        @include golden-damascus-camouflage-background;
+        color: white;
+      }
+      &.starglass {
+        @include starglass-camouflage-background;
+        color: black;
+      }
+      &.absolute-zero {
+        @include absolute-zero-camouflage-background;
+        color: white;
+      }
+      &.apocalypse {
+        @include apocalypse-camouflage-background;
+        color: white;
       }
 
-      // Removed &.list styles
+      &.grid {
+        padding: $padding 0;
+      }
     }
 
     .progress {
@@ -244,7 +352,6 @@ export default {
         position: relative;
         user-select: none;
 
-        // Only keep grid-specific styles
         &.weapon-layout-grid > .inner {
           flex-direction: column;
           justify-content: center;
@@ -280,8 +387,6 @@ export default {
             }
           }
         }
-
-        // Removed .weapon-layout-list styles completely
 
         .favorite-camouflage-icon {
           position: absolute;

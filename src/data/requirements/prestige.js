@@ -7,6 +7,7 @@ import melee from '@/data/requirements/prestige/melee'
 import shotguns from '@/data/requirements/prestige/shotguns'
 import sniperRifles from '@/data/requirements/prestige/sniperRifles'
 import subMachineGuns from '@/data/requirements/prestige/subMachineGuns'
+import specials from '@/data/requirements/prestige/specials'
 
 export default {
   'Assault Rifles': assaultRifles,
@@ -17,5 +18,6 @@ export default {
   'Melee': melee,
   'Shotguns': shotguns,
   'Sniper Rifles': sniperRifles,
-  'Sub Machine Guns': subMachineGuns
+  'Sub Machine Guns': subMachineGuns,
+  'Specials': specials
 }

@@ -6,4 +6,5 @@ export default [
   'X9 Maverick',
   'DS20 Mirage',
   'Peacekeeper Mk1',
+  'Maddox RFB'
 ]

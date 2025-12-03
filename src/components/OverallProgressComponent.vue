@@ -29,7 +29,6 @@
 import { mapState } from 'pinia'
 import { useStore } from '@/stores/store'
 import { convertToKebabCase } from '@/utils/utils'
-import ShareProgressModal from '@/components/ShareProgressModal.vue'
 
 export default {
   props: {
@@ -79,7 +78,9 @@ export default {
     },
 
     totalWeapons() {
-      return this.weapons.length
+      // Only count weapons that are Season 0 (Base game weapons)
+      // This allows the progress to exceed the total (e.g. 50/30) if DLC weapons are completed
+      return this.weapons.filter((w) => !w.season || w.season === 0).length
     },
   },
 

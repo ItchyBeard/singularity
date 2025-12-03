@@ -11,7 +11,7 @@ import specials from './weapons/specials'
 import defaultProgress from '@/data/defaults/progress'
 
 // Insert Seasonal weapon metadata here, rather than on the camo requirements
-const weaponMetadata = {
+export const weaponMetadata = {
   // Assault Rifle
     'Maddox RFB': { season: 1, releaseDate: '2025-12-04' },
 

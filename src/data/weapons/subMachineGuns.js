@@ -5,4 +5,6 @@ export default [
   'Dravec 45',
   'Carbon 57',
   'MPC-25',
+  'Kogot-7',
+  'Sturmwolf 45'
 ]

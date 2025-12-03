@@ -55,6 +55,29 @@ const specialCamouflages = {
       "Tyrant": { "amount": 5, "type": "kills_with_suppressor" },
       "Trace": { "amount": 5, "type": "kills_without_taking_damage" }
     }
+  },
+
+  "Sokol 545": {
+    "multiplayer": {
+      "Diamondback": {"type": "tbd"},
+      "Raptor": {"type": "tbd"},
+      "Mainframe": {"type": "tbd"}
+    },
+    "zombies": {
+      "Mutilate": {"type": "tbd"},
+      "Slither": {"type": "tbd"},
+      "Pathfinder": {"type": "tbd"}
+    },
+    "campaign": {
+      "Cinder": {"type": "tbd"},
+      "Caiman": {"type": "tbd"},
+      "Network": {"type": "tbd"}
+    },
+    "warzone": {
+      "Shimmer": {"type": "tbd"},
+      "Tyrant": {"type": "tbd"},
+      "Trace": {"type": "tbd"}
+    }
   }
 }
 
