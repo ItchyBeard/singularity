@@ -103,9 +103,12 @@ export default {
     },
 
     calculateProgress(weapons, mode) {
-      const requiredWeapons = 33
+      // Dynamically calculate required weapons (Season 0)
+      const baseGameWeapons = weapons.filter((w) => !w.season || w.season === 0)
+      const requiredWeaponsCount = baseGameWeapons.length || 33 // Fallback if 0
 
       // Sort and filter out the weapons with the most progress
+      // We take the top X progressed weapons, where X is the required amount
       const mostProgressedWeapons = weapons
         .map((weapon) => {
           let totalCamouflages = Object.keys(weapon.progress[mode]).length
@@ -113,12 +116,12 @@ export default {
 
           return {
             ...weapon,
-            completed: Object.values(weapon.progress[mode]).reduce((a, b) => a + b, 0),
-            completedPercentage: completedCamouflages / totalCamouflages,
+            completed: completedCamouflages,
+            completedPercentage: completedCamouflages / (totalCamouflages || 1),
           }
         })
         .sort((a, b) => b.completedPercentage - a.completedPercentage)
-        .splice(0, requiredWeapons)
+        .slice(0, requiredWeaponsCount)
 
       // Count the amount of camouflages completed for the most progress weapons
       const totalCamouflagesCompleted = mostProgressedWeapons.reduce((a, b) => a + b.completed, 0)
@@ -128,7 +131,7 @@ export default {
         return a + Object.keys(b.progress[mode]).length
       }, 0)
 
-      return roundToTwoDecimals((totalCamouflagesCompleted / requiredCamouflages) * 100)
+      return roundToTwoDecimals((totalCamouflagesCompleted / (requiredCamouflages || 1)) * 100)
     },
 
     handleCompleted() {
@@ -146,7 +149,9 @@ export default {
 
       setTimeout(() => {
         let canvas = document.querySelector('canvas')
-        canvas.parentNode.removeChild(canvas)
+        if (canvas) {
+          canvas.parentNode.removeChild(canvas)
+        }
       }, DURATION)
     },
   },
@@ -174,6 +179,7 @@ export default {
       display: block;
       height: 100%;
       transition: $transition;
+      background-size: cover;
 
       &.multiplayer {
         background-image: $singularity-gradient;

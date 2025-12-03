@@ -26,11 +26,11 @@
             />
             <div class="stat-info">
               <h3>{{ name }}</h3>
-              <div class="progress-text">{{ count }} / {{ totalWeapons }}</div>
+              <div class="progress-text">{{ count }} / {{ totalRequired }}</div>
               <div class="mini-track">
                 <div
                   class="mini-fill"
-                  :style="{ width: `${(Number(count) / totalWeapons) * 100}%`, background: getCamoGradient(String(name)) }">
+                  :style="{ width: `${Math.min((Number(count) / totalRequired) * 100, 100)}%`, background: getCamoGradient(String(name)) }">
                 </div>
               </div>
             </div>
@@ -64,8 +64,9 @@ const shareCardRef = ref<HTMLElement | null>(null);
 // 3. Computed Properties
 const weapons = computed(() => store.weapons);
 
-const totalWeapons = computed(() => {
-  return weapons.value.length || 1;
+// NEW LOGIC: Total Required (Base Game / Season 0 only)
+const totalRequired = computed(() => {
+  return weapons.value.filter((w: any) => !w.season || w.season === 0).length || 1;
 });
 
 // BRANDING LOGIC: Determines the Title and Gradient based on the mode
