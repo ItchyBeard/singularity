@@ -74,8 +74,6 @@ import PrestigeWeapon from '@/components/PrestigeWeapon.vue'
 import FiltersComponent from '@/components/FiltersComponent.vue'
 import prestigeMasterList from '@/data/requirements/prestige'
 
-import prestigeMasterList from '@/data/requirements/prestige'
-
 export default {
   components: {
     AlertComponent,

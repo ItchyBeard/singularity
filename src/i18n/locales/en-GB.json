@@ -332,6 +332,7 @@
 
       "_comment_kill_effects_and_status": "Kill Effects & Status",
       "kills_while_affected_by_tactical": "{amount} kills while they are affected by your Tactical",
+      "kill_while_affected_by_tactical_or_non_lethal_scorestreak": "Get a kill while they are affected by your Tactical or non-lethal Scorestreak {amount} times",
       "kills_on_affected_enemies_with_tacticals": "{amount} kills on enemies affected by your Stun, Flashbang, or Shock Charge",
 
       "_comment_objective_and_match_based": "Objective & Match-Based",
@@ -377,6 +378,10 @@
       "_comment_wz": "Warzone Challenges",
       "kills_in_a_single_match": "Get {amount} Kills in a single match {times} times",
       "kills_in_top_10": "Get {amount} Eliminations while in the Top 10",
+      "eliminations_without_taking_damage": "Get {amount} Eliminations without taking damage",
+      "eliminations_shortly_after_sprinting": "Get {amount} Eliminations shortly after sprinting",
+      "eliminations_while_sliding": "Get {amount} Eliminations while sliding",
+      "eliminations_while_moving": "Get {amount} Eliminations while moving",
 
       "_comment_mastery": "Mastery Challenges",
       "unlock_tempest_30_weapons": "Unlock Tempest on 30 weapons",
@@ -386,6 +391,7 @@
       "weapon_prestige": "Reach Weapon Prestige {amount}",
       "weapon_prestige_master": "Reach Weapon Prestige Master Level {amount}",
 
+      "tbd": "Challenge To Be Determined",
       "TBD": "Challenge To Be Determined"
     }
   },
