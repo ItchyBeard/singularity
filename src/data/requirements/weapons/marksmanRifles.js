@@ -36,7 +36,7 @@ const specialCamouflages = {
 
   "Warden 308": {
     "multiplayer": {
-      "Diamondback": { "amount": 30, "type": "objective_kills" },
+      "Diamondback": { "amount": 30, "type": "kills_objective" },
       "Raptor": { "amount": 50, "type": "kills_with_5_attachments" },
       "Mainframe": { "amount": 30, "type": "one_shot_kills" }
     },

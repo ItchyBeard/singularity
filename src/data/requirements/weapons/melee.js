@@ -36,8 +36,8 @@ const specialCamouflages = {
 
   "Flatline MK.II": {
     "multiplayer": {
-      "Diamondback": { "amount": 15, "type": "kills_shortly_after_switching_weapon" },
-      "Raptor": { "amount": 30, "type": "kills_on_enemies_affected_by_tactical" },
+      "Diamondback": { "amount": 15, "type": "kills_shortly_after_switching_weapons" },
+      "Raptor": { "amount": 30, "type": "kills_on_affected_enemies_with_tacticals" },
       "Mainframe": { "amount": 50, "type": "kills_while_moving" }
     },
     "zombies": {

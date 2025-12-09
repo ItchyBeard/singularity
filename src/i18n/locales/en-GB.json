@@ -315,7 +315,7 @@
       "kills_shortly_after_switching_weapons": "{amount} kills shortly after switching weapons",
       "kills_shortly_after_sprinting": "Get {amount} kills while or shortly after sprinting",
       "kill_without_taking_damage": "Get a kill without taking damage {amount} times",
-      "kill_shortly_after_movement": "Get a Kill while or shortly after sliding, diving or wall-jumping {times} times",
+      "kill_shortly_after_movement": "Get a Kill while or shortly after sliding, diving or wall-jumping {amount} times",
       "kills_while_moving": "{amount} kills while moving",
       "kills_while_moving_ads": "{amount} kills while ADS and moving",
       "kills_while_specialty_is_active": "{amount} kills while {specialty} Specialty is active",
@@ -331,7 +331,7 @@
       "kills_without_taking_damage": "Get {amount} eliminations without taking damage",
       "kills_without_taking_damage_times": "Get {amount} eliminations without taking damage {times} times",
       "consecutive_kills_without_taking_damage": "Get {amount} consecutive kills without taking damage {times} times",
-      "critical_kills_with_a_single_shot": "Gte {amount} Critical Kills with a single shot {times}",
+      "critical_kills_with_a_single_shot": "Get {amount} Critical Kills with a single shot {times} times",
 
       "_comment_kill_effects_and_status": "Kill Effects & Status",
       "kills_while_affected_by_tactical": "{amount} kills while they are affected by your Tactical",

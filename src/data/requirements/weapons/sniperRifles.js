@@ -37,7 +37,7 @@ const specialCamouflages = {
   "Shadow SK": {
     "multiplayer": {
       "Diamondback": { "amount": 50, "type": "kills_with_suppressor" },
-      "Raptor": { "amount": 15, "type": "long_shot_kills" },
+      "Raptor": { "amount": 15, "type": "longshot_kills" },
       "Mainframe": { "amount": 2, "type": "kills_without_reloading", "times": 10 }
     },
     "zombies": {
