@@ -28,16 +28,16 @@ const specialCamouflages = {
       "Network": { "amount": 100, "type": "kills_with_8_attachments" }
     },
     "warzone": {
-      "Shimmer": {"amount": 5, "type": "tbd"},
-      "Tyrant": {"amount": 5, "type": "tbd"},
-      "Trace": {"amount": 5, "type": "tbd"}
+      "Shimmer": {"amount": 5, "type": "headshots"},
+      "Tyrant": {"amount": 5, "type": "kills_without_taking_damage"},
+      "Trace": {"amount": 5, "type": "kills_without_moving"}
     }
   },
 
   "Shadow SK": {
     "multiplayer": {
       "Diamondback": { "amount": 50, "type": "kills_with_suppressor" },
-      "Raptor": { "amount": 15, "type": "long_shot_kills" },
+      "Raptor": { "amount": 15, "type": "longshot_kills" },
       "Mainframe": { "amount": 2, "type": "kills_without_reloading", "times": 10 }
     },
     "zombies": {
@@ -51,9 +51,9 @@ const specialCamouflages = {
       "Network": { "amount": 25, "type": "destructions_guild" }
     },
     "warzone": {
-      "Shimmer": {"amount": 5, "type": "tbd"},
-      "Tyrant": {"amount": 5, "type": "tbd"},
-      "Trace": {"amount": 5, "type": "tbd"}
+      "Shimmer": {"amount": 5, "type": "headshots"},
+      "Tyrant": {"amount": 5, "type": "kills_without_taking_damage"},
+      "Trace": {"amount": 5, "type": "kills_with_suppressor"}
     }
   },
 
@@ -74,9 +74,9 @@ const specialCamouflages = {
       "Network": { "amount": 100, "type": "specific_enemy_kills", "enemy": 'Fear' }
     },
     "warzone": {
-      "Shimmer": {"amount": 5, "type": "tbd"},
-      "Tyrant": {"amount": 5, "type": "tbd"},
-      "Trace": {"amount": 5, "type": "tbd"}
+      "Shimmer": {"amount": 5, "type": "headshots"},
+      "Tyrant": {"amount": 5, "type": "kills_without_taking_damage"},
+      "Trace": {"amount": 5, "type": "kills_with_suppressor"}
     }
   },
 

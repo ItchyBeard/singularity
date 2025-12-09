@@ -1,8 +1,8 @@
-import shotguns from '@/data/weapons/shotguns'
+import shotguns from "@/data/weapons/shotguns"
 import {
     PRESTIGE_CAMOS
-} from '../../camouflages/definitions';
-import { generatePrestigeConfig } from '@/utils/prestigeHelper';
+} from "../../camouflages/definitions";
+import { generatePrestigeConfig } from "@/utils/prestigeHelper";
 
 const universalCamouflages = {
     "M10 Breacher": {

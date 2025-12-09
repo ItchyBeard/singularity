@@ -28,9 +28,9 @@ const specialCamouflages = {
       "Network": { "amount": 100, "type": "specific_enemy_kills", "enemy": 'Fear' }
     },
     "warzone": {
-      "Shimmer": {"amount": 5, "type": "tbd"},
-      "Tyrant": {"amount": 5, "type": "tbd"},
-      "Trace": {"amount": 5, "type": "tbd"}
+      "Shimmer": {"amount": 5, "type": "headshots" },
+      "Tyrant": {"amount": 5, "type": "kills_with_suppressor" },
+      "Trace": {"amount": 5, "type": "kills_shortly_after_sprinting" }
     }
   },
 
@@ -51,9 +51,9 @@ const specialCamouflages = {
       "Network": { "amount": 100, "type": "specific_enemy_kills", "enemy": 'Human' }
     },
     "warzone": {
-      "Shimmer": {"amount": 5, "type": "tbd"},
-      "Tyrant": {"amount": 5, "type": "tbd"},
-      "Trace": {"amount": 5, "type": "tbd"}
+      "Shimmer": {"amount": 5, "type": "headshots"},
+      "Tyrant": {"amount": 5, "type": "kills_while_moving"},
+      "Trace": {"amount": 5, "type": "kills_without_taking_damage"}
     }
   },
 
@@ -74,9 +74,9 @@ const specialCamouflages = {
       "Network": { "amount": 3, "type": "rapid_kills", "times": 10 }
     },
     "warzone": {
-      "Shimmer": {"amount": 5, "type": "tbd"},
-      "Tyrant": {"amount": 5, "type": "tbd"},
-      "Trace": {"amount": 5, "type": "tbd"}
+      "Shimmer": {"amount": 5, "type": "headshots"},
+      "Tyrant": {"amount": 5, "type": "kills_with_suppressor"},
+      "Trace": {"amount": 5, "type": "kills_without_taking_damage"}
     }
   },
 
@@ -97,9 +97,9 @@ const specialCamouflages = {
       "Network": { "amount": 50, "type": "kills_while_moving_ads" },
     },
     "warzone": {
-      "Shimmer": {"amount": 5, "type": "tbd"},
-      "Tyrant": {"amount": 5, "type": "tbd"},
-      "Trace": {"amount": 5, "type": "tbd"}
+      "Shimmer": {"amount": 5, "type": "kills_with_suppressor"},
+      "Tyrant": {"amount": 5, "type": "headshots" },
+      "Trace": {"amount": 5, "type": "kills_without_taking_damage"}
     }
   },
 
@@ -120,9 +120,9 @@ const specialCamouflages = {
       "Network": { "amount": 100, "type": "kills_with_specific_attachment", "attachment": "Extended Mag" },
     },
     "warzone": {
-      "Shimmer": {"amount": 5, "type": "tbd"},
-      "Tyrant": {"amount": 5, "type": "tbd"},
-      "Trace": {"amount": 5, "type": "tbd"}
+      "Shimmer": {"amount": 5, "type": "kills_with_suppressor"},
+      "Tyrant": {"amount": 5, "type": "kills_while_moving"},
+      "Trace": {"amount": 5, "type": "kills_without_taking_damage"}
     }
   },
 
@@ -143,9 +143,9 @@ const specialCamouflages = {
       "Network": { "amount": 25, "type": "kill_shortly_after_movement" },
     },
     "warzone": {
-      "Shimmer": {"amount": 5, "type": "tbd"},
-      "Tyrant": {"amount": 5, "type": "tbd"},
-      "Trace": {"amount": 5, "type": "tbd"}
+      "Shimmer": {"amount": 5, "type": "headshots"},
+      "Tyrant": {"amount": 5, "type": "kills_without_taking_damage"},
+      "Trace": {"amount": 5, "type": "kills_shortly_after_sprinting"}
     }
   },
 

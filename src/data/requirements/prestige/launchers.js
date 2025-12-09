@@ -1,8 +1,8 @@
-import launchers from '@/data/weapons/launchers'
+import launchers from "@/data/weapons/launchers"
 import {
     PRESTIGE_CAMOS
-} from '../../camouflages/definitions';
-import { generatePrestigeConfig } from '@/utils/prestigeHelper';
+} from "../../camouflages/definitions";
+import { generatePrestigeConfig } from "@/utils/prestigeHelper";
 
 const universalCamouflages = {
     "AAROW 109": {

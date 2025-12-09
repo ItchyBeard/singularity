@@ -28,15 +28,15 @@ const specialCamouflages = {
       "Network": { "amount": 100, "type": "kills_at_rare_rarity" }
     },
     "warzone": {
-      "Shimmer": {"amount": 5, "type": "tbd"},
-      "Tyrant": {"amount": 5, "type": "tbd"},
-      "Trace": {"amount": 5, "type": "tbd"}
+      "Shimmer": {"amount": 5, "type": "headshots"},
+      "Tyrant": {"amount": 5, "type": "kills_without_taking_damage"},
+      "Trace": {"amount": 5, "type": "kills_while_moving"}
     }
   },
 
   "Warden 308": {
     "multiplayer": {
-      "Diamondback": { "amount": 30, "type": "objective_kills" },
+      "Diamondback": { "amount": 30, "type": "kills_objective" },
       "Raptor": { "amount": 50, "type": "kills_with_5_attachments" },
       "Mainframe": { "amount": 30, "type": "one_shot_kills" }
     },
@@ -51,15 +51,15 @@ const specialCamouflages = {
       "Network": { "amount": 100, "type": "kills_with_specific_attachment", "attachment": "Suppressor" }
     },
     "warzone": {
-      "Shimmer": {"amount": 5, "type": "tbd"},
-      "Tyrant": {"amount": 5, "type": "tbd"},
-      "Trace": {"amount": 5, "type": "tbd"}
+      "Shimmer": {"amount": 5, "type": "kills_with_suppressor"},
+      "Tyrant": {"amount": 5, "type": "kills_without_taking_damage"},
+      "Trace": {"amount": 5, "type": "kills_while_moving" }
     }
   },
 
   "M34 Novaline": {
     "multiplayer": {
-      "Diamondback": { "amount": 15, "type": "long_shots" },
+      "Diamondback": { "amount": 15, "type": "longshot_kills" },
       "Raptor": { "amount": 50, "type": "kills_with_4x_or_higher_magnification_scope" },
       "Mainframe": { "amount": 50, "type": "kills_while_wildcard_is_equipped_and_8_attachments", "wildcard": "Gunfighter" }
     },
@@ -74,9 +74,9 @@ const specialCamouflages = {
       "Network": { "amount": 100, "type": "kills_with_4x_or_higher_magnification_scope" }
     },
     "warzone": {
-      "Shimmer": {"amount": 5, "type": "tbd"},
-      "Tyrant": {"amount": 5, "type": "tbd"},
-      "Trace": {"amount": 5, "type": "tbd"}
+      "Shimmer": {"amount": 5, "type": "headshots"},
+      "Tyrant": {"amount": 5, "type": "kills_without_taking_damage"},
+      "Trace": {"amount": 5, "type": "kills_while_moving"}
     }
   }
 }

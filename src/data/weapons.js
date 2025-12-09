@@ -17,17 +17,17 @@ export const weaponMetadata = {
 
   // Submachine Gun
     'Kogot-7': { season: 1, releaseDate: '2025-12-04' },
-    'Sturmwolf 45': { season: 1, releaseDate: '2025-12-04' },
+    'Sturmwolf 45': { season: 1, releaseDate: '2025-12-31' },
 
   // Shotgun (none yet)
 
   // Light Machine Gun
-    'Sokol 545': { season: 1, releaseDate: '2025-12-04' },
+    'Sokol 545': { season: 1, releaseDate: '2025-12-31' },
 
   // Marksman Rifle (none yet)
 
   // Sniper Rifle
-    'Hawker HX': { season: 1, releaseDate: '2025-12-04' },
+    'Hawker HX': { season: 1, releaseDate: '2025-12-31' },
 
   // Handgun (none yet)
 
@@ -37,7 +37,7 @@ export const weaponMetadata = {
     'Ballistic Knife': { season: 1, releaseDate: '2025-12-04' },
 
   // Special
-    'NX Ravager': { season: 1, releaseDate: '2025-12-04' },
+    'NX Ravager': { season: 1, releaseDate: '2025-12-11' },
 }
 
 

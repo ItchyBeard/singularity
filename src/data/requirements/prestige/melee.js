@@ -1,22 +1,22 @@
-import melee from '@/data/weapons/melee'
-import { PRESTIGE_CAMOS } from '../../camouflages/definitions'
-import { generatePrestigeConfig } from '@/utils/prestigeHelper'
+import melee from "@/data/weapons/melee"
+import { PRESTIGE_CAMOS } from "../../camouflages/definitions"
+import { generatePrestigeConfig } from "@/utils/prestigeHelper"
 
 const universalCamouflages = {
-  'Knife': {
-    Vivid: { amount: 1, type: 'weapon_prestige' },
-    Tangerine: { amount: 2, type: 'weapon_prestige' },
-    Igneous: { amount: 250, type: 'weapon_prestige_master' },
+  "Knife": {
+    "Vivid": { amount: 1, type: "weapon_prestige" },
+    "Tangerine": { amount: 2, type: "weapon_prestige" },
+    "Igneous": { amount: 250, type: "weapon_prestige_master" },
   },
-  'Flatline MK.II': {
-    Glyph: { amount: 1, type: 'weapon_prestige' },
-    Runoff: { amount: 2, type: 'weapon_prestige' },
-    QWERTY: { amount: 250, type: 'weapon_prestige_master' },
+  "Flatline MK.II": {
+    "Glyph": { amount: 1, type: "weapon_prestige" },
+    "Runoff": { amount: 2, type: "weapon_prestige" },
+    "QWERTY": { amount: 250, type: "weapon_prestige_master" },
   },
-  'Ballistic Knife': {
-    PrestigeA: { amount: 1, type: 'weapon_prestige' },
-    PrestigeB: { amount: 2, type: 'weapon_prestige' },
-    PrestigeC: { amount: 250, type: 'weapon_prestige_master' },
+  "Ballistic Knife": {
+    "Stinger": { amount: 1, type: "weapon_prestige" },
+    "Barbed": { amount: 2, type: "weapon_prestige" },
+    "Elegant": { amount: 250, type: "weapon_prestige_master" },
   },
 }
 

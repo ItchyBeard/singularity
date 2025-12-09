@@ -1,8 +1,8 @@
-import marksmanRifles from '@/data/weapons/marksmanRifles'
+import marksmanRifles from "@/data/weapons/marksmanRifles"
 import {
     PRESTIGE_CAMOS
-} from '../../camouflages/definitions';
-import { generatePrestigeConfig } from '@/utils/prestigeHelper';
+} from "../../camouflages/definitions";
+import { generatePrestigeConfig } from "@/utils/prestigeHelper";
 
 const universalCamouflages = {
     "M8A1": {

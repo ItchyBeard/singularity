@@ -1,8 +1,8 @@
-import handguns from '@/data/weapons/handguns.js'
+import handguns from "@/data/weapons/handguns.js"
 import {
     PRESTIGE_CAMOS
-} from '../../camouflages/definitions';
-import { generatePrestigeConfig } from '@/utils/prestigeHelper';
+} from "../../camouflages/definitions";
+import { generatePrestigeConfig } from "@/utils/prestigeHelper";
 
 const universalCamouflages = {
     "Jäger 45": {

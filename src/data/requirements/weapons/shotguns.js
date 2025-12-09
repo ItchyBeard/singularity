@@ -28,9 +28,9 @@ const specialCamouflages = {
       "Network": { "amount": 50, "type": "hipfire_kills" }
     },
     "warzone": {
-      "Shimmer": {"amount": 5, "type": "tbd"},
-      "Tyrant": {"amount": 5, "type": "tbd"},
-      "Trace": {"amount": 5, "type": "tbd"}
+      "Shimmer": {"amount": 5, "type": "kills_while_moving"},
+      "Tyrant": {"amount": 5, "type": "kills_while_ads"},
+      "Trace": {"amount": 5, "type": "kills_while_sliding"}
     }
   },
 
@@ -41,7 +41,7 @@ const specialCamouflages = {
       "Mainframe": { "amount": 50, "type": "kills_with_no_attachments" }
     },
     "zombies": {
-      "Mutilate": { "amount": 300, "type": "point_blank" },
+      "Mutilate": { "amount": 300, "type": "point_blank_kills" },
       "Slither": { "amount": 300, "type": "kills_with_ammo_mod", "mod": "Cryo Freeze" },
       "Pathfinder": { "amount": 10, "type": "kills_without_taking_damage", "times": 5 }
     },
@@ -51,9 +51,9 @@ const specialCamouflages = {
       "Network": { "amount": 50, "type": "specific_enemy_kills", "enemy": 'Human' }
     },
     "warzone": {
-      "Shimmer": {"amount": 5, "type": "tbd"},
-      "Tyrant": {"amount": 5, "type": "tbd"},
-      "Trace": {"amount": 5, "type": "tbd"}
+      "Shimmer": {"amount": 5, "type": "kills_while_moving"},
+      "Tyrant": {"amount": 5, "type": "kills_while_ads"},
+      "Trace": {"amount": 5, "type": "kills_while_sliding"}
     }
   },
 
@@ -74,9 +74,9 @@ const specialCamouflages = {
       "Network": { "amount": 50, "type": "hipfire_kills" }
     },
     "warzone": {
-      "Shimmer": {"amount": 5, "type": "tbd"},
-      "Tyrant": {"amount": 5, "type": "tbd"},
-      "Trace": {"amount": 5, "type": "tbd"}
+      "Shimmer": {"amount": 5, "type": "kills_while_moving"},
+      "Tyrant": {"amount": 5, "type": "kills_while_sliding"},
+      "Trace": {"amount": 5, "type": "hipfire_kills"}
     }
   }
 }

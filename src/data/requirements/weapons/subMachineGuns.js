@@ -28,9 +28,9 @@ const specialCamouflages = {
       "Network": { "amount": 50, "type": "point_blank_kills" }
     },
     "warzone": {
-      "Shimmer": {"amount": 5, "type": "tbd"},
-      "Tyrant": {"amount": 5, "type": "tbd"},
-      "Trace": {"amount": 5, "type": "tbd"}
+      "Shimmer": {"amount": 5, "type": "kills_without_taking_damage"},
+      "Tyrant": {"amount": 5, "type": "kills_shortly_after_sprinting"},
+      "Trace": {"amount": 5, "type": "kills_while_sliding"}
     }
   },
 
@@ -51,15 +51,15 @@ const specialCamouflages = {
       "Network": { "amount": 50, "type": "kills_while_moving_ads" }
     },
     "warzone": {
-      "Shimmer": {"amount": 5, "type": "tbd"},
-      "Tyrant": {"amount": 5, "type": "tbd"},
-      "Trace": {"amount": 5, "type": "tbd"}
+      "Shimmer": {"amount": 5, "type": "kills_while_moving"},
+      "Tyrant": {"amount": 5, "type": "kills_shortly_after_sprinting"},
+      "Trace": {"amount": 5, "type": "kills_while_sliding"}
     }
   },
 
   "Razor 9mm": {
     "multiplayer": {
-      "Diamondback": { "amount": 530, "type": "hipfire_kills" },
+      "Diamondback": { "amount": 30, "type": "hipfire_kills" },
       "Raptor": { "amount": 30, "type": "kills_objective" },
       "Mainframe": { "amount": 50, "type": "kills_while_moving" }
     },
@@ -74,9 +74,9 @@ const specialCamouflages = {
       "Network": { "amount": 50, "type": "point_blank_kills" }
     },
     "warzone": {
-      "Shimmer": {"amount": 5, "type": "tbd"},
-      "Tyrant": {"amount": 5, "type": "tbd"},
-      "Trace": {"amount": 5, "type": "tbd"}
+      "Shimmer": {"amount": 5, "type": "kills_without_taking_damage"},
+      "Tyrant": {"amount": 5, "type": "kills_with_suppressor"},
+      "Trace": {"amount": 5, "type": "kills_while_sliding"}
     }
   },
 
@@ -97,9 +97,9 @@ const specialCamouflages = {
       "Network": { "amount": 50, "type": "kills_with_specific_attachment_tac", "attachment": "Tactical Laser" }
     },
     "warzone": {
-      "Shimmer": {"amount": 5, "type": "tbd"},
-      "Tyrant": {"amount": 5, "type": "tbd"},
-      "Trace": {"amount": 5, "type": "tbd"}
+      "Shimmer": {"amount": 5, "type": "kills_without_taking_damage"},
+      "Tyrant": {"amount": 5, "type": "kills_shortly_after_sprinting"},
+      "Trace": {"amount": 5, "type": "kills_while_sliding"}
     }
   },
 
@@ -120,9 +120,9 @@ const specialCamouflages = {
       "Network": { "amount": 3, "times": 10, "type": "rapid_kills" }
     },
     "warzone": {
-      "Shimmer": {"amount": 5, "type": "tbd"},
-      "Tyrant": {"amount": 5, "type": "tbd"},
-      "Trace": {"amount": 5, "type": "tbd"}
+      "Shimmer": {"amount": 5, "type": "kills_without_taking_damage"},
+      "Tyrant": {"amount": 5, "type": "kills_with_suppressor"},
+      "Trace": {"amount": 5, "type": "kills_while_sliding"}
     }
   },
 
@@ -143,9 +143,9 @@ const specialCamouflages = {
       "Network": { "amount": 50, "type": "specific_enemy_kills", "enemy": 'Guild Tech' }
     },
     "warzone": {
-      "Shimmer": {"amount": 5, "type": "tbd"},
-      "Tyrant": {"amount": 5, "type": "tbd"},
-      "Trace": {"amount": 5, "type": "tbd"}
+      "Shimmer": {"amount": 5, "type": "kills_while_moving"},
+      "Tyrant": {"amount": 5, "type": "kills_shortly_after_sprinting"},
+      "Trace": {"amount": 5, "type": "kills_while_sliding"}
     }
   },
 
