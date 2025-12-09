@@ -59,7 +59,7 @@ const specialCamouflages = {
 
   "Razor 9mm": {
     "multiplayer": {
-      "Diamondback": { "amount": 530, "type": "hipfire_kills" },
+      "Diamondback": { "amount": 30, "type": "hipfire_kills" },
       "Raptor": { "amount": 30, "type": "kills_objective" },
       "Mainframe": { "amount": 50, "type": "kills_while_moving" }
     },

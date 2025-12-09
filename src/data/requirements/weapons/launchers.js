@@ -41,7 +41,7 @@ const specialCamouflages = {
       "Mainframe": { "amount": 10, "type": "scorestreaks_or_enemy_equipment" }
     },
     "zombies": {
-      "Mutilate": { "amount": 150, "type": "kills_at_tier_armor", "tier": 2 },
+      "Mutilate": { "amount": 150, "type": "kills_with_tier_armor", "tier": 2 },
       "Slither": { "amount": 75, "type": "armored_zombie_kills" },
       "Pathfinder": { "amount": 75, "type": "kills_with_ammo_mod_activations", "mod": "Fire Works" }
     },

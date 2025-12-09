@@ -41,7 +41,7 @@ const specialCamouflages = {
       "Mainframe": { "amount": 50, "type": "kills_with_no_attachments" }
     },
     "zombies": {
-      "Mutilate": { "amount": 300, "type": "point_blank" },
+      "Mutilate": { "amount": 300, "type": "point_blank_kills" },
       "Slither": { "amount": 300, "type": "kills_with_ammo_mod", "mod": "Cryo Freeze" },
       "Pathfinder": { "amount": 10, "type": "kills_without_taking_damage", "times": 5 }
     },
