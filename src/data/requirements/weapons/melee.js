@@ -28,9 +28,9 @@ const specialCamouflages = {
       "Network": { "amount": 50, "type": "specific_enemy_kills", "enemy": 'Guild Tech' }
     },
     "warzone": {
-      "Shimmer": { "amount": 5, "type": "headshots" },
-      "Tyrant": { "amount": 5, "type": "kills_with_suppressor" },
-      "Trace": { "amount": 5, "type": "kills_without_taking_damage" }
+      "Shimmer": {"amount": 5, "type": "tbd"},
+      "Tyrant": {"amount": 5, "type": "tbd"},
+      "Trace": {"amount": 5, "type": "tbd"}
     }
   },
 
@@ -51,32 +51,32 @@ const specialCamouflages = {
       "Network": { "amount": 25, "type": "kill_shortly_after_movement" }
     },
     "warzone": {
-      "Shimmer": { "amount": 5, "type": "headshots" },
-      "Tyrant": { "amount": 5, "type": "kills_with_suppressor" },
-      "Trace": { "amount": 5, "type": "kills_without_taking_damage" }
+      "Shimmer": {"amount": 5, "type": "tbd"},
+      "Tyrant": {"amount": 5, "type": "tbd"},
+      "Trace": {"amount": 5, "type": "tbd"}
     }
   },
 
   "Ballistic Knife": {
     "multiplayer": {
-      "Diamondback": {"type": "tbd"},
-      "Raptor": {"type": "tbd"},
-      "Mainframe": {"type": "tbd"}
+      "Diamondback": {"amount": 5, "type": "kills"},
+      "Raptor": {"amount": 30, "type": "kills_without_taking_damage"},
+      "Mainframe": {"amount": 30, "type": "kill_while_affected_by_tactical_or_non_lethal_scorestreak"}
     },
     "zombies": {
-      "Mutilate": {"type": "tbd"},
-      "Slither": {"type": "tbd"},
-      "Pathfinder": {"type": "tbd"}
+      "Mutilate": {"amount": 10, "type": "kills_without_taking_damage_times", "times": 3},
+      "Slither": {"amount": 300, "type": "kills_while_pack_a_punched"},
+      "Pathfinder": {"amount": 100, "type": "kills_while_field_upgrade_is_active"}
     },
     "campaign": {
-      "Cinder": {"type": "tbd"},
-      "Caiman": {"type": "tbd"},
-      "Network": {"type": "tbd"}
+      "Cinder": {"amount": 50, "type": "specific_enemy_kills", "enemy": "Guild Tech"},
+      "Caiman": {"amount": 25, "type": "kills_shortly_after_switching_weapons"},
+      "Network": {"amount": 100, "type": "kills_at_rare_or_higher"}
     },
     "warzone": {
-      "Shimmer": {"type": "tbd"},
-      "Tyrant": {"type": "tbd"},
-      "Trace": {"type": "tbd"}
+      "Shimmer": {"amount": 2, "type": "eliminations_while_moving"},
+      "Tyrant": {"amount": 2, "type": "eliminations_without_taking_damage"},
+      "Trace": {"amount": 2, "type": "eliminations_shortly_after_sprinting"}
     }
   }
 }

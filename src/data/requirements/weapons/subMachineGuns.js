@@ -28,9 +28,9 @@ const specialCamouflages = {
       "Network": { "amount": 50, "type": "point_blank_kills" }
     },
     "warzone": {
-      "Shimmer": { "amount": 5, "type": "headshots" },
-      "Tyrant": { "amount": 5, "type": "kills_with_suppressor" },
-      "Trace": { "amount": 5, "type": "kills_without_taking_damage" }
+      "Shimmer": {"amount": 5, "type": "tbd"},
+      "Tyrant": {"amount": 5, "type": "tbd"},
+      "Trace": {"amount": 5, "type": "tbd"}
     }
   },
 
@@ -51,9 +51,9 @@ const specialCamouflages = {
       "Network": { "amount": 50, "type": "kills_while_moving_ads" }
     },
     "warzone": {
-      "Shimmer": { "amount": 5, "type": "headshots" },
-      "Tyrant": { "amount": 5, "type": "kills_with_suppressor" },
-      "Trace": { "amount": 5, "type": "kills_without_taking_damage" }
+      "Shimmer": {"amount": 5, "type": "tbd"},
+      "Tyrant": {"amount": 5, "type": "tbd"},
+      "Trace": {"amount": 5, "type": "tbd"}
     }
   },
 
@@ -74,9 +74,9 @@ const specialCamouflages = {
       "Network": { "amount": 50, "type": "point_blank_kills" }
     },
     "warzone": {
-      "Shimmer": { "amount": 5, "type": "headshots" },
-      "Tyrant": { "amount": 5, "type": "kills_with_suppressor" },
-      "Trace": { "amount": 5, "type": "kills_without_taking_damage" }
+      "Shimmer": {"amount": 5, "type": "tbd"},
+      "Tyrant": {"amount": 5, "type": "tbd"},
+      "Trace": {"amount": 5, "type": "tbd"}
     }
   },
 
@@ -97,9 +97,9 @@ const specialCamouflages = {
       "Network": { "amount": 50, "type": "kills_with_specific_attachment_tac", "attachment": "Tactical Laser" }
     },
     "warzone": {
-      "Shimmer": { "amount": 5, "type": "headshots" },
-      "Tyrant": { "amount": 5, "type": "kills_with_suppressor" },
-      "Trace": { "amount": 5, "type": "kills_without_taking_damage" }
+      "Shimmer": {"amount": 5, "type": "tbd"},
+      "Tyrant": {"amount": 5, "type": "tbd"},
+      "Trace": {"amount": 5, "type": "tbd"}
     }
   },
 
@@ -120,9 +120,9 @@ const specialCamouflages = {
       "Network": { "amount": 3, "times": 10, "type": "rapid_kills" }
     },
     "warzone": {
-      "Shimmer": { "amount": 5, "type": "headshots" },
-      "Tyrant": { "amount": 5, "type": "kills_with_suppressor" },
-      "Trace": { "amount": 5, "type": "kills_without_taking_damage" }
+      "Shimmer": {"amount": 5, "type": "tbd"},
+      "Tyrant": {"amount": 5, "type": "tbd"},
+      "Trace": {"amount": 5, "type": "tbd"}
     }
   },
 
@@ -143,55 +143,55 @@ const specialCamouflages = {
       "Network": { "amount": 50, "type": "specific_enemy_kills", "enemy": 'Guild Tech' }
     },
     "warzone": {
-      "Shimmer": { "amount": 5, "type": "headshots" },
-      "Tyrant": { "amount": 5, "type": "kills_with_suppressor" },
-      "Trace": { "amount": 5, "type": "kills_without_taking_damage" }
+      "Shimmer": {"amount": 5, "type": "tbd"},
+      "Tyrant": {"amount": 5, "type": "tbd"},
+      "Trace": {"amount": 5, "type": "tbd"}
     }
   },
 
   "Kogot-7": {
     "multiplayer": {
-      "Diamondback": {"type": "tbd"},
-      "Raptor": {"type": "tbd"},
-      "Mainframe": {"type": "tbd"}
+      "Diamondback": { "amount": 50, "type": "kills_with_suppressor" },
+      "Raptor": { "amount": 2, "type": "kills_without_reloading", "times": 10 },
+      "Mainframe": { "amount": 30, "type": "hipfire_kills" }
     },
     "zombies": {
-      "Mutilate": {"type": "tbd"},
-      "Slither": {"type": "tbd"},
-      "Pathfinder": {"type": "tbd"}
+      "Mutilate": { "amount": 300, "type": "hipfire_kills" },
+      "Slither": { "amount": 100, "type": "kills_while_field_upgrade_is_active" },
+      "Pathfinder": { "amount": 300, "type": "kills_with_ammo_mod", "mod": "Dead Wire" }
     },
     "campaign": {
-      "Cinder": {"type": "tbd"},
-      "Caiman": {"type": "tbd"},
-      "Network": {"type": "tbd"}
+      "Cinder": { "amount": 50, "type": "hipfire_kills" },
+      "Caiman": { "amount": 100, "type": "specific_enemy_kills", "enemy": "Human" },
+      "Network": { "amount": 25, "type": "kills_shortly_after_moving" }
     },
     "warzone": {
-      "Shimmer": {"type": "tbd"},
-      "Tyrant": {"type": "tbd"},
-      "Trace": {"type": "tbd"}
+      "Shimmer": { "amount": 5, "type": "eliminations_while_moving" },
+      "Tyrant": { "amount": 5, "type": "eliminations_shortly_after_sprinting" },
+      "Trace": { "amount": 5, "type": "eliminations_while_sliding" }
     }
   },
 
   "Sturmwolf 45": {
     "multiplayer": {
-      "Diamondback": {"type": "tbd"},
-      "Raptor": {"type": "tbd"},
-      "Mainframe": {"type": "tbd"}
+      "Diamondback": { "amount": 5, "type": "tbd" },
+      "Raptor": { "amount": 5, "type": "tbd" },
+      "Mainframe": { "amount": 5, "type": "tbd" }
     },
     "zombies": {
-      "Mutilate": {"type": "tbd"},
-      "Slither": {"type": "tbd"},
-      "Pathfinder": {"type": "tbd"}
+      "Mutilate": { "amount": 5, "type": "tbd" },
+      "Slither": { "amount": 5, "type": "tbd" },
+      "Pathfinder": { "amount": 5, "type": "tbd" }
     },
     "campaign": {
-      "Cinder": {"type": "tbd"},
-      "Caiman": {"type": "tbd"},
-      "Network": {"type": "tbd"}
+      "Cinder": { "amount": 5, "type": "tbd" },
+      "Caiman": { "amount": 5, "type": "tbd" },
+      "Network": { "amount": 5, "type": "tbd" }
     },
     "warzone": {
-      "Shimmer": {"type": "tbd"},
-      "Tyrant": {"type": "tbd"},
-      "Trace": {"type": "tbd"}
+      "Shimmer": { "amount": 5, "type": "tbd" },
+      "Tyrant": { "amount": 5, "type": "tbd" },
+      "Trace": { "amount": 5, "type": "tbd" }
     }
   }
 }
