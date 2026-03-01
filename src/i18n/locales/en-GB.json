@@ -332,6 +332,7 @@
       "kills_without_taking_damage_times": "Get {amount} eliminations without taking damage {times} times",
       "consecutive_kills_without_taking_damage": "Get {amount} consecutive kills without taking damage {times} times",
       "critical_kills_with_a_single_shot": "Get {amount} Critical Kills with a single shot {times} times",
+      "kills_with_heavy_melee": "Get {amount} kills using a heavy melee attack",
 
       "_comment_kill_effects_and_status": "Kill Effects & Status",
       "kills_while_affected_by_tactical": "{amount} kills while they are affected by your Tactical",
@@ -412,4 +413,5 @@
     "Sub Machine Guns": "Submachine Guns",
     "Specials": "Specials"
   }
+
 }
