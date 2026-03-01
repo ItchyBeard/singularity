@@ -7,4 +7,5 @@ export default [
   'DS20 Mirage',
   'Peacekeeper Mk1',
   'Maddox RFB'
+  'EGRT-17'
 ]
