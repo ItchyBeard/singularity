@@ -35,24 +35,24 @@ const specialCamouflages = {
 
      "GDL Havoc": {
     "multiplayer": {
-      "Diamondback": { "type": "TBD" },
-      "Raptor": { "type": "TBD" },
-      "Mainframe": { "type": "TBD" }
+      "Diamondback": {"amount": 15, "type": "kills_objective"},
+      "Raptor": {"amount": 25, "type": "kills_without_taking_damage"},
+      "Mainframe": {"amount": 25, "type": "kills_while_moving"}
     },
     "zombies": {
-      "Mutilate": { "type": "TBD" },
-      "Slither": { "type": "TBD" },
-      "Pathfinder": { "type": "TBD" }
+      "Mutilate": { "amount": 300, "type": "kills_while_pack_a_punched" },
+      "Slither": { "amount": 300, "type": "kills_with_ammo_mod", "mod": "Cryo Freeze"},
+      "Pathfinder": { "amount": 150, "type": "kills_with_tier_armor", "tier": 2 }
     },
     "campaign": {
-      "Cinder": { "type": "TBD" },
-      "Caiman": { "type": "TBD" },
-      "Network": { "type": "TBD" }
+      "Cinder": { "amount": 100, "type": "specific_enemy_kills", "enemy": 'Human' },
+      "Caiman": { "amount": 3, "type": "rapid_kills", "times": 10 },
+      "Network": { "amount": 100, "type": "kills_at_rare_rarity" }
     },
     "warzone": {
-      "Shimmer": { "type": "TBD" },
-      "Tyrant": { "type": "TBD" },
-      "Trace": { "type": "TBD" }
+      "Shimmer": {"amount": 5, "type": "kills_without_taking_damage"},
+      "Tyrant": {"amount": 5, "type": "kills_while_moving"},
+      "Trace": {"amount": 5, "type": "vehicle_destructions"}
     }
   }
 }
