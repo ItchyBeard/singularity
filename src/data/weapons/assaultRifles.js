@@ -8,5 +8,5 @@ export default [
   'Peacekeeper Mk1',
   'Maddox RFB',
   'EGRT-17',
-  'Voyak KT-3',
+  'Voyak KT-3'
 ]
