@@ -59,24 +59,24 @@ const specialCamouflages = {
 
   "Sokol 545": {
     "multiplayer": {
-      "Diamondback": {"type": "tbd"},
-      "Raptor": {"type": "tbd"},
-      "Mainframe": {"type": "tbd"}
+      "Diamondback": { "amount": 30, "type": "kill_while_affected_by_tactical_or_non_lethal_scorestreak" },
+      "Raptor": { "amount": 50, "type": "kills_while_wildcard_is_equipped_and_8_attachments", "wildcard": "Gunfighter" },
+      "Mainframe": { "amount": 2, "type": "kills_without_releasing_trigger", "times": 5 }
     },
     "zombies": {
-      "Mutilate": {"type": "tbd"},
-      "Slither": {"type": "tbd"},
-      "Pathfinder": {"type": "tbd"}
+      "Mutilate": { "amount": 3, "type": "critical_kills_consecutively", "times": 5 },
+      "Slither": { "amount": 300, "type": "kills_with_ammo_mod", "mod": "Brain Rot" },
+      "Pathfinder": { "amount": 10, "type": "kills_without_reloading", "times": 15 }
     },
     "campaign": {
-      "Cinder": {"type": "tbd"},
-      "Caiman": {"type": "tbd"},
-      "Network": {"type": "tbd"}
+      "Cinder": { "amount": 50, "type": "specific_enemy_kills", "enemy": 'Guild Tech' },
+      "Caiman": { "amount": 3, "type": "kills_without_reloading", "times": 10 },
+      "Network": { "amount": 100, "type": "kills_while_moving_ads" }
     },
     "warzone": {
-      "Shimmer": {"type": "tbd"},
-      "Tyrant": {"type": "tbd"},
-      "Trace": {"type": "tbd"}
+      "Shimmer": {"amount": 5, "type": "kills_while_moving"},
+      "Tyrant": {"amount": 5, "type": "kills_without_taking_damage"},
+      "Trace": {"amount": 5, "type": "headshots"}
     }
   }
 }

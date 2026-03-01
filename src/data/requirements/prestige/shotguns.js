@@ -19,7 +19,13 @@ const universalCamouflages = {
         "Fissure": { "amount": 1, "type": "weapon_prestige" },
         "Slither": { "amount": 2, "type": "weapon_prestige" },
         "Hexed": { "amount": 250, "type": "weapon_prestige_master" }
-    }
+    },
+    "SG-12": {
+        "Chrysalis": { amount: 1, type: "weapon_prestige" },
+        "Rocket Box": { amount: 2, type: "weapon_prestige" },
+        "Shimmer": { amount: 250, type: "weapon_prestige_master" },
+  },
 }
+
 
 export default generatePrestigeConfig(shotguns, universalCamouflages, PRESTIGE_CAMOS)

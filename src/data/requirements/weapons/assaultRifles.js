@@ -11,166 +11,220 @@ import {
 } from '../../camouflages/definitions'
 
 const specialCamouflages = {
-  "M15 Mod 0": {
-    "multiplayer": {
-      "Diamondback": { "amount": 50, "type": "kills_while_moving" },
-      "Raptor": { "amount": 30, "type": "kills_objective" },
-      "Mainframe": { "amount": 20, "type": "kills_with_underbarrel_launcher" }
+  'M15 Mod 0': {
+    multiplayer: {
+      Diamondback: { amount: 50, type: 'kills_while_moving' },
+      Raptor: { amount: 30, type: 'kills_objective' },
+      Mainframe: { amount: 20, type: 'kills_with_underbarrel_launcher' },
     },
-    "zombies": {
-      "Mutilate": { "amount": 300, "type": "hipfire_kills" },
-      "Slither": { "amount": 3, "type": "critical_kills_consecutively", "times": 5 },
-      "Pathfinder": { "amount": 300, "type": "kills_with_ammo_mod", "mod": "Fire Works" }
+    zombies: {
+      Mutilate: { amount: 300, type: 'hipfire_kills' },
+      Slither: { amount: 3, type: 'critical_kills_consecutively', times: 5 },
+      Pathfinder: { amount: 300, type: 'kills_with_ammo_mod', mod: 'Fire Works' },
     },
-    "campaign": {
-      "Cinder": { "amount": 50, "type": "kills_shortly_after_sprinting" },
-      "Caiman": { "amount": 100, "type": "kills_with_4x_or_higher_magnification_scope" },
-      "Network": { "amount": 100, "type": "specific_enemy_kills", "enemy": 'Fear' }
+    campaign: {
+      Cinder: { amount: 50, type: 'kills_shortly_after_sprinting' },
+      Caiman: { amount: 100, type: 'kills_with_4x_or_higher_magnification_scope' },
+      Network: { amount: 100, type: 'specific_enemy_kills', enemy: 'Fear' },
     },
-    "warzone": {
-      "Shimmer": {"amount": 5, "type": "headshots" },
-      "Tyrant": {"amount": 5, "type": "kills_with_suppressor" },
-      "Trace": {"amount": 5, "type": "kills_shortly_after_sprinting" }
-    }
+    warzone: {
+      Shimmer: { amount: 5, type: 'headshots' },
+      Tyrant: { amount: 5, type: 'kills_with_suppressor' },
+      Trace: { amount: 5, type: 'kills_shortly_after_sprinting' },
+    },
   },
 
-  "AK-27": {
-    "multiplayer": {
-      "Diamondback": { "amount": 30, "type": "hipfire_kills" },
-      "Raptor": { "amount": 2, "type": "kills_without_reloading" },
-      "Mainframe": { "amount": 20, "type": "kills_with_underbarrel_launcher" }
+  'AK-27': {
+    multiplayer: {
+      Diamondback: { amount: 30, type: 'hipfire_kills' },
+      Raptor: { amount: 2, type: 'kills_without_reloading' },
+      Mainframe: { amount: 20, type: 'kills_with_underbarrel_launcher' },
     },
-    "zombies": {
-      "Mutilate": { "amount": 2, "type": "critical_kills_with_a_single_shot", "times": 15 },
-      "Slither": { "amount": 300, "type": "kills_with_ammo_mod", "mod": "Napalm Burst" },
-      "Pathfinder": { "amount": 10, "type": "kills_without_taking_damage_times", "times": 5 }
+    zombies: {
+      Mutilate: { amount: 2, type: 'critical_kills_with_a_single_shot', times: 15 },
+      Slither: { amount: 300, type: 'kills_with_ammo_mod', mod: 'Napalm Burst' },
+      Pathfinder: { amount: 10, type: 'kills_without_taking_damage_times', times: 5 },
     },
-    "campaign": {
-      "Cinder": { "amount": 50, "type": "kills_shortly_after_sprinting" },
-      "Caiman": { "amount": 50, "type": "kills_while_moving_ads" },
-      "Network": { "amount": 100, "type": "specific_enemy_kills", "enemy": 'Human' }
+    campaign: {
+      Cinder: { amount: 50, type: 'kills_shortly_after_sprinting' },
+      Caiman: { amount: 50, type: 'kills_while_moving_ads' },
+      Network: { amount: 100, type: 'specific_enemy_kills', enemy: 'Human' },
     },
-    "warzone": {
-      "Shimmer": {"amount": 5, "type": "headshots"},
-      "Tyrant": {"amount": 5, "type": "kills_while_moving"},
-      "Trace": {"amount": 5, "type": "kills_without_taking_damage"}
-    }
+    warzone: {
+      Shimmer: { amount: 5, type: 'headshots' },
+      Tyrant: { amount: 5, type: 'kills_while_moving' },
+      Trace: { amount: 5, type: 'kills_without_taking_damage' },
+    },
   },
 
-  "MXR-17": {
-    "multiplayer": {
-      "Diamondback": { "amount": 50, "type": "kills_with_5_attachments" },
-      "Raptor": { "amount": 30, "type": "kills_shortly_after_sprinting" },
-      "Mainframe": { "amount": 20, "type": "kills_with_underbarrel" }
+  'MXR-17': {
+    multiplayer: {
+      Diamondback: { amount: 50, type: 'kills_with_5_attachments' },
+      Raptor: { amount: 30, type: 'kills_shortly_after_sprinting' },
+      Mainframe: { amount: 20, type: 'kills_with_underbarrel' },
     },
-    "zombies": {
-      "Mutilate": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },
-      "Slither": { "amount": 10, "type": "kills_without_reloading", "times": 15 },
-      "Pathfinder": { "amount": 300, "type": "kills_with_ammo_mod", "mod": "Cryo Freeze" }
+    zombies: {
+      Mutilate: { amount: 5, type: 'critical_kills_rapidly', times: 15 },
+      Slither: { amount: 10, type: 'kills_without_reloading', times: 15 },
+      Pathfinder: { amount: 300, type: 'kills_with_ammo_mod', mod: 'Cryo Freeze' },
     },
-    "campaign": {
-      "Cinder": { "amount": 150, "type": "kills_with_8_attachments" },
-      "Caiman": { "amount": 100, "type": "kills_at_rare_rarity" },
-      "Network": { "amount": 3, "type": "rapid_kills", "times": 10 }
+    campaign: {
+      Cinder: { amount: 150, type: 'kills_with_8_attachments' },
+      Caiman: { amount: 100, type: 'kills_at_rare_rarity' },
+      Network: { amount: 3, type: 'rapid_kills', times: 10 },
     },
-    "warzone": {
-      "Shimmer": {"amount": 5, "type": "headshots"},
-      "Tyrant": {"amount": 5, "type": "kills_with_suppressor"},
-      "Trace": {"amount": 5, "type": "kills_without_taking_damage"}
-    }
+    warzone: {
+      Shimmer: { amount: 5, type: 'headshots' },
+      Tyrant: { amount: 5, type: 'kills_with_suppressor' },
+      Trace: { amount: 5, type: 'kills_without_taking_damage' },
+    },
   },
 
-  "X9 Maverick": {
-    "multiplayer": {
-      "Diamondback": { "amount": 30, "type": "kills_while_affected_by_tactical" },
-      "Raptor": { "amount": 50, "type": "kills_with_no_attachments" },
-      "Mainframe": { "amount": 30, "type": "kill_without_taking_damage" }
+  'X9 Maverick': {
+    multiplayer: {
+      Diamondback: { amount: 30, type: 'kills_while_affected_by_tactical' },
+      Raptor: { amount: 50, type: 'kills_with_no_attachments' },
+      Mainframe: { amount: 30, type: 'kill_without_taking_damage' },
     },
-    "zombies": {
-      "Mutilate": { "amount": 75, "type": "kills_with_ammo_mod_activations", "mod": "Shadow Rift" },
-      "Slither": { "amount": 300, "type": "kills_while_pack_a_punched" },
-      "Pathfinder": { "amount": 75, "type": "armored_zombie_kills" }
+    zombies: {
+      Mutilate: { amount: 75, type: 'kills_with_ammo_mod_activations', mod: 'Shadow Rift' },
+      Slither: { amount: 300, type: 'kills_while_pack_a_punched' },
+      Pathfinder: { amount: 75, type: 'armored_zombie_kills' },
     },
-    "campaign": {
-      "Cinder": { "amount": 3, "type": "rapid_kills", "times": 10 },
-      "Caiman": { "amount": 50, "type": "kills_with_specific_attachment_tac", "attachment": "Tactical Laser" },
-      "Network": { "amount": 50, "type": "kills_while_moving_ads" },
+    campaign: {
+      Cinder: { amount: 3, type: 'rapid_kills', times: 10 },
+      Caiman: {
+        amount: 50,
+        type: 'kills_with_specific_attachment_tac',
+        attachment: 'Tactical Laser',
+      },
+      Network: { amount: 50, type: 'kills_while_moving_ads' },
     },
-    "warzone": {
-      "Shimmer": {"amount": 5, "type": "kills_with_suppressor"},
-      "Tyrant": {"amount": 5, "type": "headshots" },
-      "Trace": {"amount": 5, "type": "kills_without_taking_damage"}
-    }
+    warzone: {
+      Shimmer: { amount: 5, type: 'kills_with_suppressor' },
+      Tyrant: { amount: 5, type: 'headshots' },
+      Trace: { amount: 5, type: 'kills_without_taking_damage' },
+    },
   },
 
-  "DS20 Mirage": {
-    "multiplayer": {
-      "Diamondback": { "amount": 50, "type": "kills_with_4x_or_higher_magnification_scope" },
-      "Raptor": { "amount": 30, "type": "kills_with_suppressor" },
-      "Mainframe": { "amount": 50, "type": "kills_while_wildcard_is_equipped_and_8_attachments", "wildcard": "Gunfighter" }
+  'DS20 Mirage': {
+    multiplayer: {
+      Diamondback: { amount: 50, type: 'kills_with_4x_or_higher_magnification_scope' },
+      Raptor: { amount: 30, type: 'kills_with_suppressor' },
+      Mainframe: {
+        amount: 50,
+        type: 'kills_while_wildcard_is_equipped_and_8_attachments',
+        wildcard: 'Gunfighter',
+      },
     },
-    "zombies": {
-      "Mutilate": { "amount": 10, "type": "kills_without_taking_damage", "times": 10 },
-      "Slither": { "amount": 150, "type": "kills_with_tier_armor", "tier": 2 },
-      "Pathfinder": { "amount": 300, "type": "kills_with_ammo_mod", "mod": "Dead Wire" }
+    zombies: {
+      Mutilate: { amount: 10, type: 'kills_without_taking_damage', times: 10 },
+      Slither: { amount: 150, type: 'kills_with_tier_armor', tier: 2 },
+      Pathfinder: { amount: 300, type: 'kills_with_ammo_mod', mod: 'Dead Wire' },
     },
-    "campaign": {
-      "Cinder": { "amount": 3, "type": "rapid_kills", "times": 10 },
-      "Caiman": { "amount": 25, "type": "kill_shortly_after_movement" },
-      "Network": { "amount": 100, "type": "kills_with_specific_attachment", "attachment": "Extended Mag" },
+    campaign: {
+      Cinder: { amount: 3, type: 'rapid_kills', times: 10 },
+      Caiman: { amount: 25, type: 'kill_shortly_after_movement' },
+      Network: { amount: 100, type: 'kills_with_specific_attachment', attachment: 'Extended Mag' },
     },
-    "warzone": {
-      "Shimmer": {"amount": 5, "type": "kills_with_suppressor"},
-      "Tyrant": {"amount": 5, "type": "kills_while_moving"},
-      "Trace": {"amount": 5, "type": "kills_without_taking_damage"}
-    }
+    warzone: {
+      Shimmer: { amount: 5, type: 'kills_with_suppressor' },
+      Tyrant: { amount: 5, type: 'kills_while_moving' },
+      Trace: { amount: 5, type: 'kills_without_taking_damage' },
+    },
   },
 
-  "Peacekeeper Mk1": {
-    "multiplayer": {
-      "Diamondback": { "amount": 50, "type": "kills_with_5_attachments" },
-      "Raptor": { "amount": 30, "type": "kills_without_taking_damage", },
-      "Mainframe": { "amount": 20, "type": "kills_with_underbarrel_launcher" }
+  'Peacekeeper Mk1': {
+    multiplayer: {
+      Diamondback: { amount: 50, type: 'kills_with_5_attachments' },
+      Raptor: { amount: 30, type: 'kills_without_taking_damage' },
+      Mainframe: { amount: 20, type: 'kills_with_underbarrel_launcher' },
     },
-    "zombies": {
-      "Mutilate": { "amount": 300, "type": "kills_at_rare_rarity_or_higher" },
-      "Slither": { "amount": 100, "type": "kills_while_field_upgrade_is_active" },
-      "Pathfinder": { "amount": 100, "type": "kills_while_affected_by_tactical" }
+    zombies: {
+      Mutilate: { amount: 300, type: 'kills_at_rare_rarity_or_higher' },
+      Slither: { amount: 100, type: 'kills_while_field_upgrade_is_active' },
+      Pathfinder: { amount: 100, type: 'kills_while_affected_by_tactical' },
     },
-    "campaign": {
-      "Cinder": { "amount": 10, "type": "kills_without_reloading", "times": 10 },
-      "Caiman": { "amount": 100, "type": "specific_enemy_kills", "enemy": 'Guild Tech' },
-      "Network": { "amount": 25, "type": "kill_shortly_after_movement" },
+    campaign: {
+      Cinder: { amount: 10, type: 'kills_without_reloading', times: 10 },
+      Caiman: { amount: 100, type: 'specific_enemy_kills', enemy: 'Guild Tech' },
+      Network: { amount: 25, type: 'kill_shortly_after_movement' },
     },
-    "warzone": {
-      "Shimmer": {"amount": 5, "type": "headshots"},
-      "Tyrant": {"amount": 5, "type": "kills_without_taking_damage"},
-      "Trace": {"amount": 5, "type": "kills_shortly_after_sprinting"}
-    }
+    warzone: {
+      Shimmer: { amount: 5, type: 'headshots' },
+      Tyrant: { amount: 5, type: 'kills_without_taking_damage' },
+      Trace: { amount: 5, type: 'kills_shortly_after_sprinting' },
+    },
   },
 
-  "Maddox RFB": {
-    "multiplayer": {
-      "Diamondback": { "amount": 50, "type": "kills_with_no_attachments" },
-      "Raptor": { "amount": 30, "type": "kills_without_taking_damage" },
-      "Mainframe": { "amount": 50, "type": "kills_while_moving" }
+  'Maddox RFB': {
+    multiplayer: {
+      Diamondback: { amount: 50, type: 'kills_with_no_attachments' },
+      Raptor: { amount: 30, type: 'kills_without_taking_damage' },
+      Mainframe: { amount: 50, type: 'kills_while_moving' },
     },
-    "zombies": {
-      "Mutilate": { "amount": 100, "type": "kills_while_affected_by_tactical" },
-      "Slither": { "amount": 5, "type": "critical_kills_rapidly", "times": 15 },
-      "Pathfinder": { "amount": 300, "type": "kills_with_ammo_mod", "mod": "Napalm Burst" }
+    zombies: {
+      Mutilate: { amount: 100, type: 'kills_while_affected_by_tactical' },
+      Slither: { amount: 5, type: 'critical_kills_rapidly', times: 15 },
+      Pathfinder: { amount: 300, type: 'kills_with_ammo_mod', mod: 'Napalm Burst' },
     },
-    "campaign": {
-      "Cinder": { "amount": 50, "type": "kills_shortly_after_sprinting" },
-      "Caiman": { "amount": 50, "type": "specific_enemy_kills", "enemy": "Guild Tech" },
-      "Network": { "amount": 100, "type": "kills_at_rare_rarity_or_higher" }
+    campaign: {
+      Cinder: { amount: 50, type: 'kills_shortly_after_sprinting' },
+      Caiman: { amount: 50, type: 'specific_enemy_kills', enemy: 'Guild Tech' },
+      Network: { amount: 100, type: 'kills_at_rare_rarity_or_higher' },
     },
-    "warzone": {
-      "Shimmer": { "amount": 5, "type": "headshots" },
-      "Tyrant": { "amount": 5, "type": "kills_without_taking_damage" },
-      "Trace": { "amount": 5, "type": "kills_shortly_after_sprinting" }
-    }
-  }
+    warzone: {
+      Shimmer: { amount: 5, type: 'headshots' },
+      Tyrant: { amount: 5, type: 'kills_without_taking_damage' },
+      Trace: { amount: 5, type: 'kills_shortly_after_sprinting' },
+    },
+  },
+
+  'EGRT-17': {
+    multiplayer: {
+      Diamondback: { amount: 30, type: 'kills_without_taking_damage' },
+      Raptor: { amount: 50, type: 'kills_while_moving' },
+      Mainframe: { amount: 30, type: 'kill_while_affected_by_tactical_or_non_lethal_scorestreak' },
+    },
+    zombies: {
+      Mutilate: { amount: 150, type: 'kills_with_tier_armor', tier: 2 },
+      Slither: { amount: 300, type: 'kills_with_ammo_mod', mod: 'Dead Wire' },
+      Pathfinder: { amount: 300, type: 'kills_while_pack_a_punched' },
+    },
+    campaign: {
+      Cinder: { amount: 50, type: 'point_blank_kills' },
+      Caiman: { amount: 100, type: 'kills_with_8_attachments' },
+      Network: { amount: 50, type: 'specific_enemy_kills', enemy: 'Guild Tech' },
+    },
+    warzone: {
+      Shimmer: { amount: 5, type: 'headshots' },
+      Tyrant: { amount: 5, type: 'kills_without_taking_damage' },
+      Trace: { amount: 5, type: 'kills_shortly_after_sprinting' },
+    },
+  },
+
+  'Voyak KT-3': {
+    multiplayer: {
+      Diamondback: { amount: 30, type: 'TBD' },
+      Raptor: { amount: 50, type: 'TBD' },
+      Mainframe: { amount: 30, type: 'TBD' },
+    },
+    zombies: {
+      Mutilate: { amount: 150, type: 'TBD' },
+      Slither: { amount: 300, type: 'TBD' },
+      Pathfinder: { amount: 300, type: 'TBD' },
+    },
+    campaign: {
+      Cinder: { amount: 50, type: 'TBD' },
+      Caiman: { amount: 100, type: 'TBD' },
+      Network: { amount: 50, type: 'TBD' },
+    },
+    warzone: {
+      Shimmer: { amount: 5, type: 'TBD' },
+      Tyrant: { amount: 5, type: 'TBD' },
+      Trace: { amount: 5, type: 'TBD' },
+    },
+  },
 }
 
 export default {
@@ -195,7 +249,7 @@ export default {
         ...WZ_BASE_CAMOS,
         ...specialCamouflages[weapon].warzone,
         ...WZ_MASTERY_CAMOS,
-      }
+      },
     }
     return acc
   }, {}),

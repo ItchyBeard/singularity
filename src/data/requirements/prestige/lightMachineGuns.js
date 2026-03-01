@@ -14,10 +14,11 @@ const universalCamouflages = {
     "Lacerate": { amount: 250, type: "weapon_prestige_master" },
   },
   "Sokol 545": {
-    "PrestigeA": { amount: 1, type: "weapon_prestige" },
-    "PrestigeB": { amount: 2, type: "weapon_prestige" },
-    "PrestigeC": { amount: 250, type: "weapon_prestige_master" },
+    "Coral": { amount: 1, type: "weapon_prestige" },
+    "Lavender": { amount: 2, type: "weapon_prestige" },
+    "Scallywag": { amount: 250, type: "weapon_prestige_master" },
   },
 }
 
 export default generatePrestigeConfig(lightMachineGuns, universalCamouflages, PRESTIGE_CAMOS)
+

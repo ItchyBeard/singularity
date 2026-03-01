@@ -1,3 +1,1 @@
-export default [
-  'NX Ravager'
-]
+export default ['NX Ravager', 'GDL Havoc']

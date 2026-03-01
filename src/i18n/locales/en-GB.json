@@ -332,6 +332,8 @@
       "kills_without_taking_damage_times": "Get {amount} eliminations without taking damage {times} times",
       "consecutive_kills_without_taking_damage": "Get {amount} consecutive kills without taking damage {times} times",
       "critical_kills_with_a_single_shot": "Get {amount} Critical Kills with a single shot {times} times",
+      "kills_with_heavy_melee": "Get {amount} kills using a heavy melee attack",
+      "kills_while_crouched": "Get {amount} kills while crouched",	
 
       "_comment_kill_effects_and_status": "Kill Effects & Status",
       "kills_while_affected_by_tactical": "{amount} kills while they are affected by your Tactical",
@@ -385,6 +387,8 @@
       "kills_or_vehicle_destructions": "Get {amount} kills or Vehicle Destructions",
       "launcher_kills_while_moving": "Get {amount} kills while moving",
       "launcher_kills_without_taking_damage": "Get {amount} kills without taking damage",
+      "kills_while_killstreak_active": "Get {amount} kills while your killstreak is active",
+      "vehicle_destructions": "Destroy {amount} Vehicles", 
 
 
       "_comment_mastery": "Mastery Challenges",
@@ -412,4 +416,8 @@
     "Sub Machine Guns": "Submachine Guns",
     "Specials": "Specials"
   }
+
 }
+
+
+

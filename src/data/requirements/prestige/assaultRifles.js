@@ -40,6 +40,17 @@ const universalCamouflages = {
     "Sand": { amount: 2, type: "weapon_prestige" },
     "Electro Magnetic": { amount: 250, type: "weapon_prestige_master" },
   },
+  "EGRT-17": {
+    "Retro": { amount: 1, type: "weapon_prestige" },
+    "Brick": { amount: 2, type: "weapon_prestige" },
+    "Void Stripe": { amount: 250, type: "weapon_prestige_master" },
+  },
+  "Voyak KT-3": {
+    "PrestigeA": { amount: 1, type: "weapon_prestige" },
+    "PrestigeB": { amount: 2, type: "weapon_prestige" },
+    "PrestigeC": { amount: 250, type: "weapon_prestige_master" },
+  },
 }
 
 export default generatePrestigeConfig(assaultRifles, universalCamouflages, PRESTIGE_CAMOS)
+

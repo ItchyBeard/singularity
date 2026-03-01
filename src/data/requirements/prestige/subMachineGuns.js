@@ -39,10 +39,17 @@ const universalCamouflages = {
     "Spinal": { amount: 250, type: "weapon_prestige_master" },
   },
   "Sturmwolf 45": {
-    "PrestigeA": { amount: 1, type: "weapon_prestige" },
-    "PrestigeB": { amount: 2, type: "weapon_prestige" },
-    "PrestigeC": { amount: 250, type: "weapon_prestige_master" },
+    "Elevate": { amount: 1, type: "weapon_prestige" },
+    "Olive": { amount: 2, type: "weapon_prestige" },
+    "Vines": { amount: 250, type: "weapon_prestige_master" },
   },
+  "Rev-46": {
+    "Heatmap": { "amount": 1, "type": "weapon_prestige" },
+    "Leaf": { "amount": 2, "type": "weapon_prestige" },
+    "Rosette": { "amount": 250, "type": "weapon_prestige_master" }
+    }
 }
 
 export default generatePrestigeConfig(subMachineGuns, universalCamouflages, PRESTIGE_CAMOS)
+
+

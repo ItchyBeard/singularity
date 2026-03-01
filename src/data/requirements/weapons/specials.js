@@ -11,28 +11,51 @@ import {
 } from '../../camouflages/definitions'
 
 const specialCamouflages = {
-  "NX Ravager": {
-    "multiplayer": {
-      "Diamondback": { "type": "TBD" },
-      "Raptor": { "type": "TBD" },
-      "Mainframe": { "type": "TBD" }
+  'NX Ravager': {
+    multiplayer: {
+      Diamondback: { amount: 15, type: 'kills_objective' },
+      Raptor: { amount: 25, type: 'kills_without_taking_damage' },
+      Mainframe: { amount: 25, type: 'kills_while_moving' },
     },
-    "zombies": {
-      "Mutilate": { "type": "TBD" },
-      "Slither": { "type": "TBD" },
-      "Pathfinder": { "type": "TBD" }
+    zombies: {
+      Mutilate: { amount: 300, type: 'kills_while_pack_a_punched' },
+      Slither: { amount: 300, type: 'kills_with_ammo_mod', mod: 'Cryo Freeze' },
+      Pathfinder: { amount: 150, type: 'kills_with_tier_armor', tier: 2 },
     },
-    "campaign": {
-      "Cinder": { "type": "TBD" },
-      "Caiman": { "type": "TBD" },
-      "Network": { "type": "TBD" }
+    campaign: {
+      Cinder: { amount: 100, type: 'specific_enemy_kills', enemy: 'Human' },
+      Caiman: { amount: 3, type: 'rapid_kills', times: 10 },
+      Network: { amount: 100, type: 'kills_at_rare_rarity' },
     },
-    "warzone": {
-      "Shimmer": { "type": "TBD" },
-      "Tyrant": { "type": "TBD" },
-      "Trace": { "type": "TBD" }
-    }
-  }
+    warzone: {
+      Shimmer: { amount: 5, type: 'kills_without_taking_damage' },
+      Tyrant: { amount: 5, type: 'kills_while_moving' },
+      Trace: { amount: 5, type: 'kills_shortly_after_sprinting' },
+    },
+  },
+
+  'GDL Havoc': {
+    multiplayer: {
+      Diamondback: { amount: 15, type: 'kills_without_taking_damage' },
+      Raptor: { amount: 10, type: 'scorestreaks_or_enemy_equipment' },
+      Mainframe: { amount: 15, type: 'kills_objective' },
+    },
+    zombies: {
+      Mutilate: { amount: 10, type: 'kills_without_taking_damage_times', times: 3 },
+      Slither: { amount: 300, type: 'kills_while_pack_a_punched' },
+      Pathfinder: { amount: 150, type: 'kills_with_tier_armor', tier: 2 },
+    },
+    campaign: {
+      Cinder: { amount: 3, type: 'rapid_kills', times: 10 },
+      Caiman: { amount: 100, type: 'specific_enemy_kills', enemy: 'Guild Tech' },
+      Network: { amount: 100, type: 'kills_at_rare_rarity' },
+    },
+    warzone: {
+      Shimmer: { amount: 5, type: 'kills_while_crouched' },
+      Tyrant: { amount: 5, type: 'kills_without_taking_damage' },
+      Trace: { amount: 5, type: 'vehicle_destructions' },
+    },
+  },
 }
 
 export default {
@@ -57,7 +80,7 @@ export default {
         ...WZ_BASE_CAMOS,
         ...specialCamouflages[weapon].warzone,
         ...WZ_MASTERY_CAMOS,
-      }
+      },
     }
     return acc
   }, {}),

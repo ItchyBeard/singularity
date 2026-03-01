@@ -18,6 +18,12 @@ const universalCamouflages = {
     "Barbed": { amount: 2, type: "weapon_prestige" },
     "Elegant": { amount: 250, type: "weapon_prestige_master" },
   },
+  "H311-SAW": {
+    "Swamp": { amount: 1, type: "weapon_prestige" },
+    "High Voltage": { amount: 2, type: "weapon_prestige" },
+    "Tasty": { amount: 250, type: "weapon_prestige_master" },
+  }
 }
 
 export default generatePrestigeConfig(melee, universalCamouflages, PRESTIGE_CAMOS)
+

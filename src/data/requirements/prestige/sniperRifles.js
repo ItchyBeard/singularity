@@ -19,10 +19,11 @@ const universalCamouflages = {
     "Snake Eyes": { amount: 250, type: "weapon_prestige_master" },
   },
   "Hawker HX": {
-    "PrestigeA": { amount: 1, type: "weapon_prestige" },
-    "PrestigeB": { amount: 2, type: "weapon_prestige" },
-    "PrestigeC": { amount: 250, type: "weapon_prestige_master" },
+    "Smoulder": { amount: 1, type: "weapon_prestige" },
+    "Thorns": { amount: 2, type: "weapon_prestige" },
+    "Medley": { amount: 250, type: "weapon_prestige_master" },
   },
 }
 
 export default generatePrestigeConfig(sniperRifles, universalCamouflages, PRESTIGE_CAMOS)
+

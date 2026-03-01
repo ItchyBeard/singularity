@@ -82,24 +82,24 @@ const specialCamouflages = {
 
   "Hawker HX": {
     "multiplayer": {
-      "Diamondback": {"type": "tbd"},
-      "Raptor": {"type": "tbd"},
-      "Mainframe": {"type": "tbd"}
+      "Diamondback": { "amount": 30, "type": "kills_objective" },
+      "Raptor": { "amount": 15, "type": "longshot_kills" },
+      "Mainframe": { "amount": 50, "type": "kills_with_suppressor"}
     },
     "zombies": {
-      "Mutilate": {"type": "tbd"},
-      "Slither": {"type": "tbd"},
-      "Pathfinder": {"type": "tbd"}
+      "Mutilate": { "amount": 100, "type": "kills_while_affected_by_tactical"},
+      "Slither": { "amount": 2, "type": "critical_kills_with_a_single_shot", "times": 15 },
+      "Pathfinder": { "amount": 75, "type": "armored_zombie_kills" }
     },
     "campaign": {
-      "Cinder": {"type": "tbd"},
-      "Caiman": {"type": "tbd"},
-      "Network": {"type": "tbd"}
+      "Cinder": { "amount": 100, "type": "kills_with_suppressor"},
+      "Caiman": { "amount": 100, "type": "specific_enemy_kills", "enemy": 'Fear' },
+      "Network": { "amount": 100, "type": "kills_with_8_attachments" }
     },
     "warzone": {
-      "Shimmer": {"type": "tbd"},
-      "Tyrant": {"type": "tbd"},
-      "Trace": {"type": "tbd"}
+      "Shimmer": {"amount": 5, "type": "headshots"},
+      "Tyrant": {"amount": 5, "type": "kills_without_taking_damage"},
+      "Trace": {"amount": 5, "type": "kills_without_moving"}
     }
   }
 }
