@@ -35,9 +35,9 @@ const specialCamouflages = {
 
      "GDL Havoc": {
     "multiplayer": {
-      "Diamondback": {"amount": 15, "type": "kills_objective"},
+      "Diamondback": {"amount": 15, "type": "kills_without_taking_damage"},
       "Raptor": {"amount": 25, "type": "kills_without_taking_damage"},
-      "Mainframe": {"amount": 25, "type": "kills_while_moving"}
+      "Mainframe": {"amount": 15, "type": "kills_objective"}
     },
     "zombies": {
       "Mutilate": { "amount": 300, "type": "kills_while_pack_a_punched" },
@@ -50,8 +50,8 @@ const specialCamouflages = {
       "Network": { "amount": 100, "type": "kills_at_rare_rarity" }
     },
     "warzone": {
-      "Shimmer": {"amount": 5, "type": "kills_without_taking_damage"},
-      "Tyrant": {"amount": 5, "type": "kills_while_moving"},
+      "Shimmer": {"amount": 5, "type": "kills_while_crouched"},
+      "Tyrant": {"amount": 5, "type": "kills_without_taking_damage"},
       "Trace": {"amount": 5, "type": "vehicle_destructions"}
     }
   }
