@@ -174,24 +174,46 @@ const specialCamouflages = {
 
   "Sturmwolf 45": {
     "multiplayer": {
-      "Diamondback": { "amount": 5, "type": "tbd" },
-      "Raptor": { "amount": 5, "type": "tbd" },
-      "Mainframe": { "amount": 5, "type": "tbd" }
+      "Diamondback": { "amount": 15, "type": "kill_shortly_after_movement" },
+      "Raptor": { "amount": 50, "type": "kills_while_moving"},
+      "Mainframe": { "amount": 30, "type": "kills_shortly_after_sprinting" }
     },
     "zombies": {
-      "Mutilate": { "amount": 5, "type": "tbd" },
-      "Slither": { "amount": 5, "type": "tbd" },
-      "Pathfinder": { "amount": 5, "type": "tbd" }
+      "Mutilate": { "amount": 150, "type": "kills_with_tier_armor", "tier": 2 },
+      "Slither": { "amount": 75, "type": "armored_zombie_kills" },
+      "Pathfinder": { "amount": 300, "type": "hipfire_kills" }
     },
     "campaign": {
-      "Cinder": { "amount": 5, "type": "tbd" },
-      "Caiman": { "amount": 5, "type": "tbd" },
-      "Network": { "amount": 5, "type": "tbd" }
+      "Cinder": { "amount": 50, "type": "kills_while_moving_ads" },
+      "Caiman": { "amount": 100, "type": "specific_enemy_kills", "enemy": "Human" },
+      "Network": { "amount": 50, "type": "hipfire_kills" }
     },
     "warzone": {
-      "Shimmer": { "amount": 5, "type": "tbd" },
-      "Tyrant": { "amount": 5, "type": "tbd" },
-      "Trace": { "amount": 5, "type": "tbd" }
+      "Shimmer": { "amount": 5, "type": "kills_without_taking_damage" },
+      "Tyrant": { "amount": 5, "type": "kills_with_suppressor" },
+      "Trace": { "amount": 5, "type": "kills_while_sliding" }
+    },
+
+  "REV-46": {
+    "multiplayer": {
+      "Diamondback": { "amount": 50, "type": "kills_with_suppressor" },
+      "Raptor": { "amount": 15, "type": "kill_shortly_after_movement"},
+      "Mainframe": { "amount": 30, "type": "kills_shortly_after_sprinting" }
+    },
+    "zombies": {
+      "Mutilate": { "amount": 100, "type": "kills_while_affected_by_tactical" },
+      "Slither": { "amount": 300, "type": "point_blank_kills" },
+      "Pathfinder": { "amount": 300, "type": "kills_while_pack_a_punched" }
+    },
+    "campaign": {
+      "Cinder": { "amount": 100, "type": "kills_with_specific_attachment", "attachment": "Extended Mag" },
+      "Caiman": { "amount": 50, "type": "hipfire_kills" },
+      "Network": { "amount": 3, "type": "rapid_kills", "times": 10  }
+    },
+    "warzone": {
+      "Shimmer": { "amount": 5, "type": "kills_while_moving" },
+      "Tyrant": { "amount": 5, "type": "kills_shortly_after_sprinting" },
+      "Trace": { "amount": 5, "type": "kills_while_sliding" }
     }
   }
 }
@@ -222,4 +244,5 @@ export default {
     }
     return acc
   }, {}),
+
 }
