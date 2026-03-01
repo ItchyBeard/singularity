@@ -36,17 +36,17 @@ const specialCamouflages = {
      "GDL Havoc": {
     "multiplayer": {
       "Diamondback": {"amount": 15, "type": "kills_without_taking_damage"},
-      "Raptor": {"amount": 25, "type": "kills_without_taking_damage"},
+      "Raptor": {"amount": 10, "type": "scorestreaks_or_enemy_equipment"},
       "Mainframe": {"amount": 15, "type": "kills_objective"}
     },
     "zombies": {
-      "Mutilate": { "amount": 300, "type": "kills_while_pack_a_punched" },
-      "Slither": { "amount": 300, "type": "kills_with_ammo_mod", "mod": "Cryo Freeze"},
+      "Mutilate": { "amount": 10, "type": "kills_without_taking_damage_times", "times": 3 },
+      "Slither": { "amount": 300, "type": "kills_while_pack_a_punched"},
       "Pathfinder": { "amount": 150, "type": "kills_with_tier_armor", "tier": 2 }
     },
     "campaign": {
-      "Cinder": { "amount": 100, "type": "specific_enemy_kills", "enemy": 'Human' },
-      "Caiman": { "amount": 3, "type": "rapid_kills", "times": 10 },
+      "Cinder": { "amount": 3, "type": "rapid_kills", "times": 10 }},
+      "Caiman": { "amount": 100, "type": "specific_enemy_kills", "enemy": 'Guild Tech' },
       "Network": { "amount": 100, "type": "kills_at_rare_rarity" }
     },
     "warzone": {
