@@ -1,5 +1,6 @@
 export default [
   'Knife',
   'Flatline MK.II',
-  'Ballistic Knife'
+  'Ballistic Knife',
+  'H311-SAW',
 ]
