@@ -388,7 +388,7 @@
       "launcher_kills_while_moving": "Get {amount} kills while moving",
       "launcher_kills_without_taking_damage": "Get {amount} kills without taking damage",
       "kills_while_killstreak_active": "Get {amount} kills while your killstreak is active",
-      "destroy_vehicles": "Destroy {amount} Vehicles 
+      "vehicle_destructions": "Destroy {amount} Vehicles", 
 
 
       "_comment_mastery": "Mastery Challenges",
@@ -418,5 +418,6 @@
   }
 
 }
+
 
 
