@@ -1,5 +1,30 @@
 <template>
   <div class="container">
+    <div class="divergence-alert">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="22"
+        height="22"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        aria-hidden="true">
+        <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z" />
+        <circle cx="12" cy="8" r="1" />
+        <path d="M12 10a1 1 0 0 0-1 1v5a1 1 0 0 0 2 0v-5a1 1 0 0 0-1-1z" />
+      </svg>
+
+      <div>
+        Looking for the Modern Warfare 4 camo tracker?
+        <a
+          href="https://divergence-tracker.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer">
+          Check out Divergence here!
+        </a>
+        Good luck with the grind!
+      </div>
+    </div>
+
     <OverallProgressComponent mode="multiplayer" />
 
     <div class="filter-container">
@@ -105,7 +130,9 @@ export default {
       }
 
       if (hideTempest) {
-        filteredWeapons = filteredWeapons.filter((weapon) => !weapon.progress.multiplayer['Tempest'])
+        filteredWeapons = filteredWeapons.filter(
+          (weapon) => !weapon.progress.multiplayer['Tempest']
+        )
       }
 
       if (hideSingularity) {
@@ -129,6 +156,46 @@ export default {
 <style lang="scss" scoped>
 .container {
   text-align: center;
+}
+
+.divergence-alert {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px 20px;
+  margin-bottom: 32px;
+
+  background: #162637;
+  border: 1px solid #285b89;
+  border-radius: 4px;
+
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: left;
+
+  svg {
+    flex-shrink: 0;
+    color: #3299ff;
+  }
+
+  a {
+    color: #3299ff;
+    text-decoration: none;
+
+    &:hover {
+      color: #75bdff;
+      text-decoration: underline;
+    }
+  }
+
+  @media (max-width: 600px) {
+    padding: 12px 14px;
+    font-size: 13px;
+    gap: 10px;
+  }
 }
 
 h1 {
